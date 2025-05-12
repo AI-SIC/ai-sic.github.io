@@ -1,0 +1,16 @@
+[
+  {
+    "listing": "/index.html",
+    "items": [
+      "/articles/esra_transcription_evaluation/index.html",
+      "/articles/esra_silicon_interviews/index.html"
+    ]
+  },
+  {
+    "listing": "/articles/index.html",
+    "items": [
+      "/articles/esra_transcription_evaluation/index.html",
+      "/articles/esra_silicon_interviews/index.html"
+    ]
+  }
+]
