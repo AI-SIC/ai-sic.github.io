@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://github.com/aisicresearch/about.html</loc>
-    <lastmod>2025-05-12T09:53:39.945Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.com/aisicresearch/index.html</loc>
-    <lastmod>2025-05-12T09:53:39.950Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.com/aisicresearch/articles/esra_silicon_interviews/index.html</loc>
-    <lastmod>2025-05-12T09:53:39.948Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.com/aisicresearch/contact.html</loc>
-    <lastmod>2025-05-12T09:53:39.949Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.com/aisicresearch/imprint.html</loc>
-    <lastmod>2025-05-12T09:53:39.950Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.com/aisicresearch/articles/esra_transcription_evaluation/index.html</loc>
-    <lastmod>2025-05-12T09:53:39.949Z</lastmod>
+    <loc>https://github.com/aisicresearch/privacy-statement.html</loc>
+    <lastmod>2025-05-13T09:05:08.500Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/aisicresearch/articles/index.html</loc>
-    <lastmod>2025-05-12T09:53:39.949Z</lastmod>
+    <lastmod>2025-05-13T09:05:08.500Z</lastmod>
   </url>
   <url>
-    <loc>https://github.com/aisicresearch/privacy-statement.html</loc>
-    <lastmod>2025-05-12T09:53:39.950Z</lastmod>
+    <loc>https://github.com/aisicresearch/index.html</loc>
+    <lastmod>2025-05-13T09:05:08.500Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/aisicresearch/imprint.html</loc>
+    <lastmod>2025-05-13T09:05:08.500Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/aisicresearch/contact.html</loc>
+    <lastmod>2025-05-13T09:05:08.500Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/aisicresearch/about.html</loc>
+    <lastmod>2025-05-13T09:05:08.496Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/aisicresearch/articles/esra_silicon_interviews/index.html</loc>
+    <lastmod>2025-05-13T09:05:08.499Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/aisicresearch/articles/esra_transcription_evaluation/index.html</loc>
+    <lastmod>2025-05-13T09:05:08.499Z</lastmod>
   </url>
 </urlset>
