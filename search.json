@@ -1,5 +1,12 @@
 [
   {
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Contact",
+    "section": "",
+    "text": "Contact\nGitHub\nE-Mail: aniekler@informatik.uni-leipzig.de"
+  },
+  {
     "objectID": "privacy-statement.html",
     "href": "privacy-statement.html",
     "title": "Privacy Statement",
@@ -49,13 +56,6 @@
     "text": "No automated decision-making, including profiling as defined in Article 22 of the GDPR, takes place in connection with the use of our website."
   },
   {
-    "objectID": "articles/index.html",
-    "href": "articles/index.html",
-    "title": "Articles",
-    "section": "",
-    "text": "Articles\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEvaluating ASR for Social Science Research: A Comparison of Semantic Metrics\n\n\n\n\n\n\n\n\nApr 11, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nSilicon Interviews: A Two-Agent Interview Simulation\n\n\n\n\n\n\n\n\nApr 10, 2025\n\n\n\n\n\nNo matching items"
-  },
-  {
     "objectID": "articles/esra_silicon_interviews/index.html",
     "href": "articles/esra_silicon_interviews/index.html",
     "title": "Silicon Interviews: A Two-Agent Interview Simulation",
@@ -63,25 +63,11 @@
     "text": "Planned talk for the ESRA Conference. Shortly, we will publish an article related to our research. For now, you can find the abstract of the talk here.\n\nAbstract\nSelecting an appropriate measurement instrument in social science survey research presents researchers with a fundamental trade-off between depth and scalability. The emergence of Large Language Models (LLMs), with their diverse applications and enhanced user-friendliness, opens new possibilities for social science research methodology. While recent research has primarily focused on whether LLMs can replace human respondents through so-called silicon samples, less attention has been paid to their potential to also replace interviewers. Early findings suggest that AI interviewers can surpass humans in specific tasks, such as active listening, while also reducing biases resulting from reactivity and social desirability effects, but their capabilities remain underexplored.\nOur study takes a novel approach: simulating AI-AI interactions, where LLMs act as both interviewers and respondents in semi-structured interview settings. This dual-simulation framework enables us to rigorously test and refine interviewing methodologies while addressing the dynamic nature of human interactions, which are inherently unpredictable and context-dependent. As a test case, we simulate interviews with children—a particularly challenging context that demands empathetic and adaptive interviewing techniques. By adhering to established guidelines for interviewing children, we evaluate LLMs on their ability to generate dynamic follow-up questions, maintain conversational flow, and exhibit algorithmic fidelity in both roles, modeling complex human interactions.\nBeyond addressing common methodological challenges, such as social desirability biases and subjective inconsistencies, our framework offers a scalable solution for testing and refining interview methodologies. Generating ‘silicon interviews’, enables the development and refinement of downstream tasks, such as computational coding and analysis, by providing more robust large-scale datasets. Our findings underscore the potential of AI-driven simulations to advance survey research by bridging methodological gaps, reducing costs, and enhancing the scalability of interview-based research, thereby easing the trade-off between large-scale surveys and semi-structured interviews."
   },
   {
-    "objectID": "contact.html",
-    "href": "contact.html",
-    "title": "Contact",
+    "objectID": "articles/index.html",
+    "href": "articles/index.html",
+    "title": "Articles",
     "section": "",
-    "text": "Contact\nGitHub\nE-Mail: aniekler@informatik.uni-leipzig.de"
-  },
-  {
-    "objectID": "imprint.html",
-    "href": "imprint.html",
-    "title": "Imprint",
-    "section": "",
-    "text": "Imprint\nDr. Andreas Niekler  Computational Humanities  Paulinum  Augustusplatz 10, Raum P 616  04109 Leipzig  Germany \nPhone: +49 341 97-232239  E-Mail: aniekler@informatik.uni-leipzig.de"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "AI Enhanced Validation of Survey Instruments",
-    "section": "",
-    "text": "AI Enhanced Validation of Survey Instruments\n\nGitHub\n\n\nIntegrating Semi-Automated Methods in Cognitive Interviews for Children’s Self- and Proxy Assessments of Health (AI-SIC).  → more about\n\n\n\n\n\n\n\nArticles\n\n\n\n\n\n\n\n\n\n\nEvaluating ASR for Social Science Research: A Comparison of Semantic Metrics\n\n\n\n\n\n\nApr 11, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nSilicon Interviews: A Two-Agent Interview Simulation\n\n\n\n\n\n\nApr 10, 2025\n\n\n\n\n\n\nNo matching items"
+    "text": "Articles\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEvaluating ASR for Social Science Research: A Comparison of Semantic Metrics\n\n\n\n\n\n\n\n\nApr 11, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nSilicon Interviews: A Two-Agent Interview Simulation\n\n\n\n\n\n\n\n\nApr 10, 2025\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "articles/esra_transcription_evaluation/index.html",
@@ -137,6 +123,20 @@
     "href": "about.html#project-staff",
     "title": "",
     "section": "Project Staff",
-    "text": "Project Staff\n\nDr. Andreas Niekler\nDr. Jacqueline Kroh\nDr. Stephan Poppe\nProf. Dr. Julia Ofenhammer Tuppat\nNicolas Ruth\nLeonie Steinbrinker\nDonata Perakis\nPeter Kannewitz"
+    "text": "Project Staff\n\nDr. Andreas Niekler\nDr. Jacqueline Kroh\nDr. Stephan Poppe\nProf. Dr. Julia Offenhammer Tuppat\nNicolas Ruth\nLeonie Steinbrinker\nDonata Perakis\nPeter Kannewitz"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "AI Enhanced Validation of Survey Instruments",
+    "section": "",
+    "text": "AI Enhanced Validation of Survey Instruments\n\nGitHub\n\n\nIntegrating Semi-Automated Methods in Cognitive Interviews for Children’s Self- and Proxy Assessments of Health (AI-SIC).  → more about\n\n\n\n\n\n\n\nArticles\n\n\n\n\n\n\n\n\n\n\nEvaluating ASR for Social Science Research: A Comparison of Semantic Metrics\n\n\n\n\n\n\nApr 11, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nSilicon Interviews: A Two-Agent Interview Simulation\n\n\n\n\n\n\nApr 10, 2025\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "imprint.html",
+    "href": "imprint.html",
+    "title": "Imprint",
+    "section": "",
+    "text": "Imprint\nDr. Andreas Niekler  Computational Humanities  Paulinum  Augustusplatz 10, Raum P 616  04109 Leipzig  Germany \nPhone: +49 341 97-232239  E-Mail: aniekler@informatik.uni-leipzig.de"
   }
 ]
