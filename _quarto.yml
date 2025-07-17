@@ -1,5 +1,7 @@
 project:
   type: website
+  resources:
+    - "static/files/*"
 
 website:
   favicon: favicon.webp

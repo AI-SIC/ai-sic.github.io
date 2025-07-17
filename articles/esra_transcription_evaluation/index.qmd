@@ -8,6 +8,7 @@ image: "wave.png"
 
 Planned talk for the [ESRA Conference](https://www.europeansurveyresearch.org/conf2025/prog.php?sess=99#326). Shortly, we will publish an article related to our research. For now, you can find the abstract of the talk here.
 
+[Slides](/static/files/esra_asr.pdf)
 
 # Abstract
 
