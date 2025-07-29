@@ -19,7 +19,7 @@ website:
       - text: contact
         href: contact.qmd
       - text: de
-        href: ../de/de
+        href: ../de
       - text: en
         href: ./
   page-navigation: true
