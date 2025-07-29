@@ -3,8 +3,6 @@ pagetitle: "AI-SIC"
 image: "images/"
 canonical-url: "https://aisicresearch.github.io/"
 section-divs: false
-description: | 
-  'AI Enhanced Validation of Survey Instruments: Integrating Semi-Automated Methods in Cognitive Interviews for Children’s Self- and Proxy-Assessments of Health'
 listing:
   - id: articles
     contents: 

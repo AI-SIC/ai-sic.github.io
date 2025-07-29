@@ -1,0 +1,293 @@
+/*-- scss:defaults --*/
+// Adjusted from https://github.com/skriptum/quarto_site/blob/main/mw-custom.scss
+// Quarto Refs
+// Bootstrap Variables: https://github.com/quarto-dev/quarto-cli/blob/main/src/resources/formats/html/bootstrap/_bootstrap-variables.scss
+// Bootstrap Rules: https://github.com/quarto-dev/quarto-cli/blob/main/src/resources/formats/html/bootstrap/_bootstrap-rules.scss
+// How to Handle: https://silviacanelon.com/blog/2023-09-29-hello-quarto/#scss-variables
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap'); //serif
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap'); //sans-serif
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap'); // Smallcaps
+
+$black : #000000;
+
+
+$aisic-color: #0e8341;
+$aisic-color-light: #76d19e;
+$aisic-secondary: #0d7680;
+$aisic-secondary-light: #7CA6A6;
+
+$aisic-dark: #333333;
+$aisic-light: #ffffff;
+$aisic-light-secondary: #e3fbed;
+$font-color: #111111;
+
+$font-family-serif: 'Playfair Display', serif;
+$font-family-sans-serif: 'Josefin Sans', sans-serif;
+$font-family-smallcaps: 'Playfair Display SC', serif;
+
+
+$font-size-root: 20px;
+
+$link-color: $aisic-color;
+
+$body-bg: $aisic-light;
+$code-block-bg: $aisic-light-secondary; //e1d3d0
+$code-bg: $aisic-light-secondary;
+$code-color: $font-color;
+$border-color: #ccbbb1; // color of citation border
+
+
+$navbar-bg: $aisic-light;
+$navbar-fg: $aisic-color;
+$footer-bg: $aisic-light;
+$footer-fg: $font-color;
+
+$table-border-width: 0px;
+$table-border-color: $aisic-color;
+
+// Standard Color Palette (from Flexoki)
+
+$red: rgb(175, 48, 41);
+$orange: rgb(188, 82, 21);
+$yellow: rgb(181, 137, 0);
+$green: rgb(102, 128, 11);
+$cyan: rgb(36, 131, 123);
+$blue: rgb(32, 94, 166);
+$purple: rgb(94, 64, 157);
+$magenta: rgb(160, 47, 111);
+
+/*-- scss:rules --*/
+
+// Navbar and Footer
+
+.navbar {
+  font-family: $font-family-sans-serif;
+  text-transform: lowercase;
+  font-weight: 600;
+  position: relative;
+  margin: 0vw 5vw 0vw 5vw;
+  border-bottom: 1px solid $black;
+  min-height: 80px;
+  .navbar-title {
+    font-family: $font-family-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: $aisic-dark;
+  }
+  a:hover {
+    text-decoration: underline solid $aisic-color;
+  }
+  .navbar-brand {
+    // position in middle always
+    position: absolute;
+    left: 50%;
+    margin-left: -30px !important;  /* 50% of your logo width */
+    .navbar-logo {
+      max-height: 60px;
+    }
+  }
+}
+
+.footer {
+  border-top: 1px solid $aisic-dark;
+}
+
+// Title Block 
+
+.quarto-title-block {
+  padding-bottom: 2em;
+  border-bottom: 1px solid $black;
+}
+
+.quarto-title {
+  padding-bottom: 2em;
+}
+
+.quarto-title-meta-heading {
+  font-family: $font-family-serif;
+  color: $aisic-color;
+}
+
+.quarto-title-meta-contents {
+  font-family: $font-family-serif;
+}
+
+#title-block-header {
+  border-bottom: 0px solid $black !important;
+}
+
+// Listing
+
+.quarto-post {
+  border-bottom: 1px solid $black !important;
+  padding-bottom: 1em;
+
+  // scss to style multiple classes at same time
+  .listing-title {
+    font-family: $font-family-serif;
+    font-size: 1.5rem;
+    color: $aisic-color !important;
+  }
+  .listing-date {
+    font-family: $font-family-serif;
+    color: $aisic-color;
+  }
+  .listing-author {
+    font-family: $font-family-sans-serif;
+  }
+}
+
+.card {
+  background-color: $aisic-light-secondary;
+  border: 0px solid black;
+  border-radius: 5px;
+  .listing-date {
+    font-family: $font-family-serif;
+    color: $aisic-color;
+  }
+  .listing-title {
+    margin-bottom: 0.5em;
+  }
+}
+
+.listing-description {
+  font-family: $font-family-sans-serif;
+  font-weight: 300;
+  color: $aisic-dark;
+}
+
+// General
+
+body {
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: $font-family-serif;
+  border-bottom: 0 !important;
+}
+
+//Smallcaps for em tags in strong tags
+strong em {
+  font-family: $font-family-smallcaps;
+  font-weight: 500;
+  font-style: normal;
+}
+
+hr {
+  margin: 2em 20vw 2em 20vw;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  height: 4px;
+  opacity: 1;
+}
+
+button {
+  border: 1px solid $aisic-color;
+  padding: 0.2em 1em 0.05em 1em;
+  border-radius: 0px;
+  background-size: 21px 21px;
+  min-width: 60px;
+  color: $aisic-color;
+  margin: 0.2em 0.2em;
+  background-color: transparent;
+  box-shadow: 3px 3px $aisic-color;
+
+  &:hover {
+    background-color: $aisic-color-light;
+  }
+}
+
+a {
+  font-weight: 300;
+}
+
+pre code {
+  font-size: 14 !important;
+}
+
+.table {
+  .odd {
+    background-color: $aisic-light-secondary;
+  }
+  .header {
+    border-bottom: 1px double black;
+  }
+}
+
+.blockquote {
+  border-left: 5px solid $aisic-color;
+  padding-left: 1rem;
+  font-family: $font-family-serif;
+  border-radius: .25rem;
+  background-color: $aisic-light-secondary;
+  text-align: center;
+  color: black;
+  margin: 2em 5vw 2em 5vw;
+
+  em {
+  color: $aisic-color;
+  font-family: $font-family-smallcaps;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  }
+}
+
+// The line above footnotes etc styled the same as HR
+#quarto-appendix.default {
+  border-top: 1px solid black;
+}
+
+// Custom Classes
+
+.content-block {
+  border-bottom: 1px solid black;
+  margin-bottom: 2em;
+  .h1 {
+    text-align: center;
+  }
+} 
+
+.headroom {
+  background-color: $aisic-light;
+}
+
+.title-block {
+  background-color: $aisic-light-secondary;
+  // border: 1px solid $aisic-light-secondary;
+  // border-radius: 0px;
+  // border-color: $black;
+  // padding: 0em;
+  //box-shadow: 10px 10px 1px #857c76;
+  // &:hover {
+  //   transform: translate(-5px, -5px);
+  //   border-color: black;
+  //   box-shadow: 15px 15px $aisic-color;
+  // }
+  border-radius: 5px;
+
+  // rule when title-block and text-block in same div
+  + .text-block {
+    padding: 1em;
+    p {
+      margin: auto
+    }
+  }
+  p {
+    margin: 0;
+  }
+  .img-text {
+    padding: 1em;
+    margin: auto;
+  }
+  .img-fluid {
+    border-radius: 3px 3px 0px 0px;
+  }
+}
+
+.navbar-toggler {
+  box-shadow: none;
+}

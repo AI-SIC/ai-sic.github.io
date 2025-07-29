@@ -1,0 +1,16 @@
+---
+sidebar: false
+page-layout: article
+toc: false
+pagetitle: Contact
+---
+
+
+# Kontakt
+
+[`<button type="button">GitHub</button>`{=html}](https://github.com/aisicresearch)
+
+
+E-Mail: **[aniekler@informatik.uni-leipzig.de](mailto:aniekler@informatik.uni-leipzig.de)** 
+
+

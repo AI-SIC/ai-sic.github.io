@@ -1,0 +1,64 @@
+---
+pagetitle: "AI-SIC"
+image: "/images/"
+canonical-url: "https://aisicresearch.github.io/de/"
+section-divs: false
+
+description: | 
+  'KI-gestützte Validierung von Fragebögen: Integration semi automatisierter Methoden in kognitive Interviews für Selbst- und Fremdeinschätzungen der Gesundheit von Kindern.'
+
+listing:
+  - id: articles
+    contents: 
+    - articles
+    - "!articles/index.qmd"
+    sort: "date desc"
+    type: grid
+    categories: false
+    sort-ui: false
+    filter-ui: false
+    max-items: 3
+    feed: false
+    fields: [image, date, title, description]
+
+toc: false
+
+format: 
+  html:
+    html-math-method: plain
+---
+
+# KI unterstützte Validierung von Survey Messinstrumenten
+
+
+:::: {.content-block}
+
+[`<button type="button">GitHub</button>`{=html}](https://github.com/aisicresearch)
+
+
+::: {.title-block}
+
+::: {.img-text}
+Integration semiautomatischer Methoden in kognitive Interviews für Selbst- und Fremdeinschätzungen der Gesundheit von Kindern (AI-SIC).
+<br>
+→  mehr [***über uns***](about.qmd)
+
+
+:::
+
+:::
+
+\
+
+::::
+
+<!-- Artikel -->
+:::{.content-block}
+
+## [Artikel (Englisch)](articles/index.qmd)
+
+:::{#articles}
+:::
+
+:::
+

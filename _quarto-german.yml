@@ -1,0 +1,60 @@
+project:
+  type: website
+  output-dir: _site/de
+
+website:
+  navbar:
+    logo: /images/logo.png
+    logo-alt: "logo"
+    title: ""
+    collapse-below: lg
+    right:
+      - text: artikel
+        href: articles/index.qmd
+      - text: über uns
+        href: de/about.qmd
+      - text: kontakt
+        href: de/contact.qmd
+      - text: de
+        href: ../de
+      - text: en
+        href: ../en
+  page-navigation: true
+  back-to-top-navigation: false
+  page-footer:
+    center:
+      - href: https://github.com/aisicresearch
+        icon: github
+        aria-label: GitHub
+      - href: /imprint.html
+        text: Impressum
+      - href: /privacy-statement.html
+        text: Datenschutzerklärung
+    left:
+      - text: "© 2025 AI-SIC"
+    right:
+      - text: "Erstellt mit Quarto. Vorlage von martenw.com"
+
+format:
+  html:
+    lang: de-DE
+    theme: [aisic-custom.scss]
+    toc: true
+    grid:
+      body-width: 800px
+    html-math-method: katex
+    include-in-header: 
+      text: |
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org/",
+          "@type": "Organization",
+          "name": "AI-SIC",
+          "url": "https://github.com/aisicresearch",
+          "alternateName": "KI-gestützte Validierung von Fragebögen",
+          "description": "Forschungsprojekt",
+          "sameAs": [
+            "https://github.com/aisicresearch"
+          ]
+        }
+        </script>

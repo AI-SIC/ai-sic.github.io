@@ -1,0 +1,24 @@
+---
+pagetitle: "Imprint"
+toc: false
+---
+
+# Imprint
+
+
+Dr. Andreas Niekler <br>
+Computational Humanities <br>
+Paulinum <br>
+Augustusplatz 10, Raum P 616 <br>
+04109 Leipzig <br>
+Germany <br>
+
+Phone: +49 341 97-232239 <br>
+E-Mail: aniekler@informatik.uni-leipzig.de <br>
+
+
+
+
+
+
+

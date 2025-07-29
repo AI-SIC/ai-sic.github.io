@@ -1,0 +1,17 @@
+---
+title: "Silicon Interviews: A Two-Agent Interview Simulation"
+date: "2025-04-10"
+author-title: GitHub
+author: '<a href="https://aisicresearch.github.io/">aisic</a>'
+image: "chat.png"
+---
+
+Planned talk for the [ESRA Conference](https://www.europeansurveyresearch.org/conf2025/prog.php?sess=54#362). Shortly, we will publish an article related to our research. For now, you can find the abstract of the talk here.
+
+# Abstract
+
+Selecting an appropriate measurement instrument in social science survey research presents researchers with a fundamental trade-off between depth and scalability. The emergence of Large Language Models (LLMs), with their diverse applications and enhanced user-friendliness, opens new possibilities for social science research methodology. While recent research has primarily focused on whether LLMs can replace human respondents through so-called silicon samples, less attention has been paid to their potential to also replace interviewers. Early findings suggest that AI interviewers can surpass humans in specific tasks, such as active listening, while also reducing biases resulting from reactivity and social desirability effects, but their capabilities remain underexplored.
+
+Our study takes a novel approach: simulating AI-AI interactions, where LLMs act as both interviewers and respondents in semi-structured interview settings. This dual-simulation framework enables us to rigorously test and refine interviewing methodologies while addressing the dynamic nature of human interactions, which are inherently unpredictable and context-dependent. As a test case, we simulate interviews with children—a particularly challenging context that demands empathetic and adaptive interviewing techniques. By adhering to established guidelines for interviewing children, we evaluate LLMs on their ability to generate dynamic follow-up questions, maintain conversational flow, and exhibit algorithmic fidelity in both roles, modeling complex human interactions.
+
+Beyond addressing common methodological challenges, such as social desirability biases  and subjective inconsistencies, our framework offers a scalable solution for testing and refining interview methodologies. Generating 'silicon interviews', enables the development and refinement of downstream tasks, such as computational coding and analysis, by providing more robust large-scale datasets.  Our findings underscore the potential of AI-driven simulations to advance survey research by bridging methodological gaps, reducing costs, and enhancing the scalability of interview-based research, thereby easing the trade-off between large-scale surveys and semi-structured interviews.

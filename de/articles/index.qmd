@@ -1,0 +1,20 @@
+---
+toc: false
+pagetitle: Articles
+listing:
+  contents: ./
+  sort: "date desc"
+  type: default
+  categories: false
+  sort-ui: false
+  filter-ui: false
+  page-size: 30
+  feed: true
+  fields: [date, title, description, image]
+---
+
+:::{.content-block}
+
+# Artikel (Englisch)
+
+:::

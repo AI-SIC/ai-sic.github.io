@@ -1,0 +1,19 @@
+---
+title: "Evaluating ASR for Social Science Research: A Comparison of Semantic Metrics"
+date: "2025-04-11"
+author-title: GitHub
+author: '<a href="https://aisicresearch.github.io/">aisic</a>'
+image: "wave.png"
+---
+
+Planned talk for the [ESRA Conference](https://www.europeansurveyresearch.org/conf2025/prog.php?sess=99#326). Shortly, we will publish an article related to our research. For now, you can find the abstract of the talk here.
+
+
+# Abstract
+
+Automatic Speech Recognition (ASR) is an essential technology for automating the transcription of qualitative data in social science research, particularly with large interview datasets. Recent advancements in ASR have introduced powerful new tools to the field, but their implementation requires careful and thoughtful consideration to ensure reliability and accuracy. Since outcomes vary significantly depending on the model and its (hyper-)parametrization, it is crucial to evaluate the generalization capabilities of ASR models on specific research data using a meaningful and comparable metric. Addressing these challenges will enable social scientists to effectively leverage these technologies in their research.
+
+The most commonly used metric for this purpose is the Word Error Rate (WER). WER depends on specific language-specific text transformations and focuses on surface-level accuracy, making it inadequate for evaluating transcript quality in social sciences and downstream NLP tasks. To address limitations, modern, semantics-oriented metrics have been developed in recent years. Metrics such as Embedding Error Rate (EmbER) and Semantic-WER apply penalties for different types of errors, while methods like BERTScore, SeMaScore, SemDist, and Aligned Semantic Distance (ASD) improve evaluation by utilizing contextual embeddings and advanced matching techniques to assess semantic similarity.
+
+Our research centers on comparing the usability of these semantic metrics for ASR in social sciences and developing a more intuitive approach for analyzing semantic differences in ASR transcriptions using aligned window-based semantic comparison, as opposed to relying on traditional singular value metrics. The proposed talk is not only designed to improve the quality of individual research projects but also to contribute to the creation of new data spaces for the social sciences, where ASR is a fundamental technology. Only when developing robust methods for evaluating and utilizing ASR, we can unlock the potential of large-scale qualitative datasets, opening up new avenues for research and analysis.
+

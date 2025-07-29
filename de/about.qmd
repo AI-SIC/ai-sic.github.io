@@ -1,0 +1,53 @@
+---
+toc: false
+---
+
+## Projektziel
+
+Das Projekt zielt darauf ab, die Analyse kognitiver Interviews effizienter zu gestalten, indem menschliches Fachwissen mit innovativen KI-basierten Kodierungsmethoden kombiniert wird, wodurch die Reichweite der Methode erweitert wird. Darüber hinaus trägt das Projekt dazu bei zu verstehen, wie Kinder und Eltern die Gesundheit ihrer Kinder in groß angelegten Studien einschätzen. Zu diesem Zweck werden mögliche Unterschiede in den Strategien zur Gesundheitseinschätzung zwischen den Befragtengruppen untersucht und systematische Variationen nach Alter und Geschlecht identifiziert.
+
+## Hintergrund
+
+Um die Qualität der Umfrageforschung zu gewährleisten, werden die Erhebungsinstrumente sowohl mit qualitativen als auch mit quantitativen Methoden validiert. Beide Ansätze sind jedoch mit Einschränkungen verbunden. Während quantitative Analysen aufgrund großer Stichprobengrößen effizient verallgemeinerbare Beziehungen zwischen verschiedenen Konzepten und systematische Unterschiede zwischen den Befragten aufdecken können, sind sie nur begrenzt in der Lage, komplexe kognitive Prozesse innerhalb von Personen zu erfassen.
+
+Im Gegensatz zu quantitativen Methoden bieten qualitative Ansätze wie halbstrukturierte kognitive Interviews tiefere Einblicke in die Denkmuster der Teilnehmer. Die hohen Kosten solcher Studien schränken jedoch häufig die Stichprobengröße und die Skalierbarkeit ein, was die allgemeine Gültigkeit, die Verallgemeinerbarkeit und die Fähigkeit, Unterschiede zwischen Untergruppen zu berücksichtigen, beeinträchtigt.
+
+Die Integration der Stärken beider Methoden kann die Umfrageforschung erheblich verbessern, indem sie ein ganzheitliches Verständnis der Phänomene ermöglicht und gleichzeitig die Vorteile der quantitativen Validierung nutzt. Die Kombination beider Ansätze stellt jedoch eine Herausforderung dar.
+
+Das AI-SIC-Projekt trägt dazu bei, indem es einen KI-basierten Ansatz für halbautomatische Kodierung unter Verwendung einer aktiven Lernstrategie entwickelt. Dabei werden maschinelle Kodieralgorithmen mit menschlichen Kodierfähigkeiten kombiniert. Darüber hinaus werden neue Methoden zur effizienten und gründlichen Validierung von Erhebungsinstrumenten eingesetzt, um Forschungslücken bei der bereits etablierten Messung der selbst eingeschätzten Gesundheit zu schließen. Dies wird dazu beitragen, die Lücke zwischen qualitativen und quantitativen Methoden zu schließen und offene Fragen darüber zu beantworten, wie Kinder und ihre Eltern die Gesundheit von Kindern einschätzen.
+
+## Vorgehen und Methoden
+
+Das Projekt ist in vier inhaltliche Arbeitspakete unterteilt.
+
+Das **erste Arbeitspaket „Entwicklung des halbautomatischen Kodierframeworks InTraCo “** (Dr. Andreas Niekler & Stephan Poppe; Universität Leipzig) zielt darauf ab, sprachbasiertes maschinelles Lernen und zuverlässige halbautomatische Kodierverfahren methodisch und technisch in den Werkzeugkasten der computergestützten Sozialwissenschaften zu integrieren. Ziel ist es, maschinelle Kodieralgorithmen mit menschlichen induktiven Kodierfähigkeiten zu kombinieren, um die Effizienz bei der Kodierung umfangreicher qualitativer Interviewdaten zu erhöhen.
+
+Das **zweite Arbeitspaket „Anwendung und Evaluation von InTraCo “** (Dr. Andreas Niekler & Stephan Poppe; Universität Leipzig) widmet sich der Anwendung des neu entwickelten Ansatzes sowie dessen Validierung und Anpassung.
+
+Das **dritte Arbeitspaket „Exploring the self- and proxy-assessment strategies of children and parents “** (Dr. Jacqueline Kroh; LIfBi) nutzt die gewonnenen hochkomplexen Daten und untersucht, ob die neue Methode einen Mehrwert für inhaltsbezogene Analysen mit maschinellen Lernverfahren liefern kann. Damit soll ein umfassenderes Verständnis dafür gewonnen werden, wie Kinder und Eltern die Gesundheit ihrer Kinder einschätzen.
+
+Das **vierte Arbeitspaket „Vergleichbarkeit von Einschätzungsstrategien und Ergebnissen zwischen Selbst- und Proxy-Einschätzungen von Kindern und Eltern “** (Prof. Dr. Julia Offenhammer-Tuppat; Universität Leipzig) vertieft die in Arbeitspaket drei gewonnenen Erkenntnisse und untersucht Gemeinsamkeiten und Unterschiede zwischen verschiedenen Befragtengruppen bei den Selbsteinschätzungen der Kinder und den Proxy-Einschätzungen der Eltern zur Kindergesundheit.
+
+## Datenerhebung
+
+AI-SIC verwendet qualitative Daten und führt kognitive Interviews auf der Grundlage von webbasierten und realen persönlichen Interviews durch.
+
+## Projektprofil
+
+<ul>
+<li><strong>Projektführung and Antragseinreichung:</strong> Dr. Jacqueline Kroh (LIfBi), Dr. Andreas Niekler (Universität Leipzig), Dr. Stephan Poppe (Universität Leipzig), Prof. Dr. Julia Offenhammer-Tuppat (Universität Leipzig)</li>
+<li><strong>Projektdauer:</strong> 09/2024 - 06/2028</li>
+<li><strong>Projektförderung:</strong> Deutsche Forschungsgemeinschaft (DFG)</li>
+<li><strong>Webseite:</strong> <a href="https://aisicresearch.github.io/" target="_blank" rel="noopener">aisicresearch.github.io</a></li>
+</ul>
+
+## Team
+
+- [Dr. Andreas Niekler](https://www.uni-leipzig.de/personenprofil/mitarbeiter/dr-andreas-niekler)
+- [Dr. Jacqueline Kroh](https://www.lifbi.de/de-de/Start/Institut/Personen/Person/account/1373?name=Kroh,Jacqueline)
+- [Dr. Stephan Poppe](https://www.uni-leipzig.de/personenprofil/mitarbeiter/dr-stephan-poppe)
+- [Prof. Dr. Julia Offenhammer-Tuppat](https://www.uni-leipzig.de/personenprofil/mitarbeiter/juniorprof-dr-julia-offenhammer-tuppat)
+- [Nicolas Ruth](https://www.uni-leipzig.de/personenprofil/mitarbeiter/nicolas-ruth)
+- [Leonie Steinbrinker](https://www.uni-leipzig.de/personenprofil/mitarbeiter/leonie-steinbrinker)
+- [Donata Perakis](https://www.lifbi.de/de-de/Start/Institut/Personen/Person/account/1596)
+- Peter Kannewitz
