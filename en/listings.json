@@ -1,0 +1,30 @@
+[
+  {
+    "listing": "/articles/index.html",
+    "items": [
+      "/articles/esra_transcription_evaluation/index.html",
+      "/articles/esra_silicon_interviews/index.html"
+    ]
+  },
+  {
+    "listing": "/de/index.html",
+    "items": [
+      "/de/articles/esra_transcription_evaluation/index.html",
+      "/de/articles/esra_silicon_interviews/index.html"
+    ]
+  },
+  {
+    "listing": "/de/articles/index.html",
+    "items": [
+      "/de/articles/esra_transcription_evaluation/index.html",
+      "/de/articles/esra_silicon_interviews/index.html"
+    ]
+  },
+  {
+    "listing": "/index.html",
+    "items": [
+      "/articles/esra_transcription_evaluation/index.html",
+      "/articles/esra_silicon_interviews/index.html"
+    ]
+  }
+]
