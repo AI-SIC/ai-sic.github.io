@@ -7,10 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="aisic">
-<meta name="dcterms.date" content="2025-04-10">
+<meta name="dcterms.date" content="2025-04-11">
 <meta name="description" content="AI Enhanced Validation of Survey Instruments: Integrating Semi-Automated Methods in Cognitive Interviews for Children’s Self- and Proxy-Assessments of Health">
 
-<title>Silicon Interviews: A Two-Agent Interview Simulation</title>
+<title>Evaluating ASR for Social Science Research: A Comparison of Semantic Metrics</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -71,11 +71,11 @@ ul.task-list li input[type="checkbox"] {
 </script>
 
 
-<meta property="og:title" content="Silicon Interviews: A Two-Agent Interview Simulation">
+<meta property="og:title" content="Evaluating ASR for Social Science Research: A Comparison of Semantic Metrics">
 <meta property="og:description" content="AI Enhanced Validation of Survey Instruments: Integrating Semi-Automated Methods in Cognitive Interviews for Children’s Self- and Proxy-Assessments of Health">
-<meta property="og:image" content="https://github.com/aisicresearch/articles/esra_silicon_interviews/chat.png">
-<meta property="og:image:height" content="1024">
-<meta property="og:image:width" content="1024">
+<meta property="og:image" content="https://github.com/aisicresearch/articles/esra_transcription_evaluation/wave.png">
+<meta property="og:image:height" content="1208">
+<meta property="og:image:width" content="2261">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -111,7 +111,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">de</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../en"> 
+    <a class="nav-link" href="../.././"> 
 <span class="menu-text">en</span></a>
   </li>  
 </ul>
@@ -139,7 +139,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Silicon Interviews: A Two-Agent Interview Simulation</h1>
+<h1 class="title">Evaluating ASR for Social Science Research: A Comparison of Semantic Metrics</h1>
 </div>
 
 <div>
@@ -161,7 +161,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">April 10, 2025</p>
+      <p class="date">April 11, 2025</p>
     </div>
   </div>
   
@@ -173,12 +173,13 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Planned talk for the <a href="https://www.europeansurveyresearch.org/conf2025/prog.php?sess=54#362">ESRA Conference</a>. Shortly, we will publish an article related to our research. For now, you can find the abstract of the talk here.</p>
+<p>Planned talk for the <a href="https://www.europeansurveyresearch.org/conf2025/prog.php?sess=99#326">ESRA Conference</a>. Shortly, we will publish an article related to our research. For now, you can find the abstract of the talk here.</p>
+<p><a href="../../static/files/esra_asr.pdf">Slides</a></p>
 <section id="abstract" class="level1">
 <h1>Abstract</h1>
-<p>Selecting an appropriate measurement instrument in social science survey research presents researchers with a fundamental trade-off between depth and scalability. The emergence of Large Language Models (LLMs), with their diverse applications and enhanced user-friendliness, opens new possibilities for social science research methodology. While recent research has primarily focused on whether LLMs can replace human respondents through so-called silicon samples, less attention has been paid to their potential to also replace interviewers. Early findings suggest that AI interviewers can surpass humans in specific tasks, such as active listening, while also reducing biases resulting from reactivity and social desirability effects, but their capabilities remain underexplored.</p>
-<p>Our study takes a novel approach: simulating AI-AI interactions, where LLMs act as both interviewers and respondents in semi-structured interview settings. This dual-simulation framework enables us to rigorously test and refine interviewing methodologies while addressing the dynamic nature of human interactions, which are inherently unpredictable and context-dependent. As a test case, we simulate interviews with children—a particularly challenging context that demands empathetic and adaptive interviewing techniques. By adhering to established guidelines for interviewing children, we evaluate LLMs on their ability to generate dynamic follow-up questions, maintain conversational flow, and exhibit algorithmic fidelity in both roles, modeling complex human interactions.</p>
-<p>Beyond addressing common methodological challenges, such as social desirability biases and subjective inconsistencies, our framework offers a scalable solution for testing and refining interview methodologies. Generating ‘silicon interviews’, enables the development and refinement of downstream tasks, such as computational coding and analysis, by providing more robust large-scale datasets. Our findings underscore the potential of AI-driven simulations to advance survey research by bridging methodological gaps, reducing costs, and enhancing the scalability of interview-based research, thereby easing the trade-off between large-scale surveys and semi-structured interviews.</p>
+<p>Automatic Speech Recognition (ASR) is an essential technology for automating the transcription of qualitative data in social science research, particularly with large interview datasets. Recent advancements in ASR have introduced powerful new tools to the field, but their implementation requires careful and thoughtful consideration to ensure reliability and accuracy. Since outcomes vary significantly depending on the model and its (hyper-)parametrization, it is crucial to evaluate the generalization capabilities of ASR models on specific research data using a meaningful and comparable metric. Addressing these challenges will enable social scientists to effectively leverage these technologies in their research.</p>
+<p>The most commonly used metric for this purpose is the Word Error Rate (WER). WER depends on specific language-specific text transformations and focuses on surface-level accuracy, making it inadequate for evaluating transcript quality in social sciences and downstream NLP tasks. To address limitations, modern, semantics-oriented metrics have been developed in recent years. Metrics such as Embedding Error Rate (EmbER) and Semantic-WER apply penalties for different types of errors, while methods like BERTScore, SeMaScore, SemDist, and Aligned Semantic Distance (ASD) improve evaluation by utilizing contextual embeddings and advanced matching techniques to assess semantic similarity.</p>
+<p>Our research centers on comparing the usability of these semantic metrics for ASR in social sciences and developing a more intuitive approach for analyzing semantic differences in ASR transcriptions using aligned window-based semantic comparison, as opposed to relying on traditional singular value metrics. The proposed talk is not only designed to improve the quality of individual research projects but also to contribute to the creation of new data spaces for the social sciences, where ASR is a fundamental technology. Only when developing robust methods for evaluating and utilizing ASR, we can unlock the potential of large-scale qualitative datasets, opening up new avenues for research and analysis.</p>
 
 
 </section>

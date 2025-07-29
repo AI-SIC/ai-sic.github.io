@@ -8,7 +8,7 @@
 
 <meta name="description" content="AI Enhanced Validation of Survey Instruments: Integrating Semi-Automated Methods in Cognitive Interviews for Children’s Self- and Proxy-Assessments of Health">
 
-<title>Articles</title>
+<title>AI-SIC</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,25 +21,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+.display.math{display: block; text-align: center; margin: 0.5rem auto;}
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<link href="../favicon.webp" rel="icon">
-<script src="../site_libs/quarto-listing/list.min.js"></script>
-<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-6a6e22d3bd6ac76079acede296d499d1.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<link href="./favicon.webp" rel="icon">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-6a6e22d3bd6ac76079acede296d499d1.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -58,20 +59,20 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    const listingTargetEl = window.document.querySelector('#listing-articles .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-description','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-image','listing-date','listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+    window['quarto-listings']['listing-articles'] = new List('listing-articles', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -99,55 +100,11 @@ ul.task-list li input[type="checkbox"] {
 }
 </script>
 
-  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
-  <script>document.addEventListener("DOMContentLoaded", function () {
- var mathElements = document.getElementsByClassName("math");
- var macros = [];
- for (var i = 0; i < mathElements.length; i++) {
-  var texText = mathElements[i].firstChild;
-  if (mathElements[i].tagName == "SPAN") {
-   katex.render(texText.data, mathElements[i], {
-    displayMode: mathElements[i].classList.contains('display'),
-    throwOnError: false,
-    macros: macros,
-    fleqn: false
-   });
-}}});
-  </script>
-  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
 
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<meta property="og:title" content="Articles">
+<meta property="og:title" content="AI-SIC">
 <meta property="og:description" content="AI Enhanced Validation of Survey Instruments: Integrating Semi-Automated Methods in Cognitive Interviews for Children’s Self- and Proxy-Assessments of Health">
-<meta property="og:image" content="https://github.com/aisicresearch/articles/esra_transcription_evaluation/wave.png">
-<meta property="og:image:height" content="1208">
-<meta property="og:image:width" content="2261">
+<meta property="og:image" content="https://github.com/aisicresearch/images/">
+<link rel="canonical" href="https://aisicresearch.github.io/">
 </head>
 
 <body class="nav-fixed fullcontent quarto-light">
@@ -157,8 +114,8 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../images/logo.png" alt="logo" class="navbar-logo">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <img src="./images/logo.png" alt="logo" class="navbar-logo">
     </a>
   </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
@@ -167,23 +124,23 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="../articles/index.html" aria-current="page"> 
+    <a class="nav-link" href="./articles/index.html"> 
 <span class="menu-text">articles</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../about.html"> 
+    <a class="nav-link" href="./about.html"> 
 <span class="menu-text">about</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../contact.html"> 
+    <a class="nav-link" href="./contact.html"> 
 <span class="menu-text">contact</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../de"> 
+    <a class="nav-link" href="./../de"> 
 <span class="menu-text">de</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../en"> 
+    <a class="nav-link" href="././"> 
 <span class="menu-text">en</span></a>
   </li>  
 </ul>
@@ -204,62 +161,73 @@ window.Quarto = {
 
 
 
-<section id="articles" class="level1 content-block">
-<h1>Articles</h1>
+<h1 id="ai-enhanced-validation-of-survey-instruments">AI Enhanced Validation of Survey Instruments</h1>
+<div class="content-block">
+<p><a href="https://github.com/aisicresearch"><button type="button">GitHub</button></a></p>
+<div class="title-block">
+<div class="img-text">
+<p>Integrating Semi-Automated Methods in Cognitive Interviews for Children’s Self- and Proxy Assessments of Health (AI-SIC). <br> → more <a href="./about.html"><strong><em>about</em></strong></a></p>
+</div>
+</div>
+<p><br>
+</p>
+</div>
+<!-- Articles -->
+<section id="articles" class="content-block">
+<h2 class="anchored"><a href="./articles/index.html">Articles</a></h2>
+<div id="listing-articles" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-listing-date-sort="1744329600000" data-listing-file-modified-sort="1753779630695" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="319">
+<a href="./articles/esra_transcription_evaluation/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./articles/esra_transcription_evaluation/wave.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Evaluating ASR for Social Science Research: A Comparison of Semantic Metrics
+</h5>
+<div class="card-text listing-description delink">
+Planned talk for the ESRA Conference. Shortly, we will publish an article related to our research. For now, you can find the abstract of the talk here.
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Apr 11, 2025
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-listing-date-sort="1744243200000" data-listing-file-modified-sort="1753779630695" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="311">
+<a href="./articles/esra_silicon_interviews/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./articles/esra_silicon_interviews/chat.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Silicon Interviews: A Two-Agent Interview Simulation
+</h5>
+<div class="card-text listing-description delink">
+Planned talk for the ESRA Conference. Shortly, we will publish an article related to our research. For now, you can find the abstract of the talk here.
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Apr 10, 2025
+</div>
+</div>
+</div>
+</div></a>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
 </section>
 
 
 
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1744329600000" data-listing-file-modified-sort="1753779066841" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="319">
-<div class="thumbnail"><a href="../articles/esra_transcription_evaluation/index.html" class="no-external">
-
-<img loading="lazy" src="../articles/esra_transcription_evaluation/wave.png" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../articles/esra_transcription_evaluation/index.html" class="no-external">Evaluating ASR for Social Science Research: A Comparison of Semantic Metrics</a>
-</h3>
-<div class="delink listing-description"><a href="../articles/esra_transcription_evaluation/index.html" class="no-external">
-Planned talk for the ESRA Conference. Shortly, we will publish an article related to our research. For now, you can find the abstract of the talk here.
-</a></div>
-</div>
-<div class="metadata">
-<a href="../articles/esra_transcription_evaluation/index.html" class="no-external">
-<div class="listing-date">
-Apr 11, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1744243200000" data-listing-file-modified-sort="1753779066841" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="311">
-<div class="thumbnail"><a href="../articles/esra_silicon_interviews/index.html" class="no-external">
-
-<img loading="lazy" src="../articles/esra_silicon_interviews/chat.png" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../articles/esra_silicon_interviews/index.html" class="no-external">Silicon Interviews: A Two-Agent Interview Simulation</a>
-</h3>
-<div class="delink listing-description"><a href="../articles/esra_silicon_interviews/index.html" class="no-external">
-Planned talk for the ESRA Conference. Shortly, we will publish an article related to our research. For now, you can find the abstract of the talk here.
-</a></div>
-</div>
-<div class="metadata">
-<a href="../articles/esra_silicon_interviews/index.html" class="no-external">
-<div class="listing-date">
-Apr 10, 2025
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -683,12 +651,12 @@ Apr 10, 2025
     </a>
   </li>  
     <li class="nav-item">
-    <a class="nav-link" href="../imprint.html">
+    <a class="nav-link" href="./imprint.html">
 <p>Imprint</p>
 </a>
   </li>  
     <li class="nav-item">
-    <a class="nav-link" href="../privacy-statement.html">
+    <a class="nav-link" href="./privacy-statement.html">
 <p>Privacy Statement</p>
 </a>
   </li>  
