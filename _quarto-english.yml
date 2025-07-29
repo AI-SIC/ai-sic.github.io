@@ -1,12 +1,11 @@
 project:
   type: website
-  output-dir: ./_site
+  output-dir: _site/
 
 website:
   favicon: favicon.webp
   open-graph: true
   site-url: https://github.com/aisicresearch
-  search: false
   navbar:
     logo: images/logo.png
     logo-alt: "logo"
@@ -20,7 +19,7 @@ website:
       - text: contact
         href: contact.qmd
       - text: de
-        href: ../de
+        href: ../de/de
       - text: en
         href: ./
   page-navigation: true
