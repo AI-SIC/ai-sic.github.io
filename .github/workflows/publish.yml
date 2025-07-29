@@ -45,6 +45,10 @@ jobs:
         env:
           QUARTO_PROFILE: german
 
+      - name: Copy German output
+        run: |
+          cp -r _site/de/de/ _site/de/
+
       - name: Deploy 🚀
         if: github.event_name != 'pull_request'
         uses: JamesIves/github-pages-deploy-action@v4.7.3
