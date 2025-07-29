@@ -1,6 +1,6 @@
 project:
   type: website
-  output-dir: ./_site/en
+  output-dir: ./_site
 
 website:
   favicon: favicon.webp
@@ -22,7 +22,7 @@ website:
       - text: de
         href: ../de
       - text: en
-        href: ../en
+        href: ./
   page-navigation: true
   back-to-top-navigation: false
   page-footer:
