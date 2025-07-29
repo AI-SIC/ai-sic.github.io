@@ -47,7 +47,7 @@ jobs:
 
       - name: Copy German output
         run: |
-          mv _site/de/de/* _site/de/
+          rsync -a _site/de/de/ _site/de/
           rm -r _site/de/de
 
       - name: Deploy 🚀
