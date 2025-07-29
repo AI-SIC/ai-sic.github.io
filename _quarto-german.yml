@@ -10,13 +10,13 @@ website:
     collapse-below: lg
     right:
       - text: artikel
-        href: ./articles/index.qmd
+        href: /de/articles/index.qmd
       - text: über uns
-        href: ./about.qmd
+        href: /de/about.qmd
       - text: kontakt
-        href: ./contact.qmd
+        href: /de/contact.qmd
       - text: de
-        href: ./
+        href: /de
       - text: en
         href: ../
   page-navigation: true
