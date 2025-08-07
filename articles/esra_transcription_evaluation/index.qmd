@@ -1,20 +1,109 @@
 ---
-title: "Evaluating ASR for Social Science Research: A Comparison of Semantic Metrics"
-date: "2025-04-11"
-author-title: GitHub
+title: "Evaluating Automatic Speech Recognition (ASR) for Social Science Research: A Comparison of Semantic Metrics"
+date: "2025-08-07"
+description: "A summary of our ESRA talk and experience."
+author-title: Peter Kannewitz
 author: '<a href="https://aisicresearch.github.io/">aisic</a>'
 image: "wave.png"
+bibliography: ai_sic.bib
 ---
 
-Planned talk for the [ESRA Conference](https://www.europeansurveyresearch.org/conf2025/prog.php?sess=99#326). Shortly, we will publish an article related to our research. For now, you can find the abstract of the talk here.
+- conference programm: [ESRA Conference](https://www.europeansurveyresearch.org/conf2025/prog.php?sess=99#326).
 
-[Slides](/static/files/esra_asr.pdf)
+- presentation slides: [Slides](/static/files/esra_asr.pdf).
 
-# Abstract
+# Introduction
 
-Automatic Speech Recognition (ASR) is an essential technology for automating the transcription of qualitative data in social science research, particularly with large interview datasets. Recent advancements in ASR have introduced powerful new tools to the field, but their implementation requires careful and thoughtful consideration to ensure reliability and accuracy. Since outcomes vary significantly depending on the model and its (hyper-)parametrization, it is crucial to evaluate the generalization capabilities of ASR models on specific research data using a meaningful and comparable metric. Addressing these challenges will enable social scientists to effectively leverage these technologies in their research.
+This July our team visited the ESRA conference in Utrecht (NL) and held two talks about our intermediate findings. In the following I will outline the main arguments on what needs to be considered when using transcription models for social science research. If you are intereset in synthetic data generation with LLMs, which was also a broadly covered theme of the conference, you should take a look at our talk about [Silicon Interviews](/articles/esra_silicon_interviews/).
 
-The most commonly used metric for this purpose is the Word Error Rate (WER). WER depends on specific language-specific text transformations and focuses on surface-level accuracy, making it inadequate for evaluating transcript quality in social sciences and downstream NLP tasks. To address limitations, modern, semantics-oriented metrics have been developed in recent years. Metrics such as Embedding Error Rate (EmbER) and Semantic-WER apply penalties for different types of errors, while methods like BERTScore, SeMaScore, SemDist, and Aligned Semantic Distance (ASD) improve evaluation by utilizing contextual embeddings and advanced matching techniques to assess semantic similarity.
 
-Our research centers on comparing the usability of these semantic metrics for ASR in social sciences and developing a more intuitive approach for analyzing semantic differences in ASR transcriptions using aligned window-based semantic comparison, as opposed to relying on traditional singular value metrics. The proposed talk is not only designed to improve the quality of individual research projects but also to contribute to the creation of new data spaces for the social sciences, where ASR is a fundamental technology. Only when developing robust methods for evaluating and utilizing ASR, we can unlock the potential of large-scale qualitative datasets, opening up new avenues for research and analysis.
+# Task definition
 
+In [our research project](/about.html) we are conducting interviews with german speaking chlidren aged from 8 to 16 and their parents. The children are asked to firstly asses their health on a scale and later reason about what they thought in the process. Our sociology research interest is to understand how children think about their health. Meanwhile as part of the [New Data Spaces](https://www.new-data-spaces.de) programm of the DFG we also persue the second goal, which is finding new ways of semi automating the traditional research process through employing state of the art technologies.
+
+This brings us to the main topic of this write up: given the recordings of our interviews, can we just use a recent ASR model to transcribe our interviews or do they produce errors which are inacceptebal for our downstream task and how can we even evaluate this? We are convinced that this question is not only a concern of our research, but is also extends to a broad range of research faced with with audio data.
+
+:::{.figure}
+![Our ASR Pipeline. Own illustration.](images/task_overview.png){width=100%}
+:::
+
+Before exploring the possiblities to answer this question, I will briefly introduce the most important terminology. ASR (Automatic Speech Recognition) refers to the broader task of extracting human utterances from speech signal. The concept includes various interrelated subtasks, such as Speech Recognition, Speaker Diarization, Speaker Detection, Language Detection and Transciption. In the following we will mainly focus on the transcript as final result of the pipeline. This is also due to the fact that current transformer based neural networks such as [Whisper](https://openai.com/index/whisper/) unite many of this task in a single network, which allows us to focus on the outcome. We call the outcome (transcript) produced by the model the "hypothesis" which we aim to align with a "reference" which is a transcriped version wich we consider as complete.
+
+# Performance of current ASR Models
+
+One could ask: Why do we even need to evaluate ASR-Models, isn't ASR a solved task? Taking a look at the following figure you could come to exactly this conclusion:
+
+:::{.figure}
+![Word Error Rate (WER) for LibreSpeech (Read English Speech). *Source: <https://awni.github.io/future-speech/>*
+](images/librispeech_wer.png){width=60% fig-align="center"}
+:::
+
+You can see, that the error rates of the models decline over time. One interesting thing to note are the dashed horizontel lines, which are the human reference scores for this dataset. As we can seen, for the [LibreSpeech](https://www.openslr.org/12/) dataset, ASR models outperform humans since almost 10 years. So why can't we just use the best performing model and go with it?
+
+Taking a look at the following table, we can see a completly different story. The table is taken from the paper in which the Whisper models from openAI are introduced. The models can still be considered as state of the art as of now (2025).
+
+<!-- Table -->
+Table: WER (%) on VoxPopuli corpus for selected languages.
+*Source: @radford_robust_2022, p. 23*
+
+| Model            | Czech | German | English | en_accented | ...  |
+|------------------|-------|--------|---------|-------------|------|
+| Whisper tiny     | 73.5  | 27.4   | 11.6    | 18.8        | …    |
+| Whisper base     | 54.7  | 20.6   |  9.5    | 17.5        | …    |
+| Whisper small    | 28.8  | 14.8   |  8.2    | 19.2        | …    |
+| Whisper medium   | 18.4  | 12.4   |  7.6    | 19.1        | …    |
+| Whisper large    | 15.9  | 11.9   |  7.2    | 20.8        | …    |
+| Whisper large-v2 | 12.6  | **11.2** | **7.0** | **18.6**     | …    |
+<!-- Table -->
+
+Even though the same error rate is used as in the last plot, the overall error is much higher. This simply comes from the change of the setting. Instead of read english speech the [VoxPopuli](https://github.com/facebookresearch/voxpopuli) dataset covers European Parliament event recordings. Besides the higher baseline, also the individual errors vary dramatically. If there is a accent in the english speech, the average error rate rise to 18.6 for the best performing model. This translates to almost every 5th word being incorecctly transcribed. Also for our target language, German, we can see that the errors are higher in general.
+
+So what now? How can we know if ASR errors are acceptable for our downstream task? To find an answer to this question we first need to take a look at different error metrics.
+
+# Error Metrics for ASR evaluation
+
+As we also did until now, one way to judge the quality of ASR models is using error metrics. The most common reference metric used for this task is the word error rate. In is computed based on an aligned version of the reference and hypothesis as follows:
+
+$$
+WER = \frac{\text{Substitutions} + \text{Deletions} + \text{Insertions}}{\text{Total Number of Words}}
+$$
+
+In the following table we can see two examples of substiution errors, in both cases a word of the reference (ground truth) was incorrectly transcribed by the ASR model:
+
+<!-- Table -->
+Table: WER calculated by equal weighting of word errors.
+
+| **System** | **Transcription**                         | **WER (%)** |
+|------------|-------------------------------------------|-------------|
+| Reference  | Find me flights to London                 | 0.0         |
+| ASR 1      | Find <span style="color:red">the</span> flights to London   | <span style="color:red">20.0</span> |
+| ASR 2      | Find me flights to <span style="color:red">Lisbon</span>    | <span style="color:red">20.0</span> |
+<!-- Table -->
+
+The first model substituted "me" with "the" which is one error on five words in total and yields an error rate of 20 percent. The second hypothesis gives the same error rate, by incorrectly transcribing "Lisbon" instead of "London". Through this little example some shortcomes of the WER become appearant. Most importantly the equal weighing of words does not allow judgement on the completness of the transcriped *with respect to the task at hand*. If we do research on personal pronouns we would have a task specific error rate of 100% for ASR 1. If we try to identify flight destinations, we would have a task specific error rate of 100% with ASR 2. To takle this problem alternative metrics have been propsed in the literature. Next up we will take a short peak on the ideas they base on and how they can help us to fullfill our goal: Assesing wheter or not ASR Models are usefull to automatically transcribe our interviews.
+
+Overview different semantic metrics...
+
+
+:::{.figure}
+![Word Embeddings Concept. *Source: <https://lovit.github.io/assets/figures/word2vec_country_capital.png>.*](images/word2vec_country_capital.png){width=80% fig-align="center"}
+:::
+
+## Our proposal: Visually aided Semantic Evaluation
+
+:::{.figure}
+![Our proposal: Interactive analysis of errors[^1] (Screenshot). Full code under: <https://github.com/aisicresearch/semantic-asr-evaluation>.](images/window_eval_2_larger.png)
+:::
+
+
+# Lessons Learned and future Directions
+
+...
+
+<!-- # Abstract -->
+
+<!-- Automatic Speech Recognition (ASR) is an essential technology for automating the transcription of qualitative data in social science research, particularly with large interview datasets. Recent advancements in ASR have introduced powerful new tools to the field, but their implementation requires careful and thoughtful consideration to ensure reliability and accuracy. Since outcomes vary significantly depending on the model and its (hyper-)parametrization, it is crucial to evaluate the generalization capabilities of ASR models on specific research data using a meaningful and comparable metric. Addressing these challenges will enable social scientists to effectively leverage these technologies in their research. -->
+
+<!-- The most commonly used metric for this purpose is the Word Error Rate (WER). WER depends on specific language-specific text transformations and focuses on surface-level accuracy, making it inadequate for evaluating transcript quality in social sciences and downstream NLP tasks. To address limitations, modern, semantics-oriented metrics have been developed in recent years. Metrics such as Embedding Error Rate (EmbER) and Semantic-WER apply penalties for different types of errors, while methods like BERTScore, SeMaScore, SemDist, and Aligned Semantic Distance (ASD) improve evaluation by utilizing contextual embeddings and advanced matching techniques to assess semantic similarity. -->
+
+<!-- Our research centers on comparing the usability of these semantic metrics for ASR in social sciences and developing a more intuitive approach for analyzing semantic differences in ASR transcriptions using aligned window-based semantic comparison, as opposed to relying on traditional singular value metrics. The proposed talk is not only designed to improve the quality of individual research projects but also to contribute to the creation of new data spaces for the social sciences, where ASR is a fundamental technology. Only when developing robust methods for evaluating and utilizing ASR, we can unlock the potential of large-scale qualitative datasets, opening up new avenues for research and analysis. -->
