@@ -1,7 +1,7 @@
 ---
 title: "Evaluating Automatic Speech Recognition (ASR) for Social Science Research: A Comparison of Semantic Metrics"
-date: "2025-08-07"
-description: "A summary of our ESRA talk and experience."
+date: "2025-08-11"
+description: "An extended version of our ESRA talk."
 author-title: Peter Kannewitz
 author: '<a href="https://aisicresearch.github.io/">aisic</a>'
 image: "wave.png"
@@ -14,33 +14,34 @@ bibliography: ai_sic.bib
 
 # Introduction
 
-This July our team visited the ESRA conference in Utrecht (NL) and held two talks about our intermediate findings. In the following I will outline the main arguments on what needs to be considered when using transcription models for social science research. If you are intereset in synthetic data generation with LLMs, which was also a broadly covered theme of the conference, you should take a look at our talk about [Silicon Interviews](/articles/esra_silicon_interviews/).
-
+This July, our team attended the ESRA conference in Utrecht (NL) and gave two talks about our intermediate findings. In the following, I will outline the main arguments on what needs to be considered when using transcription models for social science research. If you are interested in synthetic data generation with LLMs—a topic that was also widely discussed at the conference—you should take a look at our talk on [Silicon Interviews](/articles/esra_silicon_interviews/).
 
 # Task definition
 
-In [our research project](/about.html) we are conducting interviews with german speaking chlidren aged from 8 to 16 and their parents. The children are asked to firstly asses their health on a scale and later reason about what they thought in the process. Our sociology research interest is to understand how children think about their health. Meanwhile as part of the [New Data Spaces](https://www.new-data-spaces.de) programm of the DFG we also persue the second goal, which is finding new ways of semi automating the traditional research process through employing state of the art technologies.
+In [our research project](/about.html), we conduct interviews with German-speaking children aged 8 to 16 and their parents. The children are first asked to assess their health on a scale and then to explain their reasoning. Our sociological research interest is to illuminate children's self and proxy-rating strategies. At the same time, as part of the [New Data Spaces](https://www.new-data-spaces.de) program of the DFG, we pursue a second goal: finding new ways to semi-automate the traditional research process by employing state-of-the-art technologies.
 
-This brings us to the main topic of this write up: given the recordings of our interviews, can we just use a recent ASR model to transcribe our interviews or do they produce errors which are inacceptebal for our downstream task and how can we even evaluate this? We are convinced that this question is not only a concern of our research, but is also extends to a broad range of research faced with with audio data.
+This brings us to the main topic of this write-up: given the recordings of our interviews, can we simply use a recent ASR model to transcribe them, or do these models produce errors that are unacceptable for our downstream task? And how can we even evaluate this? We are convinced that this question is relevant not only for our research, but also for a broad range of studies that deal with audio data of any kind.
 
 :::{.figure}
 ![Our ASR Pipeline. Own illustration.](images/task_overview.png){width=100%}
 :::
 
-Before exploring the possiblities to answer this question, I will briefly introduce the most important terminology. ASR (Automatic Speech Recognition) refers to the broader task of extracting human utterances from speech signal. The concept includes various interrelated subtasks, such as Speech Recognition, Speaker Diarization, Speaker Detection, Language Detection and Transciption. In the following we will mainly focus on the transcript as final result of the pipeline. This is also due to the fact that current transformer based neural networks such as [Whisper](https://openai.com/index/whisper/) unite many of this task in a single network, which allows us to focus on the outcome. We call the outcome (transcript) produced by the model the "hypothesis" which we aim to align with a "reference" which is a transcriped version wich we consider as complete.
+Before exploring the possibilities for answering this question, I will briefly introduce the most important terminology. **ASR** (Automatic Speech Recognition) refers to the broader task of extracting human utterances from a speech signal. This concept includes various interrelated subtasks, such as Speech Recognition, Speaker Diarization, Speaker Detection, Language Detection, and Transcription. In the following, we will mainly focus on the transcript as the final result of the pipeline. This is partly because current transformer-based neural networks such as [Whisper](https://openai.com/index/whisper/) combine many of these tasks in a single model, allowing us to focus on the outcome.
+
+We call the transcript produced by the model the *hypothesis*, which we aim to align with a *reference*—a transcribed version we consider complete.
 
 # Performance of current ASR Models
 
-One could ask: Why do we even need to evaluate ASR-Models, isn't ASR a solved task? Taking a look at the following figure you could come to exactly this conclusion:
+One might ask: Isn’t ASR a solved task? A glance at the following figure might suggest exactly that:
 
 :::{.figure}
 ![Word Error Rate (WER) for LibreSpeech (Read English Speech). *Source: <https://awni.github.io/future-speech/>*
 ](images/librispeech_wer.png){width=60% fig-align="center"}
 :::
 
-You can see, that the error rates of the models decline over time. One interesting thing to note are the dashed horizontel lines, which are the human reference scores for this dataset. As we can seen, for the [LibreSpeech](https://www.openslr.org/12/) dataset, ASR models outperform humans since almost 10 years. So why can't we just use the best performing model and go with it?
+It shows declining error rates over time. Notably, the dashed horizontal lines represent human reference scores for this dataset. On [LibreSpeech](https://www.openslr.org/12/) (read English speech), ASR models have matched or even out-performed humans for years.
 
-Taking a look at the following table, we can see a completly different story. The table is taken from the paper in which the Whisper models from openAI are introduced. The models can still be considered as state of the art as of now (2025).
+However, there’s more to the story when we change the context. Consider a table from the Whisper paper by @radford_robust_2022, which reports WER on the VoxPopuli corpus—European Parliament recordings:
 
 <!-- Table -->
 Table: WER (%) on VoxPopuli corpus for selected languages.
@@ -56,19 +57,20 @@ Table: WER (%) on VoxPopuli corpus for selected languages.
 | Whisper large-v2 | 12.6  | **11.2** | **7.0** | **18.6**     | …    |
 <!-- Table -->
 
-Even though the same error rate is used as in the last plot, the overall error is much higher. This simply comes from the change of the setting. Instead of read english speech the [VoxPopuli](https://github.com/facebookresearch/voxpopuli) dataset covers European Parliament event recordings. Besides the higher baseline, also the individual errors vary dramatically. If there is a accent in the english speech, the average error rate rise to 18.6 for the best performing model. This translates to almost every 5th word being incorecctly transcribed. Also for our target language, German, we can see that the errors are higher in general.
 
-So what now? How can we know if ASR errors are acceptable for our downstream task? To find an answer to this question we first need to take a look at different error metrics.
+Even though the same error rate metric is used as in the previous plot, the overall error here is much higher. This difference simply comes from a change in setting. Instead of read English speech, the [VoxPopuli](https://github.com/facebookresearch/voxpopuli) dataset covers European Parliament event recordings. In addition to the higher baseline, the individual error rates also vary dramatically. If there is an accent in the English speech, the average error rate rises to 18.6 for the best-performing model. This translates to almost every fifth word being incorrectly transcribed. For our target language, German, we can also see that the errors are generally higher.
+
+So what now? How can we know if ASR errors are acceptable for our downstream task? To find an answer to this question, we first need to take a look at different error metrics.
 
 # Error Metrics for ASR evaluation
 
-As we also did until now, one way to judge the quality of ASR models is using error metrics. The most common reference metric used for this task is the word error rate. In is computed based on an aligned version of the reference and hypothesis as follows:
+As we have done so far, one way to judge the quality of ASR models is by using error metrics. The most common reference metric for this task is the Word Error Rate (**WER**). It is computed based on an aligned version of the reference and the hypothesis as follows:
 
 $$
 WER = \frac{\text{Substitutions} + \text{Deletions} + \text{Insertions}}{\text{Total Number of Words}}
 $$
 
-In the following table we can see two examples of substiution errors, in both cases a word of the reference (ground truth) was incorrectly transcribed by the ASR model:
+In the following table, we can see two examples of substitution errors. In both cases, a word from the reference (ground truth) was incorrectly transcribed by the ASR model:
 
 <!-- Table -->
 Table: WER calculated by equal weighting of word errors.
@@ -80,25 +82,92 @@ Table: WER calculated by equal weighting of word errors.
 | ASR 2      | Find me flights to <span style="color:red">Lisbon</span>    | <span style="color:red">20.0</span> |
 <!-- Table -->
 
-The first model substituted "me" with "the" which is one error on five words in total and yields an error rate of 20 percent. The second hypothesis gives the same error rate, by incorrectly transcribing "Lisbon" instead of "London". Through this little example some shortcomes of the WER become appearant. Most importantly the equal weighing of words does not allow judgement on the completness of the transcriped *with respect to the task at hand*. If we do research on personal pronouns we would have a task specific error rate of 100% for ASR 1. If we try to identify flight destinations, we would have a task specific error rate of 100% with ASR 2. To takle this problem alternative metrics have been propsed in the literature. Next up we will take a short peak on the ideas they base on and how they can help us to fullfill our goal: Assesing wheter or not ASR Models are usefull to automatically transcribe our interviews.
+The first model substituted “me” with “the,” which is one error out of five words in total, yielding an error rate of 20%. The second hypothesis gives the same error rate by incorrectly transcribing “Lisbon” instead of “London.”
 
-Overview different semantic metrics...
+This simple example shows some shortcomings of WER. Most importantly, the equal weighting of all words does not allow us to judge the *completeness* of the transcript with respect to the task at hand. For example, if we were researching personal pronouns, ASR 1 would yield a task-specific error rate of 100%. If we were trying to identify flight destinations, ASR 2 would yield a task-specific error rate of 100%.
+
+To tackle this problem, alternative metrics have been proposed in the literature. Next, we will take a brief look at the ideas behind them and how they can help us achieve our goal: assessing whether ASR models are useful for automatically transcribing our interviews.
+
+## Semantic Metrics
+
+In general, we can identify two ways to obtain more meaningful metrics. The first way is to improve the word error rate by weighting different classes of errors differently. For example, we could assign higher error penalties when nouns are incorrectly transcribed and lower penalties when articles are incorrect.
+
+Instead of this approach, there are also metrics that move away from measuring lexical errors altogether. These use so-called word embeddings to compare whether the reference and hypothesis align semantically.
+
+We will discuss one representative from each group to get a better sense of what they can tell us about transcription quality. It is worth noting that we set up these meta-categories to better understand what the metrics do, but the different representatives within these categories still share common principles, such as alignment and embedding strategies.
+
+
+### Weighted WER
+
+A good example of the weighted WER is the Semantic-WER by @roy_semantic-wer_2021. It uses a sophisticated ruleset for each of the WER error types (Substitution, Deletion, Insertion). This formula is taken from @roy_semantic-wer_2021 page 2:
 
 
 :::{.figure}
-![Word Embeddings Concept. *Source: <https://lovit.github.io/assets/figures/word2vec_country_capital.png>.*](images/word2vec_country_capital.png){width=80% fig-align="center"}
+
+$$
+W_{\text{sub}} =
+\begin{cases}
+{1,} & {\text{if } r_w \in \text{NE} \cup \text{SENT}} \\
+\text{cer}(r_w, h_w), & \text{if } r_w \in \text{SE} \\
+\dots &\\
+\end{cases}
+$$
 :::
+
+Just looking at one of these rulesets for substitutions, we can see that different kinds of words are assigned different error weights. If the reference word ($r_w$) substituted by another word was a named entity (NE) or a sentiment word (SENT), an error of 1 is assigned. This rule, for example, ensures that substitution of place names such as "London" contributes to a higher overall error.
+
+The second case accounts for spelled-out entities (SE), for example in telephone interviews, where we compute how many characters are incorrect using the character error rate between reference and hypothesis ($cer(r_w, h_w)$).
+
+The list goes on, but from here the idea should be clear. Another simpler way to weigh errors is used by the Embedding Error Rater (EmbER) by @roux_qualitative_2022, which weighs errors by distance in embedding space.
+
+### Semantically based Error Rates
+
+Moving away from comparison based on alignment at the lexical level, the **BERTScore** by @zhang_bertscore_2020 first embeds every single token of the reference and hypothesis using a BERT encoder. This approach leverages the idea that in the embedding space, similar words tend to be closer to each other. Similarity is assumed to be reflected across multiple dimensions—not only lexical or grammatical ones.
+
+For example, in the following projection of an embedding space, the relationship between countries and their capitals is reflected, along with some notion of geographical proximity.
+
+:::{.figure}
+![Word Embeddings Concept. *Source: <https://lovit.github.io/assets/figures/word2vec_country_capital.png>.*](images/word2vec_country_capital.png){width=100% fig-align="center"}
+:::
+
+After obtaining the embedding vectors, BERTScore aligns reference and hypothesis tokens based on proximity in embedding space. Then, token-based cosine similarity is used to compute a similarity score between aligned tokens. This similarity is weighted by TF-IDF (Term Frequency-Inverse Document Frequency) to give more importance to terms that are more characteristic of the document.
+
+This idea is also employed by several other metrics that differ slightly in implementation. The **Semantic Distance (SemDist)** by @kim_semantic_2021 uses sentence-level embeddings. The **Aligned Semantic Distance (ASD)** by @rugayan_perceptual_2023 applies character-level alignment and weighs edit-level errors by semantic proximity of segments. The **SeMaScore** by @sasindran_semascore_2024 uses dynamic programming for alignment, proceeding in a similar way as ASD. These are just a few examples highlighting key differences in semantic error metrics.
 
 ## Our proposal: Visually aided Semantic Evaluation
 
+After reviewing various error metrics, the key question remains: can they truly help us evaluate transcription models for our specific needs? While it's valuable to assess transcripts beyond just lexical accuracy—and combining different metrics can reveal the types of errors—looking at scores aggregated over an entire transcript only gives a general, averaged picture. It doesn’t show us *where* or *how* the errors happen throughout the interview.
+
+To overcome this limitation and give researchers deeper insight into transcript quality, we developed a notebook that tracks errors over time—that is, across the length of the transcript.
+
 :::{.figure}
-![Our proposal: Interactive analysis of errors[^1] (Screenshot). Full code under: <https://github.com/aisicresearch/semantic-asr-evaluation>.](images/window_eval_2_larger.png)
+![Our proposal: Interactive analysis of errors (Screenshot). Full code under: <https://github.com/aisicresearch/semantic-asr-evaluation>.](images/window_eval_2_larger.png)
 :::
 
+Specifically, we chunk a transcript into segments and measure the error for each segment based on similarity in embedding space. This approach enables interactive investigation of how errors vary throughout the transcript. It also helps identify problematic parts of the data.
+
+In the example figure, the first part of the transcript is missing, which could be caused by poor audio quality or background noise during that segment.
 
 # Lessons Learned and future Directions
 
-...
+This article began by introducing the ASR task and reviewing the performance of current models. We then highlighted that the question of “how good” an ASR system is always depends on the specific goals you want to achieve—there is no one-size-fits-all criterion, especially considering the inevitable trade-offs between different types of errors.
+
+To better assess how suitable ASR models are for your data and research questions, we proposed several metrics that go beyond the classic WER. Additionally, we provided code to move from global summary scores toward interactive, segment-level analysis of errors.
+
+Based on our work, we propose the following guidelines for evaluating ASR in social science research:
+
+- **Evaluate according to your task:** Before starting, identify which aspects of the transcript are critical to answering your research questions.
+- **Combine different error metrics:** Use multiple metrics to get a fuller picture of transcript quality.
+- **Interactively analyze error classes:** Explore where and what kinds of errors occur within transcripts to understand their impact.
+
+From applying these evaluation steps to our pre-test data, we learned several important lessons for the upcoming field phase:
+
+- **Audio quality is crucial:** Aim for the best possible recording conditions, as some audio artifacts may not be noticeable to human listeners but can significantly degrade ASR performance.
+- **Overlapping speech degrades transcripts:** In interview settings, overlapping talk strongly reduces transcript accuracy.
+- **Creating a reliable ground truth is challenging:** Preparing human-annotated transcripts is notoriously difficult and some observed errors may actually stem from annotator oversights.
+- **Model adaptation can help:** Fine-tuning or prompting ASR models for specific speaker groups may improve results. Transformer-based models like Whisper tend to produce overly polished transcripts, smoothing out dialects, interjections, and slips of the tongue, which might be important for your analysis.
+
+A more detailed report on our transcription experiements will be published soon.
 
 <!-- # Abstract -->
 
