@@ -3,7 +3,7 @@ title: "Evaluating Automatic Speech Recognition (ASR) for Social Science Researc
 date: "2025-08-11"
 description: "An extended version of our ESRA talk."
 author-title: Peter Kannewitz
-author: '<a href="https://aisicresearch.github.io/">aisic</a>'
+author: '<a href="https://ai-sic.github.io/">aisic</a>'
 image: "wave.png"
 bibliography: ai_sic.bib
 ---
@@ -141,7 +141,7 @@ After reviewing various error metrics, the key question remains: can they truly 
 To overcome this limitation and give researchers deeper insight into transcript quality, we developed a notebook that tracks errors over time—that is, across the length of the transcript.
 
 :::{.figure}
-![Our proposal: Interactive analysis of errors (Screenshot). Full code under: <https://github.com/aisicresearch/semantic-asr-evaluation>.](images/window_eval_2_larger.png)
+![Our proposal: Interactive analysis of errors (Screenshot). Full code under: <https://github.com/ai-sic/semantic-asr-evaluation>.](images/window_eval_2_larger.png)
 :::
 
 Specifically, we chunk a transcript into segments and measure the error for each segment based on similarity in embedding space. This approach enables interactive investigation of how errors vary throughout the transcript. It also helps identify problematic parts of the data.

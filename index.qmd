@@ -1,7 +1,7 @@
 ---
 pagetitle: "AI-SIC"
 image: "images/"
-canonical-url: "https://aisicresearch.github.io/"
+canonical-url: "https://ai-sic.github.io/"
 section-divs: false
 listing:
   - id: articles
@@ -27,7 +27,7 @@ format:
 
 :::: {.content-block}
 
-[`<button type="button">GitHub</button>`{=html}](https://github.com/aisicresearch)
+[`<button type="button">GitHub</button>`{=html}](https://ai-sic.github.io)
 
 
 ::: {.title-block}
