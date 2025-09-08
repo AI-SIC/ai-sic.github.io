@@ -33,7 +33,7 @@ format:
 
 :::: {.content-block}
 
-[`<button type="button">GitHub</button>`{=html}](https://github.com/ai-sic)
+[`<button type="button">GitHub</button>`{=html}](https://github.com/AI-SIC)
 
 
 ::: {.title-block}

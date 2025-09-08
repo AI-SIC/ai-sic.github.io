@@ -27,7 +27,7 @@ format:
 
 :::: {.content-block}
 
-[`<button type="button">GitHub</button>`{=html}](https://ai-sic.github.io)
+[`<button type="button">GitHub</button>`{=html}](https://github.com/AI-SIC)
 
 
 ::: {.title-block}
