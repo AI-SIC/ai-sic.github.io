@@ -1,2 +1,2 @@
-# aisicresearch.github.io
+# ai-sic.github.io
 AISIC webpage

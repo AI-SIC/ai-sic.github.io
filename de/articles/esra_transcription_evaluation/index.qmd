@@ -2,7 +2,7 @@
 title: "Evaluating ASR for Social Science Research: A Comparison of Semantic Metrics"
 date: "2025-04-11"
 author-title: GitHub
-author: '<a href="https://aisicresearch.github.io/">aisic</a>'
+author: '<a href="https://ai-sic.github.io/">aisic</a>'
 image: "wave.png"
 ---
 

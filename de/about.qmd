@@ -38,7 +38,7 @@ AI-SIC verwendet qualitative Daten und führt kognitive Interviews auf der Grund
 <li><strong>Projektführung and Antragseinreichung:</strong> Dr. Jacqueline Kroh (LIfBi), Dr. Andreas Niekler (Universität Leipzig), Dr. Stephan Poppe (Universität Leipzig), Prof. Dr. Julia Offenhammer-Tuppat (Universität Leipzig)</li>
 <li><strong>Projektdauer:</strong> 09/2024 - 06/2028</li>
 <li><strong>Projektförderung:</strong> Deutsche Forschungsgemeinschaft (DFG)</li>
-<li><strong>Webseite:</strong> <a href="https://aisicresearch.github.io/" target="_blank" rel="noopener">aisicresearch.github.io</a></li>
+<li><strong>Webseite:</strong> <a href="https://ai-sic.github.io/" target="_blank" rel="noopener">ai-sic.github.io</a></li>
 </ul>
 
 ## Team

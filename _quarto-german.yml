@@ -5,7 +5,7 @@ project:
 website:
   favicon: ../favicon.webp
   open-graph: true
-  site-url: https://github.com/aisicresearch/de
+  site-url: https://ai-sic.github.io/de
   navbar:
     logo: /images/logo.png
     logo-alt: "logo"
@@ -26,7 +26,7 @@ website:
   back-to-top-navigation: false
   page-footer:
     center:
-      - href: https://github.com/aisicresearch
+      - href: https://github.com/AI-SIC
         icon: github
         aria-label: GitHub
       - href: /imprint.html
@@ -53,11 +53,11 @@ format:
           "@context": "https://schema.org/",
           "@type": "Organization",
           "name": "AI-SIC",
-          "url": "https://github.com/aisicresearch",
+          "url": "https://ai-sic.github.io",
           "alternateName": "KI-gestützte Validierung von Fragebögen",
           "description": "Forschungsprojekt",
           "sameAs": [
-            "https://github.com/aisicresearch"
+            "https://ai-sic.github.io"
           ]
         }
         </script>
