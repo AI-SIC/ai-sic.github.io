@@ -67,7 +67,7 @@
     "href": "articles/esra_transcription_evaluation/index.html#our-proposal-visually-aided-semantic-evaluation",
     "title": "Evaluating Automatic Speech Recognition (ASR) for Social Science Research: A Comparison of Semantic Metrics",
     "section": "Our proposal: Visually aided Semantic Evaluation",
-    "text": "Our proposal: Visually aided Semantic Evaluation\nAfter reviewing various error metrics, the key question remains: can they truly help us evaluate transcription models for our specific needs? While it’s valuable to assess transcripts beyond just lexical accuracy—and combining different metrics can reveal the types of errors—looking at scores aggregated over an entire transcript only gives a general, averaged picture. It doesn’t show us where or how the errors happen throughout the interview.\nTo overcome this limitation and give researchers deeper insight into transcript quality, we developed a notebook that tracks errors over time—that is, across the length of the transcript.\n\n\n\n\nOur proposal: Interactive analysis of errors (Screenshot). Full code under: https://github.com/aisicresearch/semantic-asr-evaluation.\n\n\n\nSpecifically, we chunk a transcript into segments and measure the error for each segment based on similarity in embedding space. This approach enables interactive investigation of how errors vary throughout the transcript. It also helps identify problematic parts of the data.\nIn the example figure, the first part of the transcript is missing, which could be caused by poor audio quality or background noise during that segment."
+    "text": "Our proposal: Visually aided Semantic Evaluation\nAfter reviewing various error metrics, the key question remains: can they truly help us evaluate transcription models for our specific needs? While it’s valuable to assess transcripts beyond just lexical accuracy—and combining different metrics can reveal the types of errors—looking at scores aggregated over an entire transcript only gives a general, averaged picture. It doesn’t show us where or how the errors happen throughout the interview.\nTo overcome this limitation and give researchers deeper insight into transcript quality, we developed a notebook that tracks errors over time—that is, across the length of the transcript.\n\n\n\n\nOur proposal: Interactive analysis of errors (Screenshot). Full code under: https://github.com/ai-sic/semantic-asr-evaluation.\n\n\n\nSpecifically, we chunk a transcript into segments and measure the error for each segment based on similarity in embedding space. This approach enables interactive investigation of how errors vary throughout the transcript. It also helps identify problematic parts of the data.\nIn the example figure, the first part of the transcript is missing, which could be caused by poor audio quality or background noise during that segment."
   },
   {
     "objectID": "articles/esra_silicon_interviews/index.html",
@@ -123,7 +123,7 @@
     "href": "about.html#project-profile",
     "title": "",
     "section": "Project Profile",
-    "text": "Project Profile\n\n\nProject Leadership and Proposal Submission: Dr. Jacqueline Kroh (LIfBi), Dr. Andreas Niekler (University of Leipzig), Dr. Stephan Poppe (University of Leipzig), Prof. Dr. Julia Offenhammer-Tuppat (University of Leipzig)\n\n\nProject Duration: 09/2024 - 06/2028\n\n\nFunding: German Research Foundation (DFG)\n\n\nWebsite: aisicresearch.github.io"
+    "text": "Project Profile\n\n\nProject Leadership and Proposal Submission: Dr. Jacqueline Kroh (LIfBi), Dr. Andreas Niekler (University of Leipzig), Dr. Stephan Poppe (University of Leipzig), Prof. Dr. Julia Offenhammer-Tuppat (University of Leipzig)\n\n\nProject Duration: 09/2024 - 06/2028\n\n\nFunding: German Research Foundation (DFG)\n\n\nWebsite: ai-sic.github.io"
   },
   {
     "objectID": "about.html#project-staff",
@@ -200,7 +200,7 @@
     "href": "de/about.html#projektprofil",
     "title": "",
     "section": "Projektprofil",
-    "text": "Projektprofil\n\n\nProjektführung and Antragseinreichung: Dr. Jacqueline Kroh (LIfBi), Dr. Andreas Niekler (Universität Leipzig), Dr. Stephan Poppe (Universität Leipzig), Prof. Dr. Julia Offenhammer-Tuppat (Universität Leipzig)\n\n\nProjektdauer: 09/2024 - 06/2028\n\n\nProjektförderung: Deutsche Forschungsgemeinschaft (DFG)\n\n\nWebseite: aisicresearch.github.io"
+    "text": "Projektprofil\n\n\nProjektführung and Antragseinreichung: Dr. Jacqueline Kroh (LIfBi), Dr. Andreas Niekler (Universität Leipzig), Dr. Stephan Poppe (Universität Leipzig), Prof. Dr. Julia Offenhammer-Tuppat (Universität Leipzig)\n\n\nProjektdauer: 09/2024 - 06/2028\n\n\nProjektförderung: Deutsche Forschungsgemeinschaft (DFG)\n\n\nWebseite: ai-sic.github.io"
   },
   {
     "objectID": "de/about.html#team",
