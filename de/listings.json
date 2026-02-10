@@ -1,10 +1,40 @@
 [
   {
-    "listing": "/de/index.html",
+    "listing": "/articles/index.html",
     "items": [
-      "/de/articles/active_learning_experiments/index.html",
-      "/de/articles/esra_transcription_evaluation/index.html",
-      "/de/articles/esra_silicon_interviews/index.html"
+      "/articles/active_learning_experiments/index.html",
+      "/articles/esra_transcription_evaluation/index.html",
+      "/articles/esra_silicon_interviews/index.html"
+    ]
+  },
+  {
+    "listing": "/de/pdf/index.html",
+    "items": [
+      "/de/pdf/datenschutz/index.html",
+      "/de/pdf/anschreiben/index.html"
+    ]
+  },
+  {
+    "listing": "/de/participation.html",
+    "items": [
+      "/de/pdf/datenschutz/index.html",
+      "/de/pdf/anschreiben/index.html"
+    ]
+  },
+  {
+    "listing": "/pdf/index.html",
+    "items": [
+      "/pdf/datenschutz/index.html",
+      "/pdf/anschreiben/index.html"
+    ]
+  },
+  {
+    "listing": "/participation.html",
+    "items": [
+      "/pdf/datenschutz/index.html",
+      "/pdf/anschreiben/index.html",
+      "/de/pdf/datenschutz/index.html",
+      "/de/pdf/anschreiben/index.html"
     ]
   },
   {
@@ -16,7 +46,7 @@
     ]
   },
   {
-    "listing": "/de/articles/index.html",
+    "listing": "/de/index.html",
     "items": [
       "/de/articles/active_learning_experiments/index.html",
       "/de/articles/esra_transcription_evaluation/index.html",
@@ -24,11 +54,11 @@
     ]
   },
   {
-    "listing": "/articles/index.html",
+    "listing": "/de/articles/index.html",
     "items": [
-      "/articles/active_learning_experiments/index.html",
-      "/articles/esra_transcription_evaluation/index.html",
-      "/articles/esra_silicon_interviews/index.html"
+      "/de/articles/active_learning_experiments/index.html",
+      "/de/articles/esra_transcription_evaluation/index.html",
+      "/de/articles/esra_silicon_interviews/index.html"
     ]
   }
 ]

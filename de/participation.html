@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de-DE" xml:lang="de-DE"><head>
 
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.8.27">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="AI Enhanced Validation of Survey Instruments: Integrating Semi-Automated Methods in Cognitive Interviews for Children’s Self- and Proxy-Assessments of Health">
 
-<title>Articles</title>
+<title>Teilnahme</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,6 +20,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+.display.math{display: block; text-align: center; margin: 0.5rem auto;}
 </style>
 
 
@@ -31,7 +31,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../favicon.webp" rel="icon">
+<link href="../../favicon.webp" rel="icon">
 <script src="../site_libs/quarto-listing/list.min.js"></script>
 <script src="../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
@@ -59,36 +59,36 @@ ul.task-list li input[type="checkbox"] {
   ],
   "show-item-context": false,
   "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
+    "search-no-results-text": "Keine Treffer",
+    "search-matching-documents-text": "Treffer",
+    "search-copy-link-title": "Link in die Suche kopieren",
+    "search-hide-matches-text": "Zusätzliche Treffer verbergen",
+    "search-more-match-text": "weitere Treffer in diesem Dokument",
+    "search-more-matches-text": "weitere Treffer in diesem Dokument",
+    "search-clear-button-title": "Zurücksetzen",
     "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
+    "search-detached-cancel-button-title": "Abbrechen",
+    "search-submit-button-title": "Abschicken",
+    "search-label": "Suchen"
   }
 }</script>
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    const listingTargetEl = window.document.querySelector('#listing-pdf .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-description','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-image','listing-title',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
+      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+    window['quarto-listings']['listing-pdf'] = new List('listing-pdf', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -101,70 +101,27 @@ ul.task-list li input[type="checkbox"] {
     }
   })
   </script>
-<script type="application/ld+json"> # JSON-LD for SEO
+<script type="application/ld+json">
 {
   "@context": "https://schema.org/",
   "@type": "Organization",
   "name": "AI-SIC",
   "url": "https://ai-sic.github.io",
-  "alternateName": "AI Enhanced Validation of Survey Instruments",
-  "description": "Research Project",
-  "image": "",
+  "alternateName": "KI-gestützte Validierung von Fragebögen",
+  "description": "Forschungsprojekt",
   "sameAs": [
-     "https://ai-sic.github.io"
-  ],
+    "https://ai-sic.github.io"
+  ]
 }
 </script>
 
-  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
-  <script>document.addEventListener("DOMContentLoaded", function () {
- var mathElements = document.getElementsByClassName("math");
- var macros = [];
- for (var i = 0; i < mathElements.length; i++) {
-  var texText = mathElements[i].firstChild;
-  if (mathElements[i].tagName == "SPAN") {
-   katex.render(texText.data, mathElements[i], {
-    displayMode: mathElements[i].classList.contains('display'),
-    throwOnError: false,
-    macros: macros,
-    fleqn: false
-   });
-}}});
-  </script>
-  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
 
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<meta property="og:title" content="Articles">
-<meta property="og:description" content="AI Enhanced Validation of Survey Instruments: Integrating Semi-Automated Methods in Cognitive Interviews for Children’s Self- and Proxy-Assessments of Health">
-<meta property="og:image" content="https://ai-sic.github.io/articles/active_learning_experiments/images/training_time_stacked_sorted_minutes.png">
-<meta property="og:image:height" content="700">
-<meta property="og:image:width" content="1400">
+<meta property="og:title" content="Teilnahme">
+<meta property="og:description" content="">
+<meta property="og:image" content="https://ai-sic.github.io/de/de/pdf/datenschutz/lock.png">
+<meta property="og:image:height" content="512">
+<meta property="og:image:width" content="512">
+<link rel="canonical" href="https://ai-sic.github.io/de/participation.html">
 </head>
 
 <body class="nav-fixed fullcontent quarto-light">
@@ -179,30 +136,34 @@ window.Quarto = {
     <img src="../images/logo.png" alt="logo" class="navbar-logo dark-content">
     </a>
   </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+            <div id="quarto-search" class="" title="Suchen"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Navigation umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="../articles/index.html" aria-current="page"> 
-<span class="menu-text">articles</span></a>
+    <a class="nav-link" href="../de/articles/index.html"> 
+<span class="menu-text">artikel</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../about.html"> 
-<span class="menu-text">about</span></a>
+    <a class="nav-link" href="../de/about.html"> 
+<span class="menu-text">über uns</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../contact.html"> 
-<span class="menu-text">contact</span></a>
+    <a class="nav-link" href="../de/contact.html"> 
+<span class="menu-text">kontakt</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../de"> 
+    <a class="nav-link active" href="../de/participation.html" aria-current="page"> 
+<span class="menu-text">teilnahme</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../de/"> 
 <span class="menu-text">de</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href=".././"> 
+    <a class="nav-link" href="../../"> 
 <span class="menu-text">en</span></a>
   </li>  
 </ul>
@@ -223,84 +184,67 @@ window.Quarto = {
 
 
 
-<section id="articles" class="level1 content-block">
-<h1>Articles</h1>
+<div class="content-block">
+<div id="listing-pdf" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1770729102488" data-listing-reading-time-sort="6" data-listing-word-count-sort="1199">
+<a href="../de/pdf/datenschutz/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../de/pdf/datenschutz/lock.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Datenschutz
+</h5>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1770729102487" data-listing-reading-time-sort="3" data-listing-word-count-sort="475">
+<a href="../de/pdf/anschreiben/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../de/pdf/anschreiben/letter.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Anschreiben
+</h5>
+</div>
+</div></a>
+</div>
+</div>
+<div class="listing-no-matching d-none">Keine Treffer</div>
+</div>
+<p><a href="../de/einverstaendnis.html"><button type="button">Zur Anmeldung</button></a></p>
+</div>
+<section id="teilnahme-an-der-studie" class="content-block">
+<h1>Teilnahme an der Studie</h1>
+<p>Liebe Familien,</p>
+<p>vielen Dank, dass Sie sich für unsere Studie AI-SIC interessieren! Wir freuen uns sehr, dass Sie unsere Webseite besucht und sich über das Projekt informiert haben.</p>
+<p>Wenn Sie möchten, können Sie sich jederzeit überlegen, an einem unserer Interviews teilzunehmen. Für jede Familie, die tatsächlich teilnimmt, gibt es einen Wunschgutschein im Wert von 10 € als Dankeschön.</p>
+<p>Zusätzlich können Sie unseren Flyer gerne an andere interessierte Familien in Ihrem Umfeld weiterleiten. Für jede Familie, die sich auf Ihre Empfehlung hin zu einem Interview anmeldet, erhalten Sie als Dankeschön einen Wunschgutschein im Wert von 5 €</p>
+<p>Alle wichtigen Informationen zur Studie und die Möglichkeit, direkt mit uns in Kontakt zu treten, finden Sie hier auf dieser Seite.</p>
+<p>Mit Ihrer Unterstützung leisten Sie einen wichtigen Beitrag zu unserer Forschung – dafür sagen wir ganz herzlich <strong>Danke</strong>! Bei Fragen oder wenn Sie weitere Informationen benötigen, melden Sie sich jederzeit gern bei uns.</p>
+<p>Herzliche Grüße</p>
+<p>Ihr Studienteam</p>
 </section>
+<h1 id="ansprechpartnerinnen">Ansprechpartnerinnen</h1>
+<p><strong>Projektkoordination am LIfBi und Ansprechpartnerin</strong>:</p>
+<p>Dr.&nbsp;Jacqueline Kroh<br>
+📞 <a href="tel:+4995170060025">+49 951 700600-25</a><br>
+📧 <a href="mailto:jacqueline.kroh@lifbi.de">jacqueline.kroh@lifbi.de</a></p>
+<p><strong>Projektkoordination der Universität Leipzig</strong>:</p>
+<p>Dr.&nbsp;Andreas Niekler, Dr.&nbsp;Stephan Poppe, Prof.&nbsp;Dr.&nbsp;Julia Tuppat</p>
+<p><strong>Ansprechpartner der Universität Leipzig</strong>:</p>
+<p>Dr.&nbsp;Stephan Poppe<br>
+📞 <a href="tel:+4995170060025">+49 951 700600-25</a><br>
+📧 <a href="mailto:stephan.poppe@uni-leipzig.de">stephan.poppe@uni-leipzig.de</a></p>
 
 
 
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1768521600000" data-listing-file-modified-sort="1770729102460" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1331">
-<div class="thumbnail"><a href="../articles/active_learning_experiments/index.html" class="no-external">
-
-<img loading="lazy" src="../articles/active_learning_experiments/images/training_time_stacked_sorted_minutes.png" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../articles/active_learning_experiments/index.html" class="no-external">Evaluating Active Learning Setups for Qualitative Interview Coding</a>
-</h3>
-<div class="delink listing-description"><a href="../articles/active_learning_experiments/index.html" class="no-external">
-<p>Results from a systematic comparison of active learning setups for qualitative coding.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="../articles/active_learning_experiments/index.html" class="no-external">
-<div class="listing-date">
-Jan 16, 2026
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1754870400000" data-listing-file-modified-sort="1770729102476" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="13" data-listing-word-count-sort="2475">
-<div class="thumbnail"><a href="../articles/esra_transcription_evaluation/index.html" class="no-external">
-
-<img loading="lazy" src="../articles/esra_transcription_evaluation/wave.png" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../articles/esra_transcription_evaluation/index.html" class="no-external">Evaluating Automatic Speech Recognition (ASR) for Social Science Research: A Comparison of Semantic Metrics</a>
-</h3>
-<div class="delink listing-description"><a href="../articles/esra_transcription_evaluation/index.html" class="no-external">
-<p>An extended version of our ESRA talk.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="../articles/esra_transcription_evaluation/index.html" class="no-external">
-<div class="listing-date">
-Aug 11, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-listing-date-sort="1744243200000" data-listing-file-modified-sort="1770729102463" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="311">
-<div class="thumbnail"><a href="../articles/esra_silicon_interviews/index.html" class="no-external">
-
-<img loading="lazy" src="../articles/esra_silicon_interviews/chat.png" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../articles/esra_silicon_interviews/index.html" class="no-external">Silicon Interviews: A Two-Agent Interview Simulation</a>
-</h3>
-<div class="delink listing-description"><a href="../articles/esra_silicon_interviews/index.html" class="no-external">
-Planned talk for the ESRA Conference. Shortly, we will publish an article related to our research. For now, you can find the abstract of the talk here.
-</a></div>
-</div>
-<div class="metadata">
-<a href="../articles/esra_silicon_interviews/index.html" class="no-external">
-<div class="listing-date">
-Apr 10, 2025
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -326,12 +270,12 @@ Apr 10, 2025
       // flash "checked"
       button.classList.add('code-copy-button-checked');
       var currentTitle = button.getAttribute("title");
-      button.setAttribute("title", "Copied!");
+      button.setAttribute("title", "Kopiert");
       let tooltip;
       if (window.bootstrap) {
         button.setAttribute("data-bs-toggle", "tooltip");
         button.setAttribute("data-bs-placement", "left");
-        button.setAttribute("data-bs-title", "Copied!");
+        button.setAttribute("data-bs-title", "Kopiert");
         tooltip = new bootstrap.Tooltip(button, 
           { trigger: "manual", 
             customClass: "code-copy-button-tooltip",
@@ -374,7 +318,7 @@ Apr 10, 2025
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/ai-sic\.github\.io");
+        var filterRegex = new RegExp("https:\/\/ai-sic\.github\.io\/de");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -388,11 +332,6 @@ Apr 10, 2025
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
-            // target, if specified
-            link.setAttribute("target", "_blank");
-            if (link.getAttribute("rel") === null) {
-              link.setAttribute("rel", "noopener");
-            }
         }
       }
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
@@ -734,12 +673,12 @@ Apr 10, 2025
   </li>  
     <li class="nav-item">
     <a class="nav-link" href="../imprint.html">
-<p>Imprint</p>
+<p>Impressum</p>
 </a>
   </li>  
     <li class="nav-item">
     <a class="nav-link" href="../privacy-statement.html">
-<p>Privacy Statement</p>
+<p>Datenschutzerklärung</p>
 </a>
   </li>  
 </ul>
@@ -747,7 +686,7 @@ Apr 10, 2025
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
- Built with Quarto, inspired by martenw.com
+ Erstellt mit Quarto. Vorlage von martenw.com
   </li>  
 </ul>
     </div>
