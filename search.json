@@ -1,10 +1,101 @@
 [
   {
-    "objectID": "einverstaendnis.html",
-    "href": "einverstaendnis.html",
-    "title": "Danke tschüss",
+    "objectID": "imprint.html",
+    "href": "imprint.html",
+    "title": "Imprint",
     "section": "",
-    "text": "Danke tschüss"
+    "text": "Imprint\nDr. Andreas Niekler  Computational Humanities  Paulinum  Augustusplatz 10, Raum P 616  04109 Leipzig  Germany \nPhone: +49 341 97-232239  E-Mail: aniekler@informatik.uni-leipzig.de"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "",
+    "section": "",
+    "text": "The project aims to make the analysis of cognitive interviews more efficient by combining human expertise with innovative AI-based coding methods, thereby extending the reach of the method. In addition, the project contributes to understanding how children and parents assess children’s health in large-scale studies. For this purpose, potential differences in health assessment strategies between the respondent groups are examined, and systematic variations by age and gender are identified."
+  },
+  {
+    "objectID": "about.html#goals",
+    "href": "about.html#goals",
+    "title": "",
+    "section": "",
+    "text": "The project aims to make the analysis of cognitive interviews more efficient by combining human expertise with innovative AI-based coding methods, thereby extending the reach of the method. In addition, the project contributes to understanding how children and parents assess children’s health in large-scale studies. For this purpose, potential differences in health assessment strategies between the respondent groups are examined, and systematic variations by age and gender are identified."
+  },
+  {
+    "objectID": "about.html#background",
+    "href": "about.html#background",
+    "title": "",
+    "section": "Background",
+    "text": "Background\nTo ensure the quality of survey research, survey instruments are validated using both qualitative and quantitative methods. Both approaches, however, come with limitations. While quantitative analyses can reveal efficiently generalizable relationships between different concepts and systematic differences between respondents due to large sample sizes, they are limited in their ability to capture complex cognitive processes within individuals.\nIn contrast to quantitative methods, qualitative approaches such as semi-structured cognitive interviews provide deeper insights into participants’ thought patterns. However, the high cost of such studies often limits sample size and scalability, which affects general validity, generalizability, and the ability to account for differences between subgroups.\nIntegrating the strengths of both methods can significantly improve survey research by enabling a holistic understanding of phenomena while simultaneously leveraging the benefits of quantitative validation. However, combining both approaches presents a challenge.\nThe AI-SIC project contributes by developing an AI-based approach for semi-automatic coding using an active learning strategy. This involves combining machine coding algorithms with human coding skills. Furthermore, new methods are applied to efficiently and thoroughly validate survey instruments in order to address research gaps concerning the already established measurement of self-rated health. This will help to close the gap between qualitative and quantitative methods and answer open questions about how children and their parents assess the health of children."
+  },
+  {
+    "objectID": "about.html#approach-and-methods",
+    "href": "about.html#approach-and-methods",
+    "title": "",
+    "section": "Approach and Methods",
+    "text": "Approach and Methods\nThe project is divided into four substantive work packages.\nThe first work package “Development of the semi-automatic coding framework InTraCo” (Dr. Andreas Niekler & Stephan Poppe; University of Leipzig) aims to methodologically and technically integrate language-based machine learning and reliable semi-automatic coding procedures into the toolbox of computer-assisted social sciences. The goal is to combine machine coding algorithms with human inductive coding skills to increase efficiency in coding extensive qualitative interview data.\nThe second work package “Application and Evaluation of InTraCo” (Dr. Andreas Niekler & Stephan Poppe; University of Leipzig) is dedicated to the application of the newly developed approach as well as its validation and adaptation.\nThe third work package “Exploring the self- and proxy-assessment strategies of children and parents” (Dr. Jacqueline Kroh; LIfBi) utilizes the highly complex data obtained and examines whether the new method can provide added value for content-related analyses using machine learning procedures. This is intended to gain a more comprehensive understanding of how both children and parents assess children’s health.\nThe fourth work package “Comparability of assessment strategies and results between self- and proxy-assessments of children and parents” (Prof. Dr. Julia Offenhammer-Tuppat; University of Leipzig) deepens the insights gained in work package three and investigates similarities and differences between various respondent groups in the children’s self-assessments and the parents’ proxy assessments of child health."
+  },
+  {
+    "objectID": "about.html#data-collection",
+    "href": "about.html#data-collection",
+    "title": "",
+    "section": "Data Collection",
+    "text": "Data Collection\nAI-SIC uses qualitative data and conducts cognitive interviews based on web-based as well as real face-to-face interviews."
+  },
+  {
+    "objectID": "about.html#project-profile",
+    "href": "about.html#project-profile",
+    "title": "",
+    "section": "Project Profile",
+    "text": "Project Profile\n\n\nProject Leadership and Proposal Submission: Dr. Jacqueline Kroh (LIfBi), Dr. Andreas Niekler (University of Leipzig), Dr. Stephan Poppe (University of Leipzig), Prof. Dr. Julia Offenhammer-Tuppat (University of Leipzig)\n\n\nProject Duration: 09/2024 - 06/2028\n\n\nFunding: German Research Foundation (DFG)\n\n\nProject-Website: ai-sic.github.io,\n\n\nInfPP-Website: www.new-data-spaces.de/en-us/Start/Projects/AI-SIC"
+  },
+  {
+    "objectID": "about.html#project-staff",
+    "href": "about.html#project-staff",
+    "title": "",
+    "section": "Project Staff",
+    "text": "Project Staff\n\nDr. Andreas Niekler\nDr. Jacqueline Kroh\nDr. Stephan Poppe\nProf. Dr. Julia Offenhammer-Tuppat\nNicolas Ruth\nLeonie Steinbrinker\nDonata Perakis\nPeter Kannewitz\nNiklas Ippisch"
+  },
+  {
+    "objectID": "articles/active_learning_experiments/index.html",
+    "href": "articles/active_learning_experiments/index.html",
+    "title": "Evaluating Active Learning Setups for Qualitative Interview Coding",
+    "section": "",
+    "text": "After completing our preliminary work on transcription, we can now shift focus to the next task: coding our interviews. The aim is to assign labels to interview segments that reflect our dimensions of interest. To align our methodological approach with the needs of our sociological researchers, we decided to use active learning for the labeling process.\nActive learning enables human intervention during coding while simultaneously training a machine learning model. Over time, this model can support – and potentially partially automate – the coding process. In this short research notice, we present our findings on different active learning configurations and explain how we identified a suitable setup for our use case."
+  },
+  {
+    "objectID": "articles/active_learning_experiments/index.html#background",
+    "href": "articles/active_learning_experiments/index.html#background",
+    "title": "Evaluating Active Learning Setups for Qualitative Interview Coding",
+    "section": "",
+    "text": "After completing our preliminary work on transcription, we can now shift focus to the next task: coding our interviews. The aim is to assign labels to interview segments that reflect our dimensions of interest. To align our methodological approach with the needs of our sociological researchers, we decided to use active learning for the labeling process.\nActive learning enables human intervention during coding while simultaneously training a machine learning model. Over time, this model can support – and potentially partially automate – the coding process. In this short research notice, we present our findings on different active learning configurations and explain how we identified a suitable setup for our use case."
+  },
+  {
+    "objectID": "articles/active_learning_experiments/index.html#test-setting",
+    "href": "articles/active_learning_experiments/index.html#test-setting",
+    "title": "Evaluating Active Learning Setups for Qualitative Interview Coding",
+    "section": "Test Setting",
+    "text": "Test Setting\nActive learning refers to an iterative learning setup in which an ML model is trained repeatedly. In each iteration, annotators label examples that are expected to be particularly informative for deciding whether a given label should be assigned. The model is then retrained, and a new batch of examples is selected. The overarching goal is to minimize the total number of labeled examples required.\nWe implemented our experiments using the small-text active learning framework in Python, which offers a wide range of configuration options.\n\nData, Annotation, and Evaluation Strategy\nBefore involving expert coders in annotating the final interview data, we conducted experiments on synthetic interviews to establish baseline practices. These interviews were generated in an AI-to-AI interview setting, where roles, socio-demographic characteristics, and interview guidelines were provided as context.1\nFrom these interviews, we constructed training and test splits. For coding, we selected a small subset of codes that had already been used in a previous study by our team Kroh et al. (2023).\nDuring data preparation, it became clear that inter-coder agreement would be a central concern for evaluating model performance. A key question is whether a model trained on data labeled by one coder can be meaningfully evaluated on data labeled by another, especially if their interpretations of the codes differ. Even within annotations produced by the same coder, consistency cannot be taken for granted: perceptions of concepts may evolve during the labeling process, and subtle textual differences can lead to different label assignments.\nTo allow for later analysis of these effects, we tracked which coder labeled each example. For the experiments reported here, we restricted evaluation to a smaller subset of the test data annotated by a single coder, providing a more stable reference point.\n\n\nModel Architecture and Active Learning Configuration\nTurning to the technical setup, our task involves extracting nuanced information from natural language, making transformer-based models a natural choice. Within small-text, two transformer-based approaches are available: a token-level transformer integration (TransformerBasedClassificationFactory) and sentence transformers trained using the SetFit paradigm (SetFitClassificationFactory).\nOur experiments focus on sentence transformers, as prior work suggests they outperform the token-based approach in low-data scenarios Tunstall et al. (2022). Nevertheless, we included one standard transformer model for comparison. Since each interview segment may receive multiple codes, the task is formulated as a multi-label classification problem.\nIn addition to text representation, several configuration choices can influence model performance. Each model requires a classification head to map embeddings to label predictions. The default option is a logistic regression head implemented in sklearn. As an alternative, we evaluated a differentiable classification head implemented as a linear layer in torch. This option allows for end-to-end training of both the embedding model and the classifier and would later enable the computation of integrated gradients for token-level attribution scores.\nFor the differentiable head, we tested both full end-to-end training and a setup where embeddings were kept fixed and only the head was trained. Finally, we varied the query strategy that determines which samples are selected for annotation. We compared a prediction-entropy (PE) baseline with the more suitable CategoryVectorInconsistencyAndRanking (CVIAR) strategy, which is designed specifically for multi-label scenarios.\nFor each configuration, we simulated an active learning run by initializing the model with 20 labeled examples, followed by five iterations in which 25 additional examples were annotated. This resulted in 145 labeled samples per run. The total labeled data pool contained 210 examples, with each configuration selecting different subsets depending on model and query strategy.\nWe used MLflow to log model configurations, evaluation metrics, training times, and sample selection across iterations. All experiments were run on a SLURM cluster using four Tesla A100 GPUs with 32 GB of memory each, although substantially fewer resources are sufficient when running active learning in a fixed configuration."
+  },
+  {
+    "objectID": "articles/active_learning_experiments/index.html#results",
+    "href": "articles/active_learning_experiments/index.html#results",
+    "title": "Evaluating Active Learning Setups for Qualitative Interview Coding",
+    "section": "Results",
+    "text": "Results\nA clear pattern emerges from the results: configurations using a differentiable classification head perform substantially worse than those using a logistic regression head. This is most likely due to the small number of training examples available. Since such low-data conditions are typical in qualitative coding tasks, this finding suggests that differentiable heads are not well suited for our intended application.\nFigure 1 summarizes the performance of models using a differentiable head, while Figure 2 shows results for models with a logistic regression head. Performance is evaluated using the macro-averaged F1 score, which balances precision and recall across all codes.\nAcross almost all settings, the MiniLM model outperforms the newer e5 models – even when compared to the much larger 0.3B-parameter “Medium” variant. The choice of query strategy also has a consistent effect: CategoryVectorInconsistencyAndRanking outperforms entropy-based sampling in nearly every configuration.\nInterestingly, the baseline model performed reasonably well against the SetFit models.\n\n\n\n\nFig. 1: Macro F1 scores for model settings with a differentiable head.\n\n\n\n\n\n\n\nFig. 2: Macro F1 scores for model settings with logistic head.\n\n\n\nClass-wise performance provides additional insight (Figure 3). In particular, the categories “Mental Health” and “Unspecific” are difficult for the models to predict and strongly influence overall performance. This is also the reason why the baseline model ranks higher than other SetFit configurations, since it achieves higher scores for the harder-to-predict classes, but its performance for the other classes is overall still worse. The unequal class performance may indicate that some categories are too broadly defined or inconsistently annotated. Despite this, overall F1 scores are relatively high, which is encouraging given the complexity of the task.\n\n\n\n\nFig. 3: Class-wise F1 scores for model settings with logistic head and the baseline.\n\n\n\nTraining time is a crucial practical factor in active learning, as long delays between iterations disrupt the annotation workflow. As shown in Figure 4, training time largely scales with the number of model parameters. The configuration with the 0.3B e5-base model required the longest training time. In the SetFit framework, training time increases non-linearly because the number of contrastive training pairs grows quadratically with the number of training examples.\nFor the best-performing SetFit configuration (setfit_paraphrase-multilingual-MiniLM-L12-v2_default_CategoryVectorInconsistencyAndRanking), training time increases from roughly 30 seconds with 45 labeled examples to approximately 4 minutes when using the full set of 145 examples. Training the base model took only about two minutes in total.\n\n\n\n\nFig. 4: Training time per model configuration."
+  },
+  {
+    "objectID": "articles/active_learning_experiments/index.html#concluding-remarks",
+    "href": "articles/active_learning_experiments/index.html#concluding-remarks",
+    "title": "Evaluating Active Learning Setups for Qualitative Interview Coding",
+    "section": "Concluding Remarks",
+    "text": "Concluding Remarks\nBased on these experiments, differentiable classification heads do not appear to be a viable option for our use case. While they would offer additional interpretability through token-level attributions, their performance under low-data conditions is insufficient for practical coding workflows.\nAmong the tested configurations, the paraphrase-based MiniLM sentence transformer stands out as the most suitable “out-of-the-box” choice for our real interview data, combining strong predictive performance with relatively short training times.\nFor tasks where speedup weighs more heavily than performance, it also seems worth considering the baseline BERT model, since it dramatically reduces training time while the performance drop appears minor at first glance.\nAs we move to real-world annotation, monitoring class-wise performance and uncertainty estimates will be essential. At the same time, the extent to which a trained model can be interpreted as a reflection of an individual coder’s conceptual understanding remains an open and important question.\nFinally, while our experiments cover a broad range of settings, it is possible that relevant configurations were missed. We therefore welcome feedback from others working on similar problems. One promising direction for further experimentation is the multi-label strategy itself, as correlated codes may benefit from approaches beyond the default one-vs-rest formulation.\nThe code for these experiments is available at: https://github.com/AI-SIC/active-learning-experiments"
+  },
+  {
+    "objectID": "articles/active_learning_experiments/index.html#footnotes",
+    "href": "articles/active_learning_experiments/index.html#footnotes",
+    "title": "Evaluating Active Learning Setups for Qualitative Interview Coding",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nFor more information see our talk. A paper on the topic will also be published soon.↩︎"
   },
   {
     "objectID": "articles/esra_transcription_evaluation/index.html",
@@ -28,11 +119,109 @@
     "text": "Our proposal: Visually aided Semantic Evaluation\nAfter reviewing various error metrics, the key question remains: can they truly help us evaluate transcription models for our specific needs? While it’s valuable to assess transcripts beyond just lexical accuracy—and combining different metrics can reveal the types of errors—looking at scores aggregated over an entire transcript only gives a general, averaged picture. It doesn’t show us where or how the errors happen throughout the interview.\nTo overcome this limitation and give researchers deeper insight into transcript quality, we developed a notebook that tracks errors over time—that is, across the length of the transcript.\n\n\n\n\nOur proposal: Interactive analysis of errors (Screenshot). Full code under: https://github.com/ai-sic/semantic-asr-evaluation.\n\n\n\nSpecifically, we chunk a transcript into segments and measure the error for each segment based on similarity in embedding space. This approach enables interactive investigation of how errors vary throughout the transcript. It also helps identify problematic parts of the data.\nIn the example figure, the first part of the transcript is missing, which could be caused by poor audio quality or background noise during that segment."
   },
   {
-    "objectID": "articles/index.html",
-    "href": "articles/index.html",
-    "title": "Articles",
+    "objectID": "privacy-statement.html",
+    "href": "privacy-statement.html",
+    "title": "Privacy Statement",
     "section": "",
-    "text": "Articles\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEvaluating Active Learning Setups for Qualitative Interview Coding\n\n\nResults from a systematic comparison of active learning setups for qualitative coding.\n\n\n\n\n\nJan 16, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nEvaluating Automatic Speech Recognition (ASR) for Social Science Research: A Comparison of Semantic Metrics\n\n\nAn extended version of our ESRA talk.\n\n\n\n\n\nAug 11, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nSilicon Interviews: A Two-Agent Interview Simulation\n\n\n\n\n\n\n\n\nApr 10, 2025\n\n\n\n\n\nNo matching items"
+    "text": "We appreciate your interest in using our website. The protection of personal data is our highest priority. Below, you will find information concerning the processing of your personal data and your rights when using our website.\n\n\nAI-SIC  Computational Humanities  University of Leipzig  Augustusplatz 10, Raum P 616  04109 Leipzig  Phone: +49 341 97-232239  E-Mail: aniekler@informatik.uni-leipzig.de \n\n\n\n\nYou have the following rights under the GDPR:\n\nRight of access (Art. 15 GDPR)\nRight to rectification (Art. 16 GDPR)\nRight to erasure (“right to be forgotten”) (Art. 17 GDPR)\nRight to restriction of processing (Art. 18 GDPR)\nRight to data portability (Art. 20 GDPR)\nRight to object (Art. 21 GDPR)\n\nYou also have the right to lodge a complaint with a data protection supervisory authority, especially in the EU Member State of your habitual residence, place of work, or place of the alleged infringement.\n\n\n\nWe do not collect personal data unless it is necessary to provide the website.\n\n\n\nOur website is hosted by GitHub Pages, a service provided by GitHub Inc., San Francisco, USA. When you access our website, certain information is automatically transmitted by your browser and may be stored in server log files, including:\n\nIP address\nDate and time of the request\nBrowser type and version\nOperating system\nReferrer URL (if applicable)\n\nFor more information on GitHub’s data processing, please refer to their privacy policy:\nhttps://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement\n\n\n\nOur website does not use cookies or any form of tracking or analytics tools.\n\n\n\nNo automated decision-making, including profiling as defined in Article 22 of the GDPR, takes place in connection with the use of our website."
+  },
+  {
+    "objectID": "privacy-statement.html#controller",
+    "href": "privacy-statement.html#controller",
+    "title": "Privacy Statement",
+    "section": "",
+    "text": "AI-SIC  Computational Humanities  University of Leipzig  Augustusplatz 10, Raum P 616  04109 Leipzig  Phone: +49 341 97-232239  E-Mail: aniekler@informatik.uni-leipzig.de"
+  },
+  {
+    "objectID": "privacy-statement.html#your-rights-as-a-data-subject",
+    "href": "privacy-statement.html#your-rights-as-a-data-subject",
+    "title": "Privacy Statement",
+    "section": "",
+    "text": "You have the following rights under the GDPR:\n\nRight of access (Art. 15 GDPR)\nRight to rectification (Art. 16 GDPR)\nRight to erasure (“right to be forgotten”) (Art. 17 GDPR)\nRight to restriction of processing (Art. 18 GDPR)\nRight to data portability (Art. 20 GDPR)\nRight to object (Art. 21 GDPR)\n\nYou also have the right to lodge a complaint with a data protection supervisory authority, especially in the EU Member State of your habitual residence, place of work, or place of the alleged infringement."
+  },
+  {
+    "objectID": "privacy-statement.html#purpose-and-legal-basis-of-processing",
+    "href": "privacy-statement.html#purpose-and-legal-basis-of-processing",
+    "title": "Privacy Statement",
+    "section": "",
+    "text": "We do not collect personal data unless it is necessary to provide the website."
+  },
+  {
+    "objectID": "privacy-statement.html#hosting-and-log-files",
+    "href": "privacy-statement.html#hosting-and-log-files",
+    "title": "Privacy Statement",
+    "section": "",
+    "text": "Our website is hosted by GitHub Pages, a service provided by GitHub Inc., San Francisco, USA. When you access our website, certain information is automatically transmitted by your browser and may be stored in server log files, including:\n\nIP address\nDate and time of the request\nBrowser type and version\nOperating system\nReferrer URL (if applicable)\n\nFor more information on GitHub’s data processing, please refer to their privacy policy:\nhttps://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement"
+  },
+  {
+    "objectID": "privacy-statement.html#cookies-and-tracking",
+    "href": "privacy-statement.html#cookies-and-tracking",
+    "title": "Privacy Statement",
+    "section": "",
+    "text": "Our website does not use cookies or any form of tracking or analytics tools."
+  },
+  {
+    "objectID": "privacy-statement.html#automated-decision-making-including-profiling",
+    "href": "privacy-statement.html#automated-decision-making-including-profiling",
+    "title": "Privacy Statement",
+    "section": "",
+    "text": "No automated decision-making, including profiling as defined in Article 22 of the GDPR, takes place in connection with the use of our website."
+  },
+  {
+    "objectID": "de/imprint.html",
+    "href": "de/imprint.html",
+    "title": "Imprint",
+    "section": "",
+    "text": "Imprint\nDr. Andreas Niekler  Computational Humanities  Paulinum  Augustusplatz 10, Raum P 616  04109 Leipzig  Germany \nPhone: +49 341 97-232239  E-Mail: aniekler@informatik.uni-leipzig.de"
+  },
+  {
+    "objectID": "de/about.html",
+    "href": "de/about.html",
+    "title": "",
+    "section": "",
+    "text": "Das Projekt zielt darauf ab, die Analyse kognitiver Interviews effizienter zu gestalten, indem menschliches Fachwissen mit innovativen KI-basierten Kodierungsmethoden kombiniert wird, wodurch die Reichweite der Methode erweitert wird. Darüber hinaus trägt das Projekt dazu bei zu verstehen, wie Kinder und Eltern die Gesundheit ihrer Kinder in groß angelegten Studien einschätzen. Zu diesem Zweck werden mögliche Unterschiede in den Strategien zur Gesundheitseinschätzung zwischen den Befragtengruppen untersucht und systematische Variationen nach Alter und Geschlecht identifiziert."
+  },
+  {
+    "objectID": "de/about.html#projektziel",
+    "href": "de/about.html#projektziel",
+    "title": "",
+    "section": "",
+    "text": "Das Projekt zielt darauf ab, die Analyse kognitiver Interviews effizienter zu gestalten, indem menschliches Fachwissen mit innovativen KI-basierten Kodierungsmethoden kombiniert wird, wodurch die Reichweite der Methode erweitert wird. Darüber hinaus trägt das Projekt dazu bei zu verstehen, wie Kinder und Eltern die Gesundheit ihrer Kinder in groß angelegten Studien einschätzen. Zu diesem Zweck werden mögliche Unterschiede in den Strategien zur Gesundheitseinschätzung zwischen den Befragtengruppen untersucht und systematische Variationen nach Alter und Geschlecht identifiziert."
+  },
+  {
+    "objectID": "de/about.html#hintergrund",
+    "href": "de/about.html#hintergrund",
+    "title": "",
+    "section": "Hintergrund",
+    "text": "Hintergrund\nUm die Qualität der Umfrageforschung zu gewährleisten, werden die Erhebungsinstrumente sowohl mit qualitativen als auch mit quantitativen Methoden validiert. Beide Ansätze sind jedoch mit Einschränkungen verbunden. Während quantitative Analysen aufgrund großer Stichprobengrößen effizient verallgemeinerbare Beziehungen zwischen verschiedenen Konzepten und systematische Unterschiede zwischen den Befragten aufdecken können, sind sie nur begrenzt in der Lage, komplexe kognitive Prozesse innerhalb von Personen zu erfassen.\nIm Gegensatz zu quantitativen Methoden bieten qualitative Ansätze wie halbstrukturierte kognitive Interviews tiefere Einblicke in die Denkmuster der Teilnehmer. Die hohen Kosten solcher Studien schränken jedoch häufig die Stichprobengröße und die Skalierbarkeit ein, was die allgemeine Gültigkeit, die Verallgemeinerbarkeit und die Fähigkeit, Unterschiede zwischen Untergruppen zu berücksichtigen, beeinträchtigt.\nDie Integration der Stärken beider Methoden kann die Umfrageforschung erheblich verbessern, indem sie ein ganzheitliches Verständnis der Phänomene ermöglicht und gleichzeitig die Vorteile der quantitativen Validierung nutzt. Die Kombination beider Ansätze stellt jedoch eine Herausforderung dar.\nDas AI-SIC-Projekt trägt dazu bei, indem es einen KI-basierten Ansatz für halbautomatische Kodierung unter Verwendung einer aktiven Lernstrategie entwickelt. Dabei werden maschinelle Kodieralgorithmen mit menschlichen Kodierfähigkeiten kombiniert. Darüber hinaus werden neue Methoden zur effizienten und gründlichen Validierung von Erhebungsinstrumenten eingesetzt, um Forschungslücken bei der bereits etablierten Messung der selbst eingeschätzten Gesundheit zu schließen. Dies wird dazu beitragen, die Lücke zwischen qualitativen und quantitativen Methoden zu schließen und offene Fragen darüber zu beantworten, wie Kinder und ihre Eltern die Gesundheit von Kindern einschätzen."
+  },
+  {
+    "objectID": "de/about.html#vorgehen-und-methoden",
+    "href": "de/about.html#vorgehen-und-methoden",
+    "title": "",
+    "section": "Vorgehen und Methoden",
+    "text": "Vorgehen und Methoden\nDas Projekt ist in vier inhaltliche Arbeitspakete unterteilt.\nDas erste Arbeitspaket „Entwicklung des halbautomatischen Kodierframeworks InTraCo “ (Dr. Andreas Niekler & Stephan Poppe; Universität Leipzig) zielt darauf ab, sprachbasiertes maschinelles Lernen und zuverlässige halbautomatische Kodierverfahren methodisch und technisch in den Werkzeugkasten der computergestützten Sozialwissenschaften zu integrieren. Ziel ist es, maschinelle Kodieralgorithmen mit menschlichen induktiven Kodierfähigkeiten zu kombinieren, um die Effizienz bei der Kodierung umfangreicher qualitativer Interviewdaten zu erhöhen.\nDas zweite Arbeitspaket „Anwendung und Evaluation von InTraCo “ (Dr. Andreas Niekler & Stephan Poppe; Universität Leipzig) widmet sich der Anwendung des neu entwickelten Ansatzes sowie dessen Validierung und Anpassung.\nDas dritte Arbeitspaket „Exploring the self- and proxy-assessment strategies of children and parents “ (Dr. Jacqueline Kroh; LIfBi) nutzt die gewonnenen hochkomplexen Daten und untersucht, ob die neue Methode einen Mehrwert für inhaltsbezogene Analysen mit maschinellen Lernverfahren liefern kann. Damit soll ein umfassenderes Verständnis dafür gewonnen werden, wie Kinder und Eltern die Gesundheit ihrer Kinder einschätzen.\nDas vierte Arbeitspaket „Vergleichbarkeit von Einschätzungsstrategien und Ergebnissen zwischen Selbst- und Proxy-Einschätzungen von Kindern und Eltern “ (Prof. Dr. Julia Offenhammer-Tuppat; Universität Leipzig) vertieft die in Arbeitspaket drei gewonnenen Erkenntnisse und untersucht Gemeinsamkeiten und Unterschiede zwischen verschiedenen Befragtengruppen bei den Selbsteinschätzungen der Kinder und den Proxy-Einschätzungen der Eltern zur Kindergesundheit."
+  },
+  {
+    "objectID": "de/about.html#datenerhebung",
+    "href": "de/about.html#datenerhebung",
+    "title": "",
+    "section": "Datenerhebung",
+    "text": "Datenerhebung\nAI-SIC verwendet qualitative Daten und führt kognitive Interviews auf der Grundlage von webbasierten und realen persönlichen Interviews durch."
+  },
+  {
+    "objectID": "de/about.html#projektprofil",
+    "href": "de/about.html#projektprofil",
+    "title": "",
+    "section": "Projektprofil",
+    "text": "Projektprofil\n\n\nProjektführung and Antragseinreichung: Dr. Jacqueline Kroh (LIfBi), Dr. Andreas Niekler (Universität Leipzig), Dr. Stephan Poppe (Universität Leipzig), Prof. Dr. Julia Offenhammer-Tuppat (Universität Leipzig)\n\n\nProjektdauer: 09/2024 - 06/2028\n\n\nProjektförderung: Deutsche Forschungsgemeinschaft (DFG)\n\n\nProjektwebseite: ai-sic.github.io\n\n\nInfPP-Webseite: www.new-data-spaces.de/en-us/Start/Projects/AI-SIC"
+  },
+  {
+    "objectID": "de/about.html#team",
+    "href": "de/about.html#team",
+    "title": "",
+    "section": "Team",
+    "text": "Team\n\nDr. Andreas Niekler\nDr. Jacqueline Kroh\nDr. Stephan Poppe\nProf. Dr. Julia Offenhammer-Tuppat\nNicolas Ruth\nLeonie Steinbrinker\nDonata Perakis\nPeter Kannewitz\nNiklas Ippisch"
   },
   {
     "objectID": "de/articles/active_learning_experiments/index.html",
@@ -77,18 +266,11 @@
     "text": "Footnotes\n\n\nFor more information see our talk. A paper on the topic will also be published soon.↩︎"
   },
   {
-    "objectID": "de/articles/esra_silicon_interviews/index.html",
-    "href": "de/articles/esra_silicon_interviews/index.html",
-    "title": "Silicon Interviews: A Two-Agent Interview Simulation",
+    "objectID": "de/articles/esra_transcription_evaluation/index.html",
+    "href": "de/articles/esra_transcription_evaluation/index.html",
+    "title": "Evaluating ASR for Social Science Research: A Comparison of Semantic Metrics",
     "section": "",
-    "text": "Planned talk for the ESRA Conference. Shortly, we will publish an article related to our research. For now, you can find the abstract of the talk here.\n\nAbstract\nSelecting an appropriate measurement instrument in social science survey research presents researchers with a fundamental trade-off between depth and scalability. The emergence of Large Language Models (LLMs), with their diverse applications and enhanced user-friendliness, opens new possibilities for social science research methodology. While recent research has primarily focused on whether LLMs can replace human respondents through so-called silicon samples, less attention has been paid to their potential to also replace interviewers. Early findings suggest that AI interviewers can surpass humans in specific tasks, such as active listening, while also reducing biases resulting from reactivity and social desirability effects, but their capabilities remain underexplored.\nOur study takes a novel approach: simulating AI-AI interactions, where LLMs act as both interviewers and respondents in semi-structured interview settings. This dual-simulation framework enables us to rigorously test and refine interviewing methodologies while addressing the dynamic nature of human interactions, which are inherently unpredictable and context-dependent. As a test case, we simulate interviews with children—a particularly challenging context that demands empathetic and adaptive interviewing techniques. By adhering to established guidelines for interviewing children, we evaluate LLMs on their ability to generate dynamic follow-up questions, maintain conversational flow, and exhibit algorithmic fidelity in both roles, modeling complex human interactions.\nBeyond addressing common methodological challenges, such as social desirability biases and subjective inconsistencies, our framework offers a scalable solution for testing and refining interview methodologies. Generating ‘silicon interviews’, enables the development and refinement of downstream tasks, such as computational coding and analysis, by providing more robust large-scale datasets. Our findings underscore the potential of AI-driven simulations to advance survey research by bridging methodological gaps, reducing costs, and enhancing the scalability of interview-based research, thereby easing the trade-off between large-scale surveys and semi-structured interviews."
-  },
-  {
-    "objectID": "de/imprint.html",
-    "href": "de/imprint.html",
-    "title": "Imprint",
-    "section": "",
-    "text": "Imprint\nDr. Andreas Niekler  Computational Humanities  Paulinum  Augustusplatz 10, Raum P 616  04109 Leipzig  Germany \nPhone: +49 341 97-232239  E-Mail: aniekler@informatik.uni-leipzig.de"
+    "text": "Planned talk for the ESRA Conference. Shortly, we will publish an article related to our research. For now, you can find the abstract of the talk here.\n\nAbstract\nAutomatic Speech Recognition (ASR) is an essential technology for automating the transcription of qualitative data in social science research, particularly with large interview datasets. Recent advancements in ASR have introduced powerful new tools to the field, but their implementation requires careful and thoughtful consideration to ensure reliability and accuracy. Since outcomes vary significantly depending on the model and its (hyper-)parametrization, it is crucial to evaluate the generalization capabilities of ASR models on specific research data using a meaningful and comparable metric. Addressing these challenges will enable social scientists to effectively leverage these technologies in their research.\nThe most commonly used metric for this purpose is the Word Error Rate (WER). WER depends on specific language-specific text transformations and focuses on surface-level accuracy, making it inadequate for evaluating transcript quality in social sciences and downstream NLP tasks. To address limitations, modern, semantics-oriented metrics have been developed in recent years. Metrics such as Embedding Error Rate (EmbER) and Semantic-WER apply penalties for different types of errors, while methods like BERTScore, SeMaScore, SemDist, and Aligned Semantic Distance (ASD) improve evaluation by utilizing contextual embeddings and advanced matching techniques to assess semantic similarity.\nOur research centers on comparing the usability of these semantic metrics for ASR in social sciences and developing a more intuitive approach for analyzing semantic differences in ASR transcriptions using aligned window-based semantic comparison, as opposed to relying on traditional singular value metrics. The proposed talk is not only designed to improve the quality of individual research projects but also to contribute to the creation of new data spaces for the social sciences, where ASR is a fundamental technology. Only when developing robust methods for evaluating and utilizing ASR, we can unlock the potential of large-scale qualitative datasets, opening up new avenues for research and analysis."
   },
   {
     "objectID": "de/privacy-statement.html",
@@ -140,11 +322,74 @@
     "text": "No automated decision-making, including profiling as defined in Article 22 of the GDPR, takes place in connection with the use of our website."
   },
   {
+    "objectID": "de/contact.html",
+    "href": "de/contact.html",
+    "title": "Kontakt",
+    "section": "",
+    "text": "Kontakt\nGitHub\nE-Mail: aniekler@informatik.uni-leipzig.de"
+  },
+  {
+    "objectID": "de/pdf/flyer/index.html",
+    "href": "de/pdf/flyer/index.html",
+    "title": "Flyer",
+    "section": "",
+    "text": "Als PDF herunterladen"
+  },
+  {
     "objectID": "de/pdf/anschreiben/index.html",
     "href": "de/pdf/anschreiben/index.html",
     "title": "Anschreiben",
     "section": "",
     "text": "Bitte um Teilnahme an einer Umfrage im Rahmen des wissenschaftlicen Forschungsprojektes AI-SIC\nPDF öffnen\nSehr geehrte interessierte Familien,\nhiermit möchten wir Sie herzlich einladen, an einer wichtigen wissenschaftlichen Studie zum Thema Gesundheit teilzunehmen. Mit Ihrer Unterstützung helfen Sie uns zu verstehen, wie Kinder und Eltern über Gesundheit sprechen und welche Erfahrungen dabei wichtig sind. Gleichzeitig tragen Sie dazu bei, die Umfrageforschung im Rahmen des Projekts AI-SIC weiterzuentwickeln.\nWas ist AI-SIC?\nWir möchten erfahren, wie Kinder und Eltern die Gesundheit von Kindern einschätzen und welche Gedanken oder Erfahrungen dabei eine Rolle spielen. So können wir besser nachvollziehen, was Familien im Zusammenhang mit Kindergesundheit wichtig ist. Wir möchten außerdem die Auswertung der Interviews verbessern und entwickeln dafür computergestützte, teilweise automatisierte Methoden. Diese helfen uns dabei, Antworten schneller und gründlicher auszuwerten. Für unsere wissenschaftliche Forschung brauchen wir Ihre Unterstützung: Mit Ihrer Teilnahme und der Ihres Kindes helfen Sie uns, Forschung über Kinder und Familien weiterzuentwickeln.\nWie sieht die Befragung aus?\nWir möchten mit Ihnen und Ihrem Kind ein kurzes Videogespräch führen. Es findet außerhalb der Schulzeit statt – zum Beispiel am Nachmittag. Die Befragung dauert etwa 20 Minuten für Sie und 10 Minuten für Ihr Kind. Inhaltlich geht es um das Thema Gesundheit. Zusätzlich stellen wir Ihnen einige allgemeine Fragen, zum Beispiel zu Bildung und Herkunft. Das Gespräch wird als Ton (Audio) aufgenommen, damit wir es später sorgfältig auswerten können.\nDatenschutz und Umgang mit Ihren Daten\nFür das Projekt AI-SIC ist uns der sorgfältige Umgang mit Ihren Daten besonders wichtig. Alle erhobenen Informationen werden gemäß den Vorgaben der Datenschutz-Grundverordnung (DSGVO) streng vertraulich behandelt und ausschließlich für wissenschaftliche Zwecke verwendet. Zudem werden die Daten vor der Analyse anonymisiert, sodass keine Rückschlüsse auf einzelne Personen möglich sind. Weitere Informationen dazu finden Sie im Datenschutzblatt.\nWie können Sie uns konkret unterstützen?\nWenn Sie oder eine andere erziehungsberechtigte Person und Ihr Kind bereit sind, an unserer Studie teilzunehmen, füllen Sie als erziehungsberechtigte Person(en) bitte die Einwilligungs- und Datenschutzerklärung für Eltern aus. Sollte Ihr Kind 13 Jahre oder älter sein, füllt er oder sie bitte zusätzlich die Einwilligungserklärung des Kindes aus; sollte Ihr Kind unter 13 Jahre alt sein, reicht die elterliche Einwilligungserklärung aus. Sie können diese über die Links digital ausfüllen. Selbstverständlich sind Ihre Teilnahme und die Ihres Kindes freiwillig. Bei Nichtteilnahme entstehen Ihnen sowie Ihrem Kind natürlich keinerlei Nachteile.\nDankeschön für Ihre Unterstützung\nDie Interviews werden bis mindestens Ende März 2026 durchgeführt. Falls Sie noch Fragen haben, stehen Ihnen Dr. Jacqueline Kroh (jacqueline.kroh@lifbi.de, +49 951 700600-25) und Donata Perakis (donata.perakis@lifbi.de, +49 951 700601-36) gerne zur Verfügung. Wenn Sie sich für eine Teilnahme entscheiden, erhalten Sie im Anschluss an die Befragung als Dankeschön einen Wunschgutschein(www.wunschgutschein.de) im Wert von 10 €. Empfehlen Sie unsere Studie anschließend weiter, bedanken wir uns für jede neu geworbene Familie, die ein Interview mit uns führt, mit einem weiteren Wunschgutschein im Wert von 5 €.\nWir danken Ihnen herzlich für Ihre Unterstützung bei diesem wichtigen Forschungsprojekt!\nMit freundlichen Grüßen\nDr. Jacqueline Kroh Projektkoordination des Projektes AI-SIC am Leibniz-Institut für Bildungsverläufe"
+  },
+  {
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Contact",
+    "section": "",
+    "text": "Contact\nGitHub\nE-Mail: aniekler@informatik.uni-leipzig.de"
+  },
+  {
+    "objectID": "pdf/index.html",
+    "href": "pdf/index.html",
+    "title": "Participation information",
+    "section": "",
+    "text": "Participation information\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nInvitation letter\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nData protection\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "AI Enhanced Validation of Survey Instruments",
+    "section": "",
+    "text": "AI Enhanced Validation of Survey Instruments\n\nGitHub\n\n\nIntegrating Semi-Automated Methods in Cognitive Interviews for Children’s Self- and Proxy Assessments of Health (AI-SIC).  → more about\n\n\n\n\n\n\n\nArticles\n\n\n\n\n\n\n\n\n\n\nEvaluating Active Learning Setups for Qualitative Interview Coding\n\n\nResults from a systematic comparison of active learning setups for qualitative coding.\n\n\n\nJan 16, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nEvaluating Automatic Speech Recognition (ASR) for Social Science Research: A Comparison of Semantic Metrics\n\n\nAn extended version of our ESRA talk.\n\n\n\nAug 11, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nSilicon Interviews: A Two-Agent Interview Simulation\n\n\n\n\n\n\nApr 10, 2025\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "pdf/anschreiben/index.html",
+    "href": "pdf/anschreiben/index.html",
+    "title": "Invitation letter",
+    "section": "",
+    "text": "Lorem ipsum hier irgendein Text, vielleicht braucht es auch gar nicht das pdf sondern nur den Text, das weiß ich noch nicht??\n\n\n\nAnschreiben Text\nLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+  },
+  {
+    "objectID": "pdf/datenschutz/index.html",
+    "href": "pdf/datenschutz/index.html",
+    "title": "Data protection",
+    "section": "",
+    "text": "Information\nLorem ipsum hier irgendein Text, vielleicht braucht es auch gar nicht das pdf sondern nur den Text, das weiß ich noch nicht??\n\n\n\n\nAnschreiben Text\nLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+  },
+  {
+    "objectID": "de/index.html",
+    "href": "de/index.html",
+    "title": "KI unterstützte Validierung von Survey Messinstrumenten",
+    "section": "",
+    "text": "KI unterstützte Validierung von Survey Messinstrumenten\n\nGitHub\n\n\nIntegration semiautomatischer Methoden in kognitive Interviews für Selbst- und Fremdeinschätzungen der Gesundheit von Kindern (AI-SIC).  → mehr über uns\n\n\n\n\n\n\n\nArtikel (Englisch)\n\n\n\n\n\n\n\n\n\n\nEvaluating Active Learning Setups for Qualitative Interview Coding\n\n\nResults from a systematic comparison of active learning setups for qualitative coding.\n\n\n\nJan 16, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nEvaluating ASR for Social Science Research: A Comparison of Semantic Metrics\n\n\n\n\n\n\nApr 11, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nSilicon Interviews: A Two-Agent Interview Simulation\n\n\n\n\n\n\nApr 10, 2025\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "de/pdf/index.html",
+    "href": "de/pdf/index.html",
+    "title": "Informationen zur Teilnahme an der Umfrage",
+    "section": "",
+    "text": "Informationen zur Teilnahme an der Umfrage\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAnschreiben\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFlyer\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDatenschutz\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "de/pdf/datenschutz/index.html",
@@ -210,256 +455,11 @@
     "text": "Footnotes\n\n\nZuständige Aufsichtsbehörde: Bundesbeauftragter für den Datenschutz und die Informationsfreiheit↩︎"
   },
   {
-    "objectID": "de/index.html",
-    "href": "de/index.html",
-    "title": "KI unterstützte Validierung von Survey Messinstrumenten",
-    "section": "",
-    "text": "KI unterstützte Validierung von Survey Messinstrumenten\n\nGitHub\n\n\nIntegration semiautomatischer Methoden in kognitive Interviews für Selbst- und Fremdeinschätzungen der Gesundheit von Kindern (AI-SIC).  → mehr über uns\n\n\n\n\n\n\n\nArtikel (Englisch)\n\n\n\n\n\n\n\n\n\n\nEvaluating Active Learning Setups for Qualitative Interview Coding\n\n\nResults from a systematic comparison of active learning setups for qualitative coding.\n\n\n\nJan 16, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nEvaluating ASR for Social Science Research: A Comparison of Semantic Metrics\n\n\n\n\n\n\nApr 11, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nSilicon Interviews: A Two-Agent Interview Simulation\n\n\n\n\n\n\nApr 10, 2025\n\n\n\n\n\n\nNo matching items"
-  },
-  {
     "objectID": "de/404.html",
     "href": "de/404.html",
     "title": "404 - Die Seite konnte nicht gefunden werden.",
     "section": "",
     "text": "404 - Die Seite konnte nicht gefunden werden."
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "",
-    "section": "",
-    "text": "The project aims to make the analysis of cognitive interviews more efficient by combining human expertise with innovative AI-based coding methods, thereby extending the reach of the method. In addition, the project contributes to understanding how children and parents assess children’s health in large-scale studies. For this purpose, potential differences in health assessment strategies between the respondent groups are examined, and systematic variations by age and gender are identified."
-  },
-  {
-    "objectID": "about.html#goals",
-    "href": "about.html#goals",
-    "title": "",
-    "section": "",
-    "text": "The project aims to make the analysis of cognitive interviews more efficient by combining human expertise with innovative AI-based coding methods, thereby extending the reach of the method. In addition, the project contributes to understanding how children and parents assess children’s health in large-scale studies. For this purpose, potential differences in health assessment strategies between the respondent groups are examined, and systematic variations by age and gender are identified."
-  },
-  {
-    "objectID": "about.html#background",
-    "href": "about.html#background",
-    "title": "",
-    "section": "Background",
-    "text": "Background\nTo ensure the quality of survey research, survey instruments are validated using both qualitative and quantitative methods. Both approaches, however, come with limitations. While quantitative analyses can reveal efficiently generalizable relationships between different concepts and systematic differences between respondents due to large sample sizes, they are limited in their ability to capture complex cognitive processes within individuals.\nIn contrast to quantitative methods, qualitative approaches such as semi-structured cognitive interviews provide deeper insights into participants’ thought patterns. However, the high cost of such studies often limits sample size and scalability, which affects general validity, generalizability, and the ability to account for differences between subgroups.\nIntegrating the strengths of both methods can significantly improve survey research by enabling a holistic understanding of phenomena while simultaneously leveraging the benefits of quantitative validation. However, combining both approaches presents a challenge.\nThe AI-SIC project contributes by developing an AI-based approach for semi-automatic coding using an active learning strategy. This involves combining machine coding algorithms with human coding skills. Furthermore, new methods are applied to efficiently and thoroughly validate survey instruments in order to address research gaps concerning the already established measurement of self-rated health. This will help to close the gap between qualitative and quantitative methods and answer open questions about how children and their parents assess the health of children."
-  },
-  {
-    "objectID": "about.html#approach-and-methods",
-    "href": "about.html#approach-and-methods",
-    "title": "",
-    "section": "Approach and Methods",
-    "text": "Approach and Methods\nThe project is divided into four substantive work packages.\nThe first work package “Development of the semi-automatic coding framework InTraCo” (Dr. Andreas Niekler & Stephan Poppe; University of Leipzig) aims to methodologically and technically integrate language-based machine learning and reliable semi-automatic coding procedures into the toolbox of computer-assisted social sciences. The goal is to combine machine coding algorithms with human inductive coding skills to increase efficiency in coding extensive qualitative interview data.\nThe second work package “Application and Evaluation of InTraCo” (Dr. Andreas Niekler & Stephan Poppe; University of Leipzig) is dedicated to the application of the newly developed approach as well as its validation and adaptation.\nThe third work package “Exploring the self- and proxy-assessment strategies of children and parents” (Dr. Jacqueline Kroh; LIfBi) utilizes the highly complex data obtained and examines whether the new method can provide added value for content-related analyses using machine learning procedures. This is intended to gain a more comprehensive understanding of how both children and parents assess children’s health.\nThe fourth work package “Comparability of assessment strategies and results between self- and proxy-assessments of children and parents” (Prof. Dr. Julia Offenhammer-Tuppat; University of Leipzig) deepens the insights gained in work package three and investigates similarities and differences between various respondent groups in the children’s self-assessments and the parents’ proxy assessments of child health."
-  },
-  {
-    "objectID": "about.html#data-collection",
-    "href": "about.html#data-collection",
-    "title": "",
-    "section": "Data Collection",
-    "text": "Data Collection\nAI-SIC uses qualitative data and conducts cognitive interviews based on web-based as well as real face-to-face interviews."
-  },
-  {
-    "objectID": "about.html#project-profile",
-    "href": "about.html#project-profile",
-    "title": "",
-    "section": "Project Profile",
-    "text": "Project Profile\n\n\nProject Leadership and Proposal Submission: Dr. Jacqueline Kroh (LIfBi), Dr. Andreas Niekler (University of Leipzig), Dr. Stephan Poppe (University of Leipzig), Prof. Dr. Julia Offenhammer-Tuppat (University of Leipzig)\n\n\nProject Duration: 09/2024 - 06/2028\n\n\nFunding: German Research Foundation (DFG)\n\n\nProject-Website: ai-sic.github.io,\n\n\nInfPP-Website: www.new-data-spaces.de/en-us/Start/Projects/AI-SIC"
-  },
-  {
-    "objectID": "about.html#project-staff",
-    "href": "about.html#project-staff",
-    "title": "",
-    "section": "Project Staff",
-    "text": "Project Staff\n\nDr. Andreas Niekler\nDr. Jacqueline Kroh\nDr. Stephan Poppe\nProf. Dr. Julia Offenhammer-Tuppat\nNicolas Ruth\nLeonie Steinbrinker\nDonata Perakis\nPeter Kannewitz\nNiklas Ippisch"
-  },
-  {
-    "objectID": "contact.html",
-    "href": "contact.html",
-    "title": "Contact",
-    "section": "",
-    "text": "Contact\nGitHub\nE-Mail: aniekler@informatik.uni-leipzig.de"
-  },
-  {
-    "objectID": "pdf/datenschutz/index.html",
-    "href": "pdf/datenschutz/index.html",
-    "title": "Data protection",
-    "section": "",
-    "text": "Information\nLorem ipsum hier irgendein Text, vielleicht braucht es auch gar nicht das pdf sondern nur den Text, das weiß ich noch nicht??\n\n\n\n\nAnschreiben Text\nLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "AI Enhanced Validation of Survey Instruments",
-    "section": "",
-    "text": "AI Enhanced Validation of Survey Instruments\n\nGitHub\n\n\nIntegrating Semi-Automated Methods in Cognitive Interviews for Children’s Self- and Proxy Assessments of Health (AI-SIC).  → more about\n\n\n\n\n\n\n\nArticles\n\n\n\n\n\n\n\n\n\n\nEvaluating Active Learning Setups for Qualitative Interview Coding\n\n\nResults from a systematic comparison of active learning setups for qualitative coding.\n\n\n\nJan 16, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nEvaluating Automatic Speech Recognition (ASR) for Social Science Research: A Comparison of Semantic Metrics\n\n\nAn extended version of our ESRA talk.\n\n\n\nAug 11, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nSilicon Interviews: A Two-Agent Interview Simulation\n\n\n\n\n\n\nApr 10, 2025\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "participation.html",
-    "href": "participation.html",
-    "title": "Contact",
-    "section": "",
-    "text": "Data protection\n\n\n\n\n\n\n\n\n\n\n\n\nInvitation letter\n\n\n\n\n\nNo matching items\n\nParticipate\n\n\nDear families,\nThank you for your interest in our AI-SIC study! We are very pleased that you visited our website and took the time to learn more about the project.\nIf you wish, you can consider participating in one of our interviews at any time. Each family that actually participates will receive a voucher worth €10 as a thank-you.\nYou are also welcome to share our flyer with other interested families in your network. For each family who registers for an interview based on your recommendation, you will receive a €5 voucher as a token of our appreciation.\nAll important information about the study and the possibility to contact us directly can be found on this page.\nThank you for your support – your contribution is invaluable in helping us gain important insights through our research. If you have any questions or would like further information, please feel free to contact us at any time.\nKind regards, Your AI-SIC team\n\nContact\nContact and project lead LIfBi:\nDr. Jacqueline Kroh 📞 +49 951 700600-25 📧 jacqueline.kroh@lifbi.de\nProject lead Leipzig University:\nDr. Andreas Niekler, Dr. Stephan Poppe, Prof. Dr. Julia Tuppat\nContact Leizig University:\nDr. Stephan Poppe 📞 +49 951 700600-25 📧 stephan.poppe@uni-leipzig.de"
-  },
-  {
-    "objectID": "pdf/index.html",
-    "href": "pdf/index.html",
-    "title": "Participation information",
-    "section": "",
-    "text": "Participation information\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nData protection\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nInvitation letter\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "pdf/anschreiben/index.html",
-    "href": "pdf/anschreiben/index.html",
-    "title": "Invitation letter",
-    "section": "",
-    "text": "Lorem ipsum hier irgendein Text, vielleicht braucht es auch gar nicht das pdf sondern nur den Text, das weiß ich noch nicht??\n\n\n\nAnschreiben Text\nLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
-  },
-  {
-    "objectID": "privacy-statement.html",
-    "href": "privacy-statement.html",
-    "title": "Privacy Statement",
-    "section": "",
-    "text": "We appreciate your interest in using our website. The protection of personal data is our highest priority. Below, you will find information concerning the processing of your personal data and your rights when using our website.\n\n\nAI-SIC  Computational Humanities  University of Leipzig  Augustusplatz 10, Raum P 616  04109 Leipzig  Phone: +49 341 97-232239  E-Mail: aniekler@informatik.uni-leipzig.de \n\n\n\n\nYou have the following rights under the GDPR:\n\nRight of access (Art. 15 GDPR)\nRight to rectification (Art. 16 GDPR)\nRight to erasure (“right to be forgotten”) (Art. 17 GDPR)\nRight to restriction of processing (Art. 18 GDPR)\nRight to data portability (Art. 20 GDPR)\nRight to object (Art. 21 GDPR)\n\nYou also have the right to lodge a complaint with a data protection supervisory authority, especially in the EU Member State of your habitual residence, place of work, or place of the alleged infringement.\n\n\n\nWe do not collect personal data unless it is necessary to provide the website.\n\n\n\nOur website is hosted by GitHub Pages, a service provided by GitHub Inc., San Francisco, USA. When you access our website, certain information is automatically transmitted by your browser and may be stored in server log files, including:\n\nIP address\nDate and time of the request\nBrowser type and version\nOperating system\nReferrer URL (if applicable)\n\nFor more information on GitHub’s data processing, please refer to their privacy policy:\nhttps://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement\n\n\n\nOur website does not use cookies or any form of tracking or analytics tools.\n\n\n\nNo automated decision-making, including profiling as defined in Article 22 of the GDPR, takes place in connection with the use of our website."
-  },
-  {
-    "objectID": "privacy-statement.html#controller",
-    "href": "privacy-statement.html#controller",
-    "title": "Privacy Statement",
-    "section": "",
-    "text": "AI-SIC  Computational Humanities  University of Leipzig  Augustusplatz 10, Raum P 616  04109 Leipzig  Phone: +49 341 97-232239  E-Mail: aniekler@informatik.uni-leipzig.de"
-  },
-  {
-    "objectID": "privacy-statement.html#your-rights-as-a-data-subject",
-    "href": "privacy-statement.html#your-rights-as-a-data-subject",
-    "title": "Privacy Statement",
-    "section": "",
-    "text": "You have the following rights under the GDPR:\n\nRight of access (Art. 15 GDPR)\nRight to rectification (Art. 16 GDPR)\nRight to erasure (“right to be forgotten”) (Art. 17 GDPR)\nRight to restriction of processing (Art. 18 GDPR)\nRight to data portability (Art. 20 GDPR)\nRight to object (Art. 21 GDPR)\n\nYou also have the right to lodge a complaint with a data protection supervisory authority, especially in the EU Member State of your habitual residence, place of work, or place of the alleged infringement."
-  },
-  {
-    "objectID": "privacy-statement.html#purpose-and-legal-basis-of-processing",
-    "href": "privacy-statement.html#purpose-and-legal-basis-of-processing",
-    "title": "Privacy Statement",
-    "section": "",
-    "text": "We do not collect personal data unless it is necessary to provide the website."
-  },
-  {
-    "objectID": "privacy-statement.html#hosting-and-log-files",
-    "href": "privacy-statement.html#hosting-and-log-files",
-    "title": "Privacy Statement",
-    "section": "",
-    "text": "Our website is hosted by GitHub Pages, a service provided by GitHub Inc., San Francisco, USA. When you access our website, certain information is automatically transmitted by your browser and may be stored in server log files, including:\n\nIP address\nDate and time of the request\nBrowser type and version\nOperating system\nReferrer URL (if applicable)\n\nFor more information on GitHub’s data processing, please refer to their privacy policy:\nhttps://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement"
-  },
-  {
-    "objectID": "privacy-statement.html#cookies-and-tracking",
-    "href": "privacy-statement.html#cookies-and-tracking",
-    "title": "Privacy Statement",
-    "section": "",
-    "text": "Our website does not use cookies or any form of tracking or analytics tools."
-  },
-  {
-    "objectID": "privacy-statement.html#automated-decision-making-including-profiling",
-    "href": "privacy-statement.html#automated-decision-making-including-profiling",
-    "title": "Privacy Statement",
-    "section": "",
-    "text": "No automated decision-making, including profiling as defined in Article 22 of the GDPR, takes place in connection with the use of our website."
-  },
-  {
-    "objectID": "imprint.html",
-    "href": "imprint.html",
-    "title": "Imprint",
-    "section": "",
-    "text": "Imprint\nDr. Andreas Niekler  Computational Humanities  Paulinum  Augustusplatz 10, Raum P 616  04109 Leipzig  Germany \nPhone: +49 341 97-232239  E-Mail: aniekler@informatik.uni-leipzig.de"
-  },
-  {
-    "objectID": "de/participation.html",
-    "href": "de/participation.html",
-    "title": "Teilnahme an der Studie",
-    "section": "",
-    "text": "Datenschutz\n\n\n\n\n\n\n\n\n\n\n\n\nFlyer\n\n\n\n\n\n\n\n\n\n\n\n\nAnschreiben\n\n\n\n\n\nNo matching items\n\nZur Anmeldung\n\n\nTeilnahme an der Studie\nLiebe Familien,\nvielen Dank, dass Sie sich für unsere Studie AI-SIC interessieren! Wir freuen uns sehr, dass Sie unsere Webseite besucht und sich über das Projekt informiert haben.\nWenn Sie möchten, können Sie sich jederzeit überlegen, an einem unserer Interviews teilzunehmen. Für jede Familie, die tatsächlich teilnimmt, gibt es einen Wunschgutschein im Wert von 10 € als Dankeschön.\nZusätzlich können Sie diese Seite gerne an andere interessierte Familien in Ihrem Umfeld weiterleiten. Für jede Familie, die sich auf Ihre Empfehlung hin zu einem Interview anmeldet, erhalten Sie als Dankeschön einen Wunschgutschein im Wert von 5 €\nAlle wichtigen Informationen zur Studie und die Möglichkeit, direkt mit uns in Kontakt zu treten, finden Sie hier auf dieser Seite.\nMit Ihrer Unterstützung leisten Sie einen wichtigen Beitrag zu unserer Forschung – dafür sagen wir ganz herzlich Danke! Bei Fragen oder wenn Sie weitere Informationen benötigen, melden Sie sich jederzeit gern bei uns.\nHerzliche Grüße\nIhr Studienteam\n\nAnsprechpartnerinnen\nProjektkoordination am LIfBi und Ansprechpartnerin:\nDr. Jacqueline Kroh\n📞 +49 951 700600-25\n📧 jacqueline.kroh@lifbi.de\nProjektkoordination der Universität Leipzig:\nDr. Andreas Niekler, Dr. Stephan Poppe, Prof. Dr. Julia Tuppat\nAnsprechpartner der Universität Leipzig:\nDr. Stephan Poppe\n📞 +49 951 700600-25\n📧 stephan.poppe@uni-leipzig.de"
-  },
-  {
-    "objectID": "de/pdf/index.html",
-    "href": "de/pdf/index.html",
-    "title": "Informationen zur Teilnahme an der Umfrage",
-    "section": "",
-    "text": "Informationen zur Teilnahme an der Umfrage\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDatenschutz\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFlyer\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAnschreiben\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "de/pdf/flyer/index.html",
-    "href": "de/pdf/flyer/index.html",
-    "title": "Flyer",
-    "section": "",
-    "text": "Als PDF herunterladen"
-  },
-  {
-    "objectID": "de/contact.html",
-    "href": "de/contact.html",
-    "title": "Kontakt",
-    "section": "",
-    "text": "Kontakt\nGitHub\nE-Mail: aniekler@informatik.uni-leipzig.de"
-  },
-  {
-    "objectID": "de/about.html",
-    "href": "de/about.html",
-    "title": "",
-    "section": "",
-    "text": "Das Projekt zielt darauf ab, die Analyse kognitiver Interviews effizienter zu gestalten, indem menschliches Fachwissen mit innovativen KI-basierten Kodierungsmethoden kombiniert wird, wodurch die Reichweite der Methode erweitert wird. Darüber hinaus trägt das Projekt dazu bei zu verstehen, wie Kinder und Eltern die Gesundheit ihrer Kinder in groß angelegten Studien einschätzen. Zu diesem Zweck werden mögliche Unterschiede in den Strategien zur Gesundheitseinschätzung zwischen den Befragtengruppen untersucht und systematische Variationen nach Alter und Geschlecht identifiziert."
-  },
-  {
-    "objectID": "de/about.html#projektziel",
-    "href": "de/about.html#projektziel",
-    "title": "",
-    "section": "",
-    "text": "Das Projekt zielt darauf ab, die Analyse kognitiver Interviews effizienter zu gestalten, indem menschliches Fachwissen mit innovativen KI-basierten Kodierungsmethoden kombiniert wird, wodurch die Reichweite der Methode erweitert wird. Darüber hinaus trägt das Projekt dazu bei zu verstehen, wie Kinder und Eltern die Gesundheit ihrer Kinder in groß angelegten Studien einschätzen. Zu diesem Zweck werden mögliche Unterschiede in den Strategien zur Gesundheitseinschätzung zwischen den Befragtengruppen untersucht und systematische Variationen nach Alter und Geschlecht identifiziert."
-  },
-  {
-    "objectID": "de/about.html#hintergrund",
-    "href": "de/about.html#hintergrund",
-    "title": "",
-    "section": "Hintergrund",
-    "text": "Hintergrund\nUm die Qualität der Umfrageforschung zu gewährleisten, werden die Erhebungsinstrumente sowohl mit qualitativen als auch mit quantitativen Methoden validiert. Beide Ansätze sind jedoch mit Einschränkungen verbunden. Während quantitative Analysen aufgrund großer Stichprobengrößen effizient verallgemeinerbare Beziehungen zwischen verschiedenen Konzepten und systematische Unterschiede zwischen den Befragten aufdecken können, sind sie nur begrenzt in der Lage, komplexe kognitive Prozesse innerhalb von Personen zu erfassen.\nIm Gegensatz zu quantitativen Methoden bieten qualitative Ansätze wie halbstrukturierte kognitive Interviews tiefere Einblicke in die Denkmuster der Teilnehmer. Die hohen Kosten solcher Studien schränken jedoch häufig die Stichprobengröße und die Skalierbarkeit ein, was die allgemeine Gültigkeit, die Verallgemeinerbarkeit und die Fähigkeit, Unterschiede zwischen Untergruppen zu berücksichtigen, beeinträchtigt.\nDie Integration der Stärken beider Methoden kann die Umfrageforschung erheblich verbessern, indem sie ein ganzheitliches Verständnis der Phänomene ermöglicht und gleichzeitig die Vorteile der quantitativen Validierung nutzt. Die Kombination beider Ansätze stellt jedoch eine Herausforderung dar.\nDas AI-SIC-Projekt trägt dazu bei, indem es einen KI-basierten Ansatz für halbautomatische Kodierung unter Verwendung einer aktiven Lernstrategie entwickelt. Dabei werden maschinelle Kodieralgorithmen mit menschlichen Kodierfähigkeiten kombiniert. Darüber hinaus werden neue Methoden zur effizienten und gründlichen Validierung von Erhebungsinstrumenten eingesetzt, um Forschungslücken bei der bereits etablierten Messung der selbst eingeschätzten Gesundheit zu schließen. Dies wird dazu beitragen, die Lücke zwischen qualitativen und quantitativen Methoden zu schließen und offene Fragen darüber zu beantworten, wie Kinder und ihre Eltern die Gesundheit von Kindern einschätzen."
-  },
-  {
-    "objectID": "de/about.html#vorgehen-und-methoden",
-    "href": "de/about.html#vorgehen-und-methoden",
-    "title": "",
-    "section": "Vorgehen und Methoden",
-    "text": "Vorgehen und Methoden\nDas Projekt ist in vier inhaltliche Arbeitspakete unterteilt.\nDas erste Arbeitspaket „Entwicklung des halbautomatischen Kodierframeworks InTraCo “ (Dr. Andreas Niekler & Stephan Poppe; Universität Leipzig) zielt darauf ab, sprachbasiertes maschinelles Lernen und zuverlässige halbautomatische Kodierverfahren methodisch und technisch in den Werkzeugkasten der computergestützten Sozialwissenschaften zu integrieren. Ziel ist es, maschinelle Kodieralgorithmen mit menschlichen induktiven Kodierfähigkeiten zu kombinieren, um die Effizienz bei der Kodierung umfangreicher qualitativer Interviewdaten zu erhöhen.\nDas zweite Arbeitspaket „Anwendung und Evaluation von InTraCo “ (Dr. Andreas Niekler & Stephan Poppe; Universität Leipzig) widmet sich der Anwendung des neu entwickelten Ansatzes sowie dessen Validierung und Anpassung.\nDas dritte Arbeitspaket „Exploring the self- and proxy-assessment strategies of children and parents “ (Dr. Jacqueline Kroh; LIfBi) nutzt die gewonnenen hochkomplexen Daten und untersucht, ob die neue Methode einen Mehrwert für inhaltsbezogene Analysen mit maschinellen Lernverfahren liefern kann. Damit soll ein umfassenderes Verständnis dafür gewonnen werden, wie Kinder und Eltern die Gesundheit ihrer Kinder einschätzen.\nDas vierte Arbeitspaket „Vergleichbarkeit von Einschätzungsstrategien und Ergebnissen zwischen Selbst- und Proxy-Einschätzungen von Kindern und Eltern “ (Prof. Dr. Julia Offenhammer-Tuppat; Universität Leipzig) vertieft die in Arbeitspaket drei gewonnenen Erkenntnisse und untersucht Gemeinsamkeiten und Unterschiede zwischen verschiedenen Befragtengruppen bei den Selbsteinschätzungen der Kinder und den Proxy-Einschätzungen der Eltern zur Kindergesundheit."
-  },
-  {
-    "objectID": "de/about.html#datenerhebung",
-    "href": "de/about.html#datenerhebung",
-    "title": "",
-    "section": "Datenerhebung",
-    "text": "Datenerhebung\nAI-SIC verwendet qualitative Daten und führt kognitive Interviews auf der Grundlage von webbasierten und realen persönlichen Interviews durch."
-  },
-  {
-    "objectID": "de/about.html#projektprofil",
-    "href": "de/about.html#projektprofil",
-    "title": "",
-    "section": "Projektprofil",
-    "text": "Projektprofil\n\n\nProjektführung and Antragseinreichung: Dr. Jacqueline Kroh (LIfBi), Dr. Andreas Niekler (Universität Leipzig), Dr. Stephan Poppe (Universität Leipzig), Prof. Dr. Julia Offenhammer-Tuppat (Universität Leipzig)\n\n\nProjektdauer: 09/2024 - 06/2028\n\n\nProjektförderung: Deutsche Forschungsgemeinschaft (DFG)\n\n\nProjektwebseite: ai-sic.github.io\n\n\nInfPP-Webseite: www.new-data-spaces.de/en-us/Start/Projects/AI-SIC"
-  },
-  {
-    "objectID": "de/about.html#team",
-    "href": "de/about.html#team",
-    "title": "",
-    "section": "Team",
-    "text": "Team\n\nDr. Andreas Niekler\nDr. Jacqueline Kroh\nDr. Stephan Poppe\nProf. Dr. Julia Offenhammer-Tuppat\nNicolas Ruth\nLeonie Steinbrinker\nDonata Perakis\nPeter Kannewitz\nNiklas Ippisch"
-  },
-  {
-    "objectID": "de/articles/index.html",
-    "href": "de/articles/index.html",
-    "title": "Artikel (Englisch)",
-    "section": "",
-    "text": "Artikel (Englisch)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEvaluating Active Learning Setups for Qualitative Interview Coding\n\n\nResults from a systematic comparison of active learning setups for qualitative coding.\n\n\n\n\n\nJan 16, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nEvaluating ASR for Social Science Research: A Comparison of Semantic Metrics\n\n\n\n\n\n\n\n\nApr 11, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nSilicon Interviews: A Two-Agent Interview Simulation\n\n\n\n\n\n\n\n\nApr 10, 2025\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "de/articles/esra_transcription_evaluation/index.html",
-    "href": "de/articles/esra_transcription_evaluation/index.html",
-    "title": "Evaluating ASR for Social Science Research: A Comparison of Semantic Metrics",
-    "section": "",
-    "text": "Planned talk for the ESRA Conference. Shortly, we will publish an article related to our research. For now, you can find the abstract of the talk here.\n\nAbstract\nAutomatic Speech Recognition (ASR) is an essential technology for automating the transcription of qualitative data in social science research, particularly with large interview datasets. Recent advancements in ASR have introduced powerful new tools to the field, but their implementation requires careful and thoughtful consideration to ensure reliability and accuracy. Since outcomes vary significantly depending on the model and its (hyper-)parametrization, it is crucial to evaluate the generalization capabilities of ASR models on specific research data using a meaningful and comparable metric. Addressing these challenges will enable social scientists to effectively leverage these technologies in their research.\nThe most commonly used metric for this purpose is the Word Error Rate (WER). WER depends on specific language-specific text transformations and focuses on surface-level accuracy, making it inadequate for evaluating transcript quality in social sciences and downstream NLP tasks. To address limitations, modern, semantics-oriented metrics have been developed in recent years. Metrics such as Embedding Error Rate (EmbER) and Semantic-WER apply penalties for different types of errors, while methods like BERTScore, SeMaScore, SemDist, and Aligned Semantic Distance (ASD) improve evaluation by utilizing contextual embeddings and advanced matching techniques to assess semantic similarity.\nOur research centers on comparing the usability of these semantic metrics for ASR in social sciences and developing a more intuitive approach for analyzing semantic differences in ASR transcriptions using aligned window-based semantic comparison, as opposed to relying on traditional singular value metrics. The proposed talk is not only designed to improve the quality of individual research projects but also to contribute to the creation of new data spaces for the social sciences, where ASR is a fundamental technology. Only when developing robust methods for evaluating and utilizing ASR, we can unlock the potential of large-scale qualitative datasets, opening up new avenues for research and analysis."
   },
   {
     "objectID": "de/einverstaendnis.html",
@@ -476,6 +476,41 @@
     "text": "Über den untenstehenden Link gelangen Sie zum Online-Formular für die Einverständniserklärung. Bitte füllen Sie das Formular für sich aus und tragen Sie dort auch Ihre Kontaktinformationen ein, damit wir Sie für die weitere Organisation des Interviews erreichen können.\nFalls Ihr Kind 13 Jahre oder älter ist, füllt Ihr Kind zusätzlich ein eigenes Einverständnisformular aus.\nIhre Angaben werden über eine geschützte Verbindung an uns übermittelt und nur für die Organisation und Durchführung der Interviews verwendet. Nach Abschluss der Befragung werden Ihre Kontaktdaten spätestens am 31.03.2026 gelöscht.\nWie geht es nach dem Absenden weiter? Nach Eingang Ihrer Einverständniserklärung wird sich eine Interviewerin oder ein Interviewer bei Ihnen melden, um einen Termin für das Videointerview zu vereinbaren. Anschließend erhalten Sie eine Bestätigung per E-Mail mit allen wichtigen Informationen sowie dem Zugangslink zum Videointerview. Zum vereinbarten Termin müssen Sie dann lediglich über diesen Link dem Videointerview beitreten."
   },
   {
+    "objectID": "de/articles/index.html",
+    "href": "de/articles/index.html",
+    "title": "Artikel (Englisch)",
+    "section": "",
+    "text": "Artikel (Englisch)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEvaluating Active Learning Setups for Qualitative Interview Coding\n\n\nResults from a systematic comparison of active learning setups for qualitative coding.\n\n\n\n\n\nJan 16, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nEvaluating ASR for Social Science Research: A Comparison of Semantic Metrics\n\n\n\n\n\n\n\n\nApr 11, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nSilicon Interviews: A Two-Agent Interview Simulation\n\n\n\n\n\n\n\n\nApr 10, 2025\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "de/articles/esra_silicon_interviews/index.html",
+    "href": "de/articles/esra_silicon_interviews/index.html",
+    "title": "Silicon Interviews: A Two-Agent Interview Simulation",
+    "section": "",
+    "text": "Planned talk for the ESRA Conference. Shortly, we will publish an article related to our research. For now, you can find the abstract of the talk here.\n\nAbstract\nSelecting an appropriate measurement instrument in social science survey research presents researchers with a fundamental trade-off between depth and scalability. The emergence of Large Language Models (LLMs), with their diverse applications and enhanced user-friendliness, opens new possibilities for social science research methodology. While recent research has primarily focused on whether LLMs can replace human respondents through so-called silicon samples, less attention has been paid to their potential to also replace interviewers. Early findings suggest that AI interviewers can surpass humans in specific tasks, such as active listening, while also reducing biases resulting from reactivity and social desirability effects, but their capabilities remain underexplored.\nOur study takes a novel approach: simulating AI-AI interactions, where LLMs act as both interviewers and respondents in semi-structured interview settings. This dual-simulation framework enables us to rigorously test and refine interviewing methodologies while addressing the dynamic nature of human interactions, which are inherently unpredictable and context-dependent. As a test case, we simulate interviews with children—a particularly challenging context that demands empathetic and adaptive interviewing techniques. By adhering to established guidelines for interviewing children, we evaluate LLMs on their ability to generate dynamic follow-up questions, maintain conversational flow, and exhibit algorithmic fidelity in both roles, modeling complex human interactions.\nBeyond addressing common methodological challenges, such as social desirability biases and subjective inconsistencies, our framework offers a scalable solution for testing and refining interview methodologies. Generating ‘silicon interviews’, enables the development and refinement of downstream tasks, such as computational coding and analysis, by providing more robust large-scale datasets. Our findings underscore the potential of AI-driven simulations to advance survey research by bridging methodological gaps, reducing costs, and enhancing the scalability of interview-based research, thereby easing the trade-off between large-scale surveys and semi-structured interviews."
+  },
+  {
+    "objectID": "de/participation.html",
+    "href": "de/participation.html",
+    "title": "Teilnahme an der Studie",
+    "section": "",
+    "text": "Anschreiben\n\n\n\n\n\n\n\n\n\n\n\n\nFlyer\n\n\n\n\n\n\n\n\n\n\n\n\nDatenschutz\n\n\n\n\n\nNo matching items\n\nZur Anmeldung\n\n\nTeilnahme an der Studie\nLiebe Familien,\nvielen Dank, dass Sie sich für unsere Studie AI-SIC interessieren! Wir freuen uns sehr, dass Sie unsere Webseite besucht und sich über das Projekt informiert haben.\nWenn Sie möchten, können Sie sich jederzeit überlegen, an einem unserer Interviews teilzunehmen. Für jede Familie, die tatsächlich teilnimmt, gibt es einen Wunschgutschein im Wert von 10 € als Dankeschön.\nZusätzlich können Sie diese Seite gerne an andere interessierte Familien in Ihrem Umfeld weiterleiten. Für jede Familie, die sich auf Ihre Empfehlung hin zu einem Interview anmeldet, erhalten Sie als Dankeschön einen Wunschgutschein im Wert von 5 €\nAlle wichtigen Informationen zur Studie und die Möglichkeit, direkt mit uns in Kontakt zu treten, finden Sie hier auf dieser Seite.\nMit Ihrer Unterstützung leisten Sie einen wichtigen Beitrag zu unserer Forschung – dafür sagen wir ganz herzlich Danke! Bei Fragen oder wenn Sie weitere Informationen benötigen, melden Sie sich jederzeit gern bei uns.\nHerzliche Grüße\nIhr Studienteam\n\nAnsprechpartnerinnen\nProjektkoordination am LIfBi und Ansprechpartnerin:\nDr. Jacqueline Kroh\n📞 +49 951 700600-25\n📧 jacqueline.kroh@lifbi.de\nProjektkoordination der Universität Leipzig:\nDr. Andreas Niekler, Dr. Stephan Poppe, Prof. Dr. Julia Tuppat\nAnsprechpartner der Universität Leipzig:\nDr. Stephan Poppe\n📞 +49 951 700600-25\n📧 stephan.poppe@uni-leipzig.de"
+  },
+  {
+    "objectID": "einverstaendnis.html",
+    "href": "einverstaendnis.html",
+    "title": "Danke tschüss",
+    "section": "",
+    "text": "Danke tschüss"
+  },
+  {
+    "objectID": "articles/index.html",
+    "href": "articles/index.html",
+    "title": "Articles",
+    "section": "",
+    "text": "Articles\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEvaluating Active Learning Setups for Qualitative Interview Coding\n\n\nResults from a systematic comparison of active learning setups for qualitative coding.\n\n\n\n\n\nJan 16, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nEvaluating Automatic Speech Recognition (ASR) for Social Science Research: A Comparison of Semantic Metrics\n\n\nAn extended version of our ESRA talk.\n\n\n\n\n\nAug 11, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nSilicon Interviews: A Two-Agent Interview Simulation\n\n\n\n\n\n\n\n\nApr 10, 2025\n\n\n\n\n\nNo matching items"
+  },
+  {
     "objectID": "articles/esra_silicon_interviews/index.html",
     "href": "articles/esra_silicon_interviews/index.html",
     "title": "Silicon Interviews: A Two-Agent Interview Simulation",
@@ -483,45 +518,10 @@
     "text": "Planned talk for the ESRA Conference. Shortly, we will publish an article related to our research. For now, you can find the abstract of the talk here.\n\nAbstract\nSelecting an appropriate measurement instrument in social science survey research presents researchers with a fundamental trade-off between depth and scalability. The emergence of Large Language Models (LLMs), with their diverse applications and enhanced user-friendliness, opens new possibilities for social science research methodology. While recent research has primarily focused on whether LLMs can replace human respondents through so-called silicon samples, less attention has been paid to their potential to also replace interviewers. Early findings suggest that AI interviewers can surpass humans in specific tasks, such as active listening, while also reducing biases resulting from reactivity and social desirability effects, but their capabilities remain underexplored.\nOur study takes a novel approach: simulating AI-AI interactions, where LLMs act as both interviewers and respondents in semi-structured interview settings. This dual-simulation framework enables us to rigorously test and refine interviewing methodologies while addressing the dynamic nature of human interactions, which are inherently unpredictable and context-dependent. As a test case, we simulate interviews with children—a particularly challenging context that demands empathetic and adaptive interviewing techniques. By adhering to established guidelines for interviewing children, we evaluate LLMs on their ability to generate dynamic follow-up questions, maintain conversational flow, and exhibit algorithmic fidelity in both roles, modeling complex human interactions.\nBeyond addressing common methodological challenges, such as social desirability biases and subjective inconsistencies, our framework offers a scalable solution for testing and refining interview methodologies. Generating ‘silicon interviews’, enables the development and refinement of downstream tasks, such as computational coding and analysis, by providing more robust large-scale datasets. Our findings underscore the potential of AI-driven simulations to advance survey research by bridging methodological gaps, reducing costs, and enhancing the scalability of interview-based research, thereby easing the trade-off between large-scale surveys and semi-structured interviews."
   },
   {
-    "objectID": "articles/active_learning_experiments/index.html",
-    "href": "articles/active_learning_experiments/index.html",
-    "title": "Evaluating Active Learning Setups for Qualitative Interview Coding",
+    "objectID": "participation.html",
+    "href": "participation.html",
+    "title": "Contact",
     "section": "",
-    "text": "After completing our preliminary work on transcription, we can now shift focus to the next task: coding our interviews. The aim is to assign labels to interview segments that reflect our dimensions of interest. To align our methodological approach with the needs of our sociological researchers, we decided to use active learning for the labeling process.\nActive learning enables human intervention during coding while simultaneously training a machine learning model. Over time, this model can support – and potentially partially automate – the coding process. In this short research notice, we present our findings on different active learning configurations and explain how we identified a suitable setup for our use case."
-  },
-  {
-    "objectID": "articles/active_learning_experiments/index.html#background",
-    "href": "articles/active_learning_experiments/index.html#background",
-    "title": "Evaluating Active Learning Setups for Qualitative Interview Coding",
-    "section": "",
-    "text": "After completing our preliminary work on transcription, we can now shift focus to the next task: coding our interviews. The aim is to assign labels to interview segments that reflect our dimensions of interest. To align our methodological approach with the needs of our sociological researchers, we decided to use active learning for the labeling process.\nActive learning enables human intervention during coding while simultaneously training a machine learning model. Over time, this model can support – and potentially partially automate – the coding process. In this short research notice, we present our findings on different active learning configurations and explain how we identified a suitable setup for our use case."
-  },
-  {
-    "objectID": "articles/active_learning_experiments/index.html#test-setting",
-    "href": "articles/active_learning_experiments/index.html#test-setting",
-    "title": "Evaluating Active Learning Setups for Qualitative Interview Coding",
-    "section": "Test Setting",
-    "text": "Test Setting\nActive learning refers to an iterative learning setup in which an ML model is trained repeatedly. In each iteration, annotators label examples that are expected to be particularly informative for deciding whether a given label should be assigned. The model is then retrained, and a new batch of examples is selected. The overarching goal is to minimize the total number of labeled examples required.\nWe implemented our experiments using the small-text active learning framework in Python, which offers a wide range of configuration options.\n\nData, Annotation, and Evaluation Strategy\nBefore involving expert coders in annotating the final interview data, we conducted experiments on synthetic interviews to establish baseline practices. These interviews were generated in an AI-to-AI interview setting, where roles, socio-demographic characteristics, and interview guidelines were provided as context.1\nFrom these interviews, we constructed training and test splits. For coding, we selected a small subset of codes that had already been used in a previous study by our team Kroh et al. (2023).\nDuring data preparation, it became clear that inter-coder agreement would be a central concern for evaluating model performance. A key question is whether a model trained on data labeled by one coder can be meaningfully evaluated on data labeled by another, especially if their interpretations of the codes differ. Even within annotations produced by the same coder, consistency cannot be taken for granted: perceptions of concepts may evolve during the labeling process, and subtle textual differences can lead to different label assignments.\nTo allow for later analysis of these effects, we tracked which coder labeled each example. For the experiments reported here, we restricted evaluation to a smaller subset of the test data annotated by a single coder, providing a more stable reference point.\n\n\nModel Architecture and Active Learning Configuration\nTurning to the technical setup, our task involves extracting nuanced information from natural language, making transformer-based models a natural choice. Within small-text, two transformer-based approaches are available: a token-level transformer integration (TransformerBasedClassificationFactory) and sentence transformers trained using the SetFit paradigm (SetFitClassificationFactory).\nOur experiments focus on sentence transformers, as prior work suggests they outperform the token-based approach in low-data scenarios Tunstall et al. (2022). Nevertheless, we included one standard transformer model for comparison. Since each interview segment may receive multiple codes, the task is formulated as a multi-label classification problem.\nIn addition to text representation, several configuration choices can influence model performance. Each model requires a classification head to map embeddings to label predictions. The default option is a logistic regression head implemented in sklearn. As an alternative, we evaluated a differentiable classification head implemented as a linear layer in torch. This option allows for end-to-end training of both the embedding model and the classifier and would later enable the computation of integrated gradients for token-level attribution scores.\nFor the differentiable head, we tested both full end-to-end training and a setup where embeddings were kept fixed and only the head was trained. Finally, we varied the query strategy that determines which samples are selected for annotation. We compared a prediction-entropy (PE) baseline with the more suitable CategoryVectorInconsistencyAndRanking (CVIAR) strategy, which is designed specifically for multi-label scenarios.\nFor each configuration, we simulated an active learning run by initializing the model with 20 labeled examples, followed by five iterations in which 25 additional examples were annotated. This resulted in 145 labeled samples per run. The total labeled data pool contained 210 examples, with each configuration selecting different subsets depending on model and query strategy.\nWe used MLflow to log model configurations, evaluation metrics, training times, and sample selection across iterations. All experiments were run on a SLURM cluster using four Tesla A100 GPUs with 32 GB of memory each, although substantially fewer resources are sufficient when running active learning in a fixed configuration."
-  },
-  {
-    "objectID": "articles/active_learning_experiments/index.html#results",
-    "href": "articles/active_learning_experiments/index.html#results",
-    "title": "Evaluating Active Learning Setups for Qualitative Interview Coding",
-    "section": "Results",
-    "text": "Results\nA clear pattern emerges from the results: configurations using a differentiable classification head perform substantially worse than those using a logistic regression head. This is most likely due to the small number of training examples available. Since such low-data conditions are typical in qualitative coding tasks, this finding suggests that differentiable heads are not well suited for our intended application.\nFigure 1 summarizes the performance of models using a differentiable head, while Figure 2 shows results for models with a logistic regression head. Performance is evaluated using the macro-averaged F1 score, which balances precision and recall across all codes.\nAcross almost all settings, the MiniLM model outperforms the newer e5 models – even when compared to the much larger 0.3B-parameter “Medium” variant. The choice of query strategy also has a consistent effect: CategoryVectorInconsistencyAndRanking outperforms entropy-based sampling in nearly every configuration.\nInterestingly, the baseline model performed reasonably well against the SetFit models.\n\n\n\n\nFig. 1: Macro F1 scores for model settings with a differentiable head.\n\n\n\n\n\n\n\nFig. 2: Macro F1 scores for model settings with logistic head.\n\n\n\nClass-wise performance provides additional insight (Figure 3). In particular, the categories “Mental Health” and “Unspecific” are difficult for the models to predict and strongly influence overall performance. This is also the reason why the baseline model ranks higher than other SetFit configurations, since it achieves higher scores for the harder-to-predict classes, but its performance for the other classes is overall still worse. The unequal class performance may indicate that some categories are too broadly defined or inconsistently annotated. Despite this, overall F1 scores are relatively high, which is encouraging given the complexity of the task.\n\n\n\n\nFig. 3: Class-wise F1 scores for model settings with logistic head and the baseline.\n\n\n\nTraining time is a crucial practical factor in active learning, as long delays between iterations disrupt the annotation workflow. As shown in Figure 4, training time largely scales with the number of model parameters. The configuration with the 0.3B e5-base model required the longest training time. In the SetFit framework, training time increases non-linearly because the number of contrastive training pairs grows quadratically with the number of training examples.\nFor the best-performing SetFit configuration (setfit_paraphrase-multilingual-MiniLM-L12-v2_default_CategoryVectorInconsistencyAndRanking), training time increases from roughly 30 seconds with 45 labeled examples to approximately 4 minutes when using the full set of 145 examples. Training the base model took only about two minutes in total.\n\n\n\n\nFig. 4: Training time per model configuration."
-  },
-  {
-    "objectID": "articles/active_learning_experiments/index.html#concluding-remarks",
-    "href": "articles/active_learning_experiments/index.html#concluding-remarks",
-    "title": "Evaluating Active Learning Setups for Qualitative Interview Coding",
-    "section": "Concluding Remarks",
-    "text": "Concluding Remarks\nBased on these experiments, differentiable classification heads do not appear to be a viable option for our use case. While they would offer additional interpretability through token-level attributions, their performance under low-data conditions is insufficient for practical coding workflows.\nAmong the tested configurations, the paraphrase-based MiniLM sentence transformer stands out as the most suitable “out-of-the-box” choice for our real interview data, combining strong predictive performance with relatively short training times.\nFor tasks where speedup weighs more heavily than performance, it also seems worth considering the baseline BERT model, since it dramatically reduces training time while the performance drop appears minor at first glance.\nAs we move to real-world annotation, monitoring class-wise performance and uncertainty estimates will be essential. At the same time, the extent to which a trained model can be interpreted as a reflection of an individual coder’s conceptual understanding remains an open and important question.\nFinally, while our experiments cover a broad range of settings, it is possible that relevant configurations were missed. We therefore welcome feedback from others working on similar problems. One promising direction for further experimentation is the multi-label strategy itself, as correlated codes may benefit from approaches beyond the default one-vs-rest formulation.\nThe code for these experiments is available at: https://github.com/AI-SIC/active-learning-experiments"
-  },
-  {
-    "objectID": "articles/active_learning_experiments/index.html#footnotes",
-    "href": "articles/active_learning_experiments/index.html#footnotes",
-    "title": "Evaluating Active Learning Setups for Qualitative Interview Coding",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nFor more information see our talk. A paper on the topic will also be published soon.↩︎"
+    "text": "Invitation letter\n\n\n\n\n\n\n\n\n\n\n\n\nData protection\n\n\n\n\n\nNo matching items\n\nParticipate\n\n\nDear families,\nThank you for your interest in our AI-SIC study! We are very pleased that you visited our website and took the time to learn more about the project.\nIf you wish, you can consider participating in one of our interviews at any time. Each family that actually participates will receive a voucher worth €10 as a thank-you.\nYou are also welcome to share our flyer with other interested families in your network. For each family who registers for an interview based on your recommendation, you will receive a €5 voucher as a token of our appreciation.\nAll important information about the study and the possibility to contact us directly can be found on this page.\nThank you for your support – your contribution is invaluable in helping us gain important insights through our research. If you have any questions or would like further information, please feel free to contact us at any time.\nKind regards, Your AI-SIC team\n\nContact\nContact and project lead LIfBi:\nDr. Jacqueline Kroh 📞 +49 951 700600-25 📧 jacqueline.kroh@lifbi.de\nProject lead Leipzig University:\nDr. Andreas Niekler, Dr. Stephan Poppe, Prof. Dr. Julia Tuppat\nContact Leizig University:\nDr. Stephan Poppe 📞 +49 951 700600-25 📧 stephan.poppe@uni-leipzig.de"
   }
 ]
