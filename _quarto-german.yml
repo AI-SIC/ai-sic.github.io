@@ -11,7 +11,7 @@ website:
     logo: /images/logo.png
     logo-alt: "logo"
     title: ""
-    collapse-below: xl
+    collapse-below: xxl
     right:
       - text: artikel
         href: de/articles/index.qmd
