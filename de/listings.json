@@ -1,33 +1,57 @@
 [
   {
-    "listing": "/pdf/index.html",
-    "items": [
-      "/pdf/anschreiben/index.html",
-      "/pdf/datenschutz/index.html"
-    ]
-  },
-  {
     "listing": "/index.html",
     "items": [
+      "/articles/transcription_insights/index.html",
+      "/articles/llm_pretests/index.html",
+      "/articles/concept_alignment_with_xai/index.html",
       "/articles/active_learning_experiments/index.html",
       "/articles/esra_transcription_evaluation/index.html",
       "/articles/esra_silicon_interviews/index.html"
     ]
   },
   {
-    "listing": "/de/index.html",
+    "listing": "/articles/index.html",
     "items": [
-      "/de/articles/active_learning_experiments/index.html",
-      "/de/articles/esra_transcription_evaluation/index.html",
-      "/de/articles/esra_silicon_interviews/index.html"
+      "/articles/transcription_insights/index.html",
+      "/articles/llm_pretests/index.html",
+      "/articles/concept_alignment_with_xai/index.html",
+      "/articles/active_learning_experiments/index.html",
+      "/articles/esra_transcription_evaluation/index.html",
+      "/articles/esra_silicon_interviews/index.html"
+    ]
+  },
+  {
+    "listing": "/pdf/index.html",
+    "items": [
+      "/pdf/datenschutz/index.html",
+      "/pdf/anschreiben/index.html"
     ]
   },
   {
     "listing": "/de/pdf/index.html",
     "items": [
+      "/de/pdf/datenschutz/index.html",
+      "/de/pdf/anschreiben/index.html",
+      "/de/pdf/flyer/index.html"
+    ]
+  },
+  {
+    "listing": "/de/participation.html",
+    "items": [
+      "/de/pdf/datenschutz/index.html",
+      "/de/pdf/anschreiben/index.html",
+      "/de/pdf/flyer/index.html"
+    ]
+  },
+  {
+    "listing": "/participation.html",
+    "items": [
+      "/de/pdf/datenschutz/index.html",
       "/de/pdf/anschreiben/index.html",
       "/de/pdf/flyer/index.html",
-      "/de/pdf/datenschutz/index.html"
+      "/pdf/datenschutz/index.html",
+      "/pdf/anschreiben/index.html"
     ]
   },
   {
@@ -39,29 +63,11 @@
     ]
   },
   {
-    "listing": "/de/participation.html",
+    "listing": "/de/index.html",
     "items": [
-      "/de/pdf/anschreiben/index.html",
-      "/de/pdf/flyer/index.html",
-      "/de/pdf/datenschutz/index.html"
-    ]
-  },
-  {
-    "listing": "/articles/index.html",
-    "items": [
-      "/articles/active_learning_experiments/index.html",
-      "/articles/esra_transcription_evaluation/index.html",
-      "/articles/esra_silicon_interviews/index.html"
-    ]
-  },
-  {
-    "listing": "/participation.html",
-    "items": [
-      "/pdf/anschreiben/index.html",
-      "/pdf/datenschutz/index.html",
-      "/de/pdf/anschreiben/index.html",
-      "/de/pdf/flyer/index.html",
-      "/de/pdf/datenschutz/index.html"
+      "/de/articles/active_learning_experiments/index.html",
+      "/de/articles/esra_transcription_evaluation/index.html",
+      "/de/articles/esra_silicon_interviews/index.html"
     ]
   }
 ]

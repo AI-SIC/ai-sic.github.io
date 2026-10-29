@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.27">
+<meta name="generator" content="quarto-1.10.19">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -12,10 +12,16 @@
 
 <title>Evaluating Automatic Speech Recognition (ASR) for Social Science Research: A Comparison of Semantic Metrics</title>
 <style>
-code{white-space: pre-wrap;}
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -27,7 +33,6 @@ ul.task-list li input[type="checkbox"] {
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
-  margin-bottom: 0em;
 }
 .hanging-indent div.csl-entry {
   margin-left:2em;
@@ -56,15 +61,14 @@ div.csl-indent {
 <link href="../../favicon.webp" rel="icon">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-4eb7e239ca26da02713e2dc800cef328.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-208f92dbd4a116460ad9533982ebe401.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -450,7 +454,7 @@ W_{\text{sub}} =
 </div>
 </div>
 <p>After obtaining the embedding vectors, BERTScore aligns reference and hypothesis tokens based on proximity in embedding space. Then, token-based cosine similarity is used to compute a similarity score between aligned tokens. This similarity is weighted by TF-IDF (Term Frequency-Inverse Document Frequency) to give more importance to terms that are more characteristic of the document.</p>
-<p>This idea is also employed by several other metrics that differ slightly in implementation. The <strong>Semantic Distance (SemDist)</strong> by <span class="citation" data-cites="kim_semantic_2021">Kim et al. (<a href="#ref-kim_semantic_2021" role="doc-biblioref">2021</a>)</span> uses sentence-level embeddings. The <strong>Aligned Semantic Distance (ASD)</strong> by <span class="citation" data-cites="rugayan_perceptual_2023">Rugayan, Salvi, and Svendsen (<a href="#ref-rugayan_perceptual_2023" role="doc-biblioref">2023</a>)</span> applies character-level alignment and weighs edit-level errors by semantic proximity of segments. The <strong>SeMaScore</strong> by <span class="citation" data-cites="sasindran_semascore_2024">Sasindran, Yelchuri, and Prabhakar (<a href="#ref-sasindran_semascore_2024" role="doc-biblioref">2024</a>)</span> uses dynamic programming for alignment, proceeding in a similar way as ASD. These are just a few examples highlighting key differences in semantic error metrics.</p>
+<p>This idea is also employed by several other metrics that differ slightly in implementation. The <strong>Semantic Distance (SemDist)</strong> by <span class="citation" data-cites="kim_semantic_2021">Kim et al. (<a href="#ref-kim_semantic_2021" role="doc-biblioref">2021</a>)</span> uses sentence-level embeddings. The <strong>Aligned Semantic Distance (ASD)</strong> by <span class="citation" data-cites="rugayan_perceptual_2023">Rugayan et al. (<a href="#ref-rugayan_perceptual_2023" role="doc-biblioref">2023</a>)</span> applies character-level alignment and weighs edit-level errors by semantic proximity of segments. The <strong>SeMaScore</strong> by <span class="citation" data-cites="sasindran_semascore_2024">Sasindran et al. (<a href="#ref-sasindran_semascore_2024" role="doc-biblioref">2024</a>)</span> uses dynamic programming for alignment, proceeding in a similar way as ASD. These are just a few examples highlighting key differences in semantic error metrics.</p>
 </section>
 </section>
 <section id="our-proposal-visually-aided-semantic-evaluation" class="level2">
@@ -496,27 +500,27 @@ W_{\text{sub}} =
 
 </section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
 <div id="ref-kim_semantic_2021" class="csl-entry" role="listitem">
-Kim, Suyoun, Abhinav Arora, Duc Le, Ching-Feng Yeh, Christian Fuegen, Ozlem Kalinli, and Michael L. Seltzer. 2021. <span>“Semantic <span>Distance</span>: <span>A</span> <span>New</span> <span>Metric</span> for <span>ASR</span> <span>Performance</span> <span>Analysis</span> <span>Towards</span> <span>Spoken</span> <span>Language</span> <span>Understanding</span>.”</span> In <em>Interspeech 2021</em>, 1977–81. ISCA. <a href="https://doi.org/10.21437/Interspeech.2021-1929">https://doi.org/10.21437/Interspeech.2021-1929</a>.
+Kim, Suyoun, Abhinav Arora, Duc Le, et al. 2021. <span>“Semantic <span>Distance</span>: <span>A</span> <span>New</span> <span>Metric</span> for <span>ASR</span> <span>Performance</span> <span>Analysis</span> <span>Towards</span> <span>Spoken</span> <span>Language</span> <span>Understanding</span>.”</span> <em>Interspeech 2021</em>, August, 1977–81. <a href="https://doi.org/10.21437/Interspeech.2021-1929">https://doi.org/10.21437/Interspeech.2021-1929</a>.
 </div>
 <div id="ref-radford_robust_2022" class="csl-entry" role="listitem">
-Radford, Alec, Jong Wook Kim, Tao Xu, Greg Brockman, Christine McLeavey, and Ilya Sutskever. 2022. <span>“Robust <span>Speech</span> <span>Recognition</span> via <span>Large</span>-<span>Scale</span> <span>Weak</span> <span>Supervision</span>.”</span> arXiv. <a href="http://arxiv.org/abs/2212.04356">http://arxiv.org/abs/2212.04356</a>.
+Radford, Alec, Jong Wook Kim, Tao Xu, Greg Brockman, Christine McLeavey, and Ilya Sutskever. 2022. <em>Robust <span>Speech</span> <span>Recognition</span> via <span>Large</span>-<span>Scale</span> <span>Weak</span> <span>Supervision</span></em>. arXiv. <a href="http://arxiv.org/abs/2212.04356">http://arxiv.org/abs/2212.04356</a>.
 </div>
 <div id="ref-roux_qualitative_2022" class="csl-entry" role="listitem">
-Roux, Thibault Bañeras, Mickael Rouvier, Jane Wottawa, and Richard Dufour. 2022. <span>“Qualitative <span>Evaluation</span> of <span>Language</span> <span>Model</span> <span>Rescoring</span> in <span>Automatic</span> <span>Speech</span> <span>Recognition</span>.”</span> In <em>Interspeech 2022</em>, 3968–72. ISCA. <a href="https://doi.org/10.21437/Interspeech.2022-10931">https://doi.org/10.21437/Interspeech.2022-10931</a>.
+Roux, Thibault Bañeras, Mickael Rouvier, Jane Wottawa, and Richard Dufour. 2022. <span>“Qualitative <span>Evaluation</span> of <span>Language</span> <span>Model</span> <span>Rescoring</span> in <span>Automatic</span> <span>Speech</span> <span>Recognition</span>.”</span> <em>Interspeech 2022</em>, September, 3968–72. <a href="https://doi.org/10.21437/Interspeech.2022-10931">https://doi.org/10.21437/Interspeech.2022-10931</a>.
 </div>
 <div id="ref-roy_semantic-wer_2021" class="csl-entry" role="listitem">
-Roy, Somnath. 2021. <span>“Semantic-<span>WER</span>: <span>A</span> <span>Unified</span> <span>Metric</span> for the <span>Evaluation</span> of <span>ASR</span> <span>Transcript</span> for <span>End</span> <span>Usability</span>.”</span> arXiv. <a href="https://doi.org/10.48550/arXiv.2106.02016">https://doi.org/10.48550/arXiv.2106.02016</a>.
+Roy, Somnath. 2021. <em>Semantic-<span>WER</span>: <span>A</span> <span>Unified</span> <span>Metric</span> for the <span>Evaluation</span> of <span>ASR</span> <span>Transcript</span> for <span>End</span> <span>Usability</span></em>. arXiv. <a href="https://doi.org/10.48550/arXiv.2106.02016">https://doi.org/10.48550/arXiv.2106.02016</a>.
 </div>
 <div id="ref-rugayan_perceptual_2023" class="csl-entry" role="listitem">
-Rugayan, Janine, Giampiero Salvi, and Torbjørn Svendsen. 2023. <span>“Perceptual and <span>Task</span>-<span>Oriented</span> <span>Assessment</span> of a <span>Semantic</span> <span>Metric</span> for <span>ASR</span> <span>EvaluatiPerceptual</span> and <span>Task</span>-<span>Oriented</span> <span>Assessment</span> of a <span>Semantic</span> <span>Metric</span> for <span>ASR</span> <span>Evaluationon</span>.”</span> In <em><span>INTERSPEECH</span> 2023</em>, 2158–62. ISCA. <a href="https://doi.org/10.21437/Interspeech.2023-1778">https://doi.org/10.21437/Interspeech.2023-1778</a>.
+Rugayan, Janine, Giampiero Salvi, and Torbjørn Svendsen. 2023. <span>“Perceptual and <span>Task</span>-<span>Oriented</span> <span>Assessment</span> of a <span>Semantic</span> <span>Metric</span> for <span>ASR</span> <span>EvaluatiPerceptual</span> and <span>Task</span>-<span>Oriented</span> <span>Assessment</span> of a <span>Semantic</span> <span>Metric</span> for <span>ASR</span> <span>Evaluationon</span>.”</span> <em><span>INTERSPEECH</span> 2023</em>, August, 2158–62. <a href="https://doi.org/10.21437/Interspeech.2023-1778">https://doi.org/10.21437/Interspeech.2023-1778</a>.
 </div>
 <div id="ref-sasindran_semascore_2024" class="csl-entry" role="listitem">
-Sasindran, Zitha, Harsha Yelchuri, and T. V. Prabhakar. 2024. <span>“<span>SeMaScore</span>: <span>A</span> New Evaluation Metric for Automatic Speech Recognition Tasks.”</span> In <em>Interspeech 2024</em>, 4558–62. ISCA. <a href="https://doi.org/10.21437/Interspeech.2024-2033">https://doi.org/10.21437/Interspeech.2024-2033</a>.
+Sasindran, Zitha, Harsha Yelchuri, and T. V. Prabhakar. 2024. <span>“<span>SeMaScore</span>: <span>A</span> New Evaluation Metric for Automatic Speech Recognition Tasks.”</span> <em>Interspeech 2024</em>, September, 4558–62. <a href="https://doi.org/10.21437/Interspeech.2024-2033">https://doi.org/10.21437/Interspeech.2024-2033</a>.
 </div>
 <div id="ref-zhang_bertscore_2020" class="csl-entry" role="listitem">
-Zhang, Tianyi, Varsha Kishore, Felix Wu, Kilian Q. Weinberger, and Yoav Artzi. 2020. <span>“<span>BERTScore</span>: <span>Evaluating</span> <span>Text</span> <span>Generation</span> with <span>BERT</span>.”</span> arXiv. <a href="https://doi.org/10.48550/arXiv.1904.09675">https://doi.org/10.48550/arXiv.1904.09675</a>.
+Zhang, Tianyi, Varsha Kishore, Felix Wu, Kilian Q. Weinberger, and Yoav Artzi. 2020. <em><span>BERTScore</span>: <span>Evaluating</span> <span>Text</span> <span>Generation</span> with <span>BERT</span></em>. arXiv. <a href="https://doi.org/10.48550/arXiv.1904.09675">https://doi.org/10.48550/arXiv.1904.09675</a>.
 </div>
 </div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
