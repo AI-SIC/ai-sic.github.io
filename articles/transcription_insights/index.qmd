@@ -1,0 +1,13 @@
+---
+title: "Experiences from Semi-Automated Transcription of 96 Interviews"
+date: "2026-10-29"
+description: "We report on how we corrected our automated transcripts and what we noticed in the process"
+author-title: "Niklas Ippisch"
+author: '<a href="https://ai-sic.github.io/">aisic</a>'
+image: "images/aegissub.png"
+# bibliography: ai_sic.bib
+---
+
+# Abstract
+
+We will soon post an experience report on our transcription pipeline here.

@@ -1,0 +1,13 @@
+---
+title: "Pre-Testing Our Codebook with LLMs"
+date: "2026-10-29"
+description: "Results from a codebook pre-test with three different LLMs on our silicon interviews"
+author-title: "Donata Perakis"
+author: '<a href="https://ai-sic.github.io/">aisic</a>'
+image: "images/chart.png"
+# bibliography: ai_sic.bib
+---
+
+# Abstract
+
+We will soon report the results of our codebook pre-tests with LLMs here.

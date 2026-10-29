@@ -1,3 +1,5 @@
 /.quarto/
 /_site/
 *.code_workspace
+
+**/*.quarto_ipynb

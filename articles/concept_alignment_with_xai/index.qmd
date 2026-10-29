@@ -1,0 +1,13 @@
+---
+title: "What Does a Machine Learn? Experiments on Concept Representations of Human Coders and Machine Learning Models"
+date: "2026-10-29"
+description: "Our experiments show how XAI methods can trace model decisions and how these relate to disagreements among human coders"
+author-title: "Peter Kannewitz"
+author: '<a href="https://ai-sic.github.io/">aisic</a>'
+image: "images/ic-reliability.png"
+# bibliography: ai_sic.bib
+---
+
+# Abstract
+
+We will soon post the results of our XAI experiments here.
