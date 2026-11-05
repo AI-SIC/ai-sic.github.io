@@ -5,319 +5,86 @@
 // Bootstrap Rules: https://github.com/quarto-dev/quarto-cli/blob/main/src/resources/formats/html/bootstrap/_bootstrap-rules.scss
 // How to Handle: https://silviacanelon.com/blog/2023-09-29-hello-quarto/#scss-variables
 
+// Fonts (both SIL Open Font License 1.1, see LICENSE.md in each font folder)
+// Iosevka Etoile: headings, navbar, title block, listings
 @font-face {
-	font-family: 'Iosevka Etoile Web';
-	font-display: swap;
-	font-weight: 100;
-	font-stretch: normal;
-	font-style: normal;
-	src: url('static/fonts/WOFF2/IosevkaEtoile-Thin.woff2') format('woff2'), url('static/fonts/TTF/IosevkaEtoile-Thin.ttf') format('truetype');
+  font-family: 'Iosevka Etoile Web';
+  font-display: swap;
+  font-weight: 300;
+  font-style: normal;
+  src: url('static/fonts/iosevka-etoile/IosevkaEtoile-Light.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Iosevka Etoile Web';
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+  src: url('static/fonts/iosevka-etoile/IosevkaEtoile-Regular.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Iosevka Etoile Web';
+  font-display: swap;
+  font-weight: 500;
+  font-style: normal;
+  src: url('static/fonts/iosevka-etoile/IosevkaEtoile-Medium.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Iosevka Etoile Web';
+  font-display: swap;
+  font-weight: 600;
+  font-style: normal;
+  src: url('static/fonts/iosevka-etoile/IosevkaEtoile-SemiBold.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Iosevka Etoile Web';
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+  src: url('static/fonts/iosevka-etoile/IosevkaEtoile-Bold.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Iosevka Etoile Web';
+  font-display: swap;
+  font-weight: 400;
+  font-style: italic;
+  src: url('static/fonts/iosevka-etoile/IosevkaEtoile-Italic.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Iosevka Etoile Web';
+  font-display: swap;
+  font-weight: 700;
+  font-style: italic;
+  src: url('static/fonts/iosevka-etoile/IosevkaEtoile-BoldItalic.woff2') format('woff2');
 }
 
+// Source Serif 4: body text
 @font-face {
-	font-family: 'Iosevka Etoile Web';
-	font-display: swap;
-	font-weight: 100;
-	font-stretch: normal;
-	font-style: oblique;
-	src: url('static/fonts/WOFF2/IosevkaEtoile-ThinOblique.woff2') format('woff2'), url('static/fonts/TTF/IosevkaEtoile-ThinOblique.ttf') format('truetype');
+  font-family: 'Source Serif 4';
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+  src: url('static/fonts/source-serif-4/SourceSerif4-Regular.woff2') format('woff2');
 }
-
 @font-face {
-	font-family: 'Iosevka Etoile Web Oblique';
-	font-display: swap;
-	font-weight: 100;
-	font-stretch: normal;
-	src: url('static/fonts/WOFF2/IosevkaEtoile-ThinOblique.woff2') format('woff2'), url('static/fonts/TTF/IosevkaEtoile-ThinOblique.ttf') format('truetype');
+  font-family: 'Source Serif 4';
+  font-display: swap;
+  font-weight: 400;
+  font-style: italic;
+  src: url('static/fonts/source-serif-4/SourceSerif4-It.woff2') format('woff2');
 }
-
 @font-face {
-	font-family: 'Iosevka Etoile Web';
-	font-display: swap;
-	font-weight: 100;
-	font-stretch: normal;
-	font-style: italic;
-	src: url('static/fonts/WOFF2/IosevkaEtoile-ThinItalic.woff2') format('woff2'), url('static/fonts/TTF/IosevkaEtoile-ThinItalic.ttf') format('truetype');
+  font-family: 'Source Serif 4';
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+  src: url('static/fonts/source-serif-4/SourceSerif4-Bold.woff2') format('woff2');
 }
-
 @font-face {
-	font-family: 'Iosevka Etoile Web';
-	font-display: swap;
-	font-weight: 200;
-	font-stretch: normal;
-	font-style: normal;
-	src: url('static/fonts/WOFF2/IosevkaEtoile-ExtraLight.woff2') format('woff2'), url('static/fonts/TTF/IosevkaEtoile-ExtraLight.ttf') format('truetype');
-}
-
-@font-face {
-	font-family: 'Iosevka Etoile Web';
-	font-display: swap;
-	font-weight: 200;
-	font-stretch: normal;
-	font-style: oblique;
-	src: url('static/fonts/WOFF2/IosevkaEtoile-ExtraLightOblique.woff2') format('woff2'), url('static/fonts/TTF/IosevkaEtoile-ExtraLightOblique.ttf') format('truetype');
-}
-
-@font-face {
-	font-family: 'Iosevka Etoile Web Oblique';
-	font-display: swap;
-	font-weight: 200;
-	font-stretch: normal;
-	src: url('static/fonts/WOFF2/IosevkaEtoile-ExtraLightOblique.woff2') format('woff2'), url('static/fonts/TTF/IosevkaEtoile-ExtraLightOblique.ttf') format('truetype');
-}
-
-@font-face {
-	font-family: 'Iosevka Etoile Web';
-	font-display: swap;
-	font-weight: 200;
-	font-stretch: normal;
-	font-style: italic;
-	src: url('static/fonts/WOFF2/IosevkaEtoile-ExtraLightItalic.woff2') format('woff2'), url('static/fonts/TTF/IosevkaEtoile-ExtraLightItalic.ttf') format('truetype');
-}
-
-@font-face {
-	font-family: 'Iosevka Etoile Web';
-	font-display: swap;
-	font-weight: 300;
-	font-stretch: normal;
-	font-style: normal;
-	src: url('static/fonts/WOFF2/IosevkaEtoile-Light.woff2') format('woff2'), url('static/fonts/TTF/IosevkaEtoile-Light.ttf') format('truetype');
-}
-
-@font-face {
-	font-family: 'Iosevka Etoile Web';
-	font-display: swap;
-	font-weight: 300;
-	font-stretch: normal;
-	font-style: oblique;
-	src: url('static/fonts/WOFF2/IosevkaEtoile-LightOblique.woff2') format('woff2'), url('static/fonts/TTF/IosevkaEtoile-LightOblique.ttf') format('truetype');
-}
-
-@font-face {
-	font-family: 'Iosevka Etoile Web Oblique';
-	font-display: swap;
-	font-weight: 300;
-	font-stretch: normal;
-	src: url('static/fonts/WOFF2/IosevkaEtoile-LightOblique.woff2') format('woff2'), url('static/fonts/TTF/IosevkaEtoile-LightOblique.ttf') format('truetype');
-}
-
-@font-face {
-	font-family: 'Iosevka Etoile Web';
-	font-display: swap;
-	font-weight: 300;
-	font-stretch: normal;
-	font-style: italic;
-	src: url('static/fonts/WOFF2/IosevkaEtoile-LightItalic.woff2') format('woff2'), url('static/fonts/TTF/IosevkaEtoile-LightItalic.ttf') format('truetype');
-}
-
-@font-face {
-	font-family: 'Iosevka Etoile Web';
-	font-display: swap;
-	font-weight: 400;
-	font-stretch: normal;
-	font-style: normal;
-	src: url('static/fonts/WOFF2/IosevkaEtoile-Regular.woff2') format('woff2'), url('static/fonts/TTF/IosevkaEtoile-Regular.ttf') format('truetype');
-}
-
-@font-face {
-	font-family: 'Iosevka Etoile Web';
-	font-display: swap;
-	font-weight: 400;
-	font-stretch: normal;
-	font-style: oblique;
-	src: url('static/fonts/WOFF2/IosevkaEtoile-Oblique.woff2') format('woff2'), url('static/fonts/TTF/IosevkaEtoile-Oblique.ttf') format('truetype');
-}
-
-@font-face {
-	font-family: 'Iosevka Etoile Web Oblique';
-	font-display: swap;
-	font-weight: 400;
-	font-stretch: normal;
-	src: url('static/fonts/WOFF2/IosevkaEtoile-Oblique.woff2') format('woff2'), url('static/fonts/TTF/IosevkaEtoile-Oblique.ttf') format('truetype');
-}
-
-@font-face {
-	font-family: 'Iosevka Etoile Web';
-	font-display: swap;
-	font-weight: 400;
-	font-stretch: normal;
-	font-style: italic;
-	src: url('static/fonts/WOFF2/IosevkaEtoile-Italic.woff2') format('woff2'), url('static/fonts/TTF/IosevkaEtoile-Italic.ttf') format('truetype');
-}
-
-@font-face {
-	font-family: 'Iosevka Etoile Web';
-	font-display: swap;
-	font-weight: 500;
-	font-stretch: normal;
-	font-style: normal;
-	src: url('static/fonts/WOFF2/IosevkaEtoile-Medium.woff2') format('woff2'), url('static/fonts/TTF/IosevkaEtoile-Medium.ttf') format('truetype');
-}
-
-@font-face {
-	font-family: 'Iosevka Etoile Web';
-	font-display: swap;
-	font-weight: 500;
-	font-stretch: normal;
-	font-style: oblique;
-	src: url('static/fonts/WOFF2/IosevkaEtoile-MediumOblique.woff2') format('woff2'), url('static/fonts/TTF/IosevkaEtoile-MediumOblique.ttf') format('truetype');
-}
-
-@font-face {
-	font-family: 'Iosevka Etoile Web Oblique';
-	font-display: swap;
-	font-weight: 500;
-	font-stretch: normal;
-	src: url('static/fonts/WOFF2/IosevkaEtoile-MediumOblique.woff2') format('woff2'), url('static/fonts/TTF/IosevkaEtoile-MediumOblique.ttf') format('truetype');
-}
-
-@font-face {
-	font-family: 'Iosevka Etoile Web';
-	font-display: swap;
-	font-weight: 500;
-	font-stretch: normal;
-	font-style: italic;
-	src: url('static/fonts/WOFF2/IosevkaEtoile-MediumItalic.woff2') format('woff2'), url('static/fonts/TTF/IosevkaEtoile-MediumItalic.ttf') format('truetype');
-}
-
-@font-face {
-	font-family: 'Iosevka Etoile Web';
-	font-display: swap;
-	font-weight: 600;
-	font-stretch: normal;
-	font-style: normal;
-	src: url('static/fonts/WOFF2/IosevkaEtoile-SemiBold.woff2') format('woff2'), url('static/fonts/TTF/IosevkaEtoile-SemiBold.ttf') format('truetype');
-}
-
-@font-face {
-	font-family: 'Iosevka Etoile Web';
-	font-display: swap;
-	font-weight: 600;
-	font-stretch: normal;
-	font-style: oblique;
-	src: url('static/fonts/WOFF2/IosevkaEtoile-SemiBoldOblique.woff2') format('woff2'), url('static/fonts/TTF/IosevkaEtoile-SemiBoldOblique.ttf') format('truetype');
-}
-
-@font-face {
-	font-family: 'Iosevka Etoile Web Oblique';
-	font-display: swap;
-	font-weight: 600;
-	font-stretch: normal;
-	src: url('static/fonts/WOFF2/IosevkaEtoile-SemiBoldOblique.woff2') format('woff2'), url('static/fonts/TTF/IosevkaEtoile-SemiBoldOblique.ttf') format('truetype');
-}
-
-@font-face {
-	font-family: 'Iosevka Etoile Web';
-	font-display: swap;
-	font-weight: 600;
-	font-stretch: normal;
-	font-style: italic;
-	src: url('static/fonts/WOFF2/IosevkaEtoile-SemiBoldItalic.woff2') format('woff2'), url('static/fonts/TTF/IosevkaEtoile-SemiBoldItalic.ttf') format('truetype');
-}
-
-@font-face {
-	font-family: 'Iosevka Etoile Web';
-	font-display: swap;
-	font-weight: 700;
-	font-stretch: normal;
-	font-style: normal;
-	src: url('static/fonts/WOFF2/IosevkaEtoile-Bold.woff2') format('woff2'), url('static/fonts/TTF/IosevkaEtoile-Bold.ttf') format('truetype');
-}
-
-@font-face {
-	font-family: 'Iosevka Etoile Web';
-	font-display: swap;
-	font-weight: 700;
-	font-stretch: normal;
-	font-style: oblique;
-	src: url('static/fonts/WOFF2/IosevkaEtoile-BoldOblique.woff2') format('woff2'), url('static/fonts/TTF/IosevkaEtoile-BoldOblique.ttf') format('truetype');
-}
-
-@font-face {
-	font-family: 'Iosevka Etoile Web Oblique';
-	font-display: swap;
-	font-weight: 700;
-	font-stretch: normal;
-	src: url('static/fonts/WOFF2/IosevkaEtoile-BoldOblique.woff2') format('woff2'), url('static/fonts/TTF/IosevkaEtoile-BoldOblique.ttf') format('truetype');
-}
-
-@font-face {
-	font-family: 'Iosevka Etoile Web';
-	font-display: swap;
-	font-weight: 700;
-	font-stretch: normal;
-	font-style: italic;
-	src: url('static/fonts/WOFF2/IosevkaEtoile-BoldItalic.woff2') format('woff2'), url('static/fonts/TTF/IosevkaEtoile-BoldItalic.ttf') format('truetype');
-}
-
-@font-face {
-	font-family: 'Iosevka Etoile Web';
-	font-display: swap;
-	font-weight: 800;
-	font-stretch: normal;
-	font-style: normal;
-	src: url('static/fonts/WOFF2/IosevkaEtoile-ExtraBold.woff2') format('woff2'), url('static/fonts/TTF/IosevkaEtoile-ExtraBold.ttf') format('truetype');
-}
-
-@font-face {
-	font-family: 'Iosevka Etoile Web';
-	font-display: swap;
-	font-weight: 800;
-	font-stretch: normal;
-	font-style: oblique;
-	src: url('static/fonts/WOFF2/IosevkaEtoile-ExtraBoldOblique.woff2') format('woff2'), url('static/fonts/TTF/IosevkaEtoile-ExtraBoldOblique.ttf') format('truetype');
-}
-
-@font-face {
-	font-family: 'Iosevka Etoile Web Oblique';
-	font-display: swap;
-	font-weight: 800;
-	font-stretch: normal;
-	src: url('static/fonts/WOFF2/IosevkaEtoile-ExtraBoldOblique.woff2') format('woff2'), url('static/fonts/TTF/IosevkaEtoile-ExtraBoldOblique.ttf') format('truetype');
-}
-
-@font-face {
-	font-family: 'Iosevka Etoile Web';
-	font-display: swap;
-	font-weight: 800;
-	font-stretch: normal;
-	font-style: italic;
-	src: url('static/fonts/WOFF2/IosevkaEtoile-ExtraBoldItalic.woff2') format('woff2'), url('static/fonts/TTF/IosevkaEtoile-ExtraBoldItalic.ttf') format('truetype');
-}
-
-@font-face {
-	font-family: 'Iosevka Etoile Web';
-	font-display: swap;
-	font-weight: 900;
-	font-stretch: normal;
-	font-style: normal;
-	src: url('static/fonts/WOFF2/IosevkaEtoile-Heavy.woff2') format('woff2'), url('static/fonts/TTF/IosevkaEtoile-Heavy.ttf') format('truetype');
-}
-
-@font-face {
-	font-family: 'Iosevka Etoile Web';
-	font-display: swap;
-	font-weight: 900;
-	font-stretch: normal;
-	font-style: oblique;
-	src: url('static/fonts/WOFF2/IosevkaEtoile-HeavyOblique.woff2') format('woff2'), url('static/fonts/TTF/IosevkaEtoile-HeavyOblique.ttf') format('truetype');
-}
-
-@font-face {
-	font-family: 'Iosevka Etoile Web Oblique';
-	font-display: swap;
-	font-weight: 900;
-	font-stretch: normal;
-	src: url('static/fonts/WOFF2/IosevkaEtoile-HeavyOblique.woff2') format('woff2'), url('static/fonts/TTF/IosevkaEtoile-HeavyOblique.ttf') format('truetype');
-}
-
-@font-face {
-	font-family: 'Iosevka Etoile Web';
-	font-display: swap;
-	font-weight: 900;
-	font-stretch: normal;
-	font-style: italic;
-	src: url('static/fonts/WOFF2/IosevkaEtoile-HeavyItalic.woff2') format('woff2'), url('static/fonts/TTF/IosevkaEtoile-HeavyItalic.ttf') format('truetype');
+  font-family: 'Source Serif 4';
+  font-display: swap;
+  font-weight: 700;
+  font-style: italic;
+  src: url('static/fonts/source-serif-4/SourceSerif4-BoldIt.woff2') format('woff2');
 }
 
 
@@ -335,6 +102,8 @@ $font-color: #111111;
 $font-family-serif: 'Iosevka Etoile Web', serif;
 $font-family-sans-serif: 'Iosevka Etoile Web', sans-serif;
 $font-family-smallcaps: 'Iosevka Etoile Web', serif;
+$font-family-body: 'Source Serif 4', Georgia, serif;
+$font-family-base: $font-family-body;
 
 $font-size-root: 20px;
 
@@ -468,8 +237,7 @@ $magenta: rgb(160, 47, 111);
 }
 
 .listing-description {
-  font-family: $font-family-sans-serif;
-  font-weight: 300;
+  font-family: $font-family-body;
   color: $aisic-dark;
 }
 
@@ -484,8 +252,9 @@ $magenta: rgb(160, 47, 111);
 // General
 
 body {
-  font-weight: 300;
-  line-height: 1.4;
+  font-family: $font-family-body;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -526,6 +295,11 @@ button {
 
 a {
   font-weight: 300;
+}
+
+// links in running text keep the weight of the surrounding text
+main.content p a, main.content li a {
+  font-weight: inherit;
 }
 
 pre code {
@@ -619,4 +393,11 @@ pre code {
 
 .caption{
    text-align: center;
+}
+// Frame around figure images (use with :::{.figure .framed})
+.framed img {
+  border: 1px solid $aisic-dark;
+  border-radius: 3px;
+  padding: 4px;
+  background-color: $aisic-light;
 }
