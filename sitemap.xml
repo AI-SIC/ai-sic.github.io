@@ -1,135 +1,143 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://ai-sic.github.io/imprint.html</loc>
-    <lastmod>2026-10-29T14:09:09.389Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-sic.github.io/index.html</loc>
-    <lastmod>2026-10-29T14:09:09.389Z</lastmod>
-  </url>
-  <url>
     <loc>https://ai-sic.github.io/einverstaendnis.html</loc>
-    <lastmod>2026-10-29T14:09:09.388Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-sic.github.io/articles/index.html</loc>
-    <lastmod>2026-10-29T14:09:09.378Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-sic.github.io/articles/concept_alignment_with_xai/index.html</loc>
-    <lastmod>2026-10-29T14:09:09.367Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-sic.github.io/articles/llm_pretests/index.html</loc>
-    <lastmod>2026-10-29T14:09:09.379Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-sic.github.io/articles/active_learning_experiments/index.html</loc>
-    <lastmod>2026-10-29T14:09:09.366Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-sic.github.io/pdf/index.html</loc>
-    <lastmod>2026-10-29T14:09:09.391Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-sic.github.io/pdf/datenschutz/index.html</loc>
-    <lastmod>2026-10-29T14:09:09.391Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-sic.github.io/de/privacy-statement.html</loc>
-    <lastmod>2026-10-29T14:09:09.388Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-sic.github.io/de/404.html</loc>
-    <lastmod>2026-10-29T14:09:09.379Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-sic.github.io/de/contact.html</loc>
-    <lastmod>2026-10-29T14:09:09.385Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-sic.github.io/de/articles/esra_transcription_evaluation/index.html</loc>
-    <lastmod>2026-10-29T14:09:09.384Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-sic.github.io/de/articles/active_learning_experiments/index.html</loc>
-    <lastmod>2026-10-29T14:09:09.382Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-sic.github.io/de/pdf/index.html</loc>
-    <lastmod>2026-10-29T14:09:09.388Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-sic.github.io/de/pdf/anschreiben/index.html</loc>
-    <lastmod>2026-10-29T14:09:09.387Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-sic.github.io/de/participation.html</loc>
-    <lastmod>2026-10-29T14:09:09.386Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-sic.github.io/participation.html</loc>
-    <lastmod>2026-10-29T14:09:09.389Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-sic.github.io/de/pdf/datenschutz/index.html</loc>
-    <lastmod>2026-10-29T14:09:09.387Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-sic.github.io/de/pdf/flyer/index.html</loc>
-    <lastmod>2026-10-29T14:09:09.388Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-sic.github.io/de/about.html</loc>
-    <lastmod>2026-10-29T14:09:09.379Z</lastmod>
+    <lastmod>2026-11-05T15:39:06.846Z</lastmod>
   </url>
   <url>
     <loc>https://ai-sic.github.io/de/articles/esra_silicon_interviews/index.html</loc>
-    <lastmod>2026-10-29T14:09:09.384Z</lastmod>
+    <lastmod>2026-11-05T15:39:06.840Z</lastmod>
   </url>
   <url>
-    <loc>https://ai-sic.github.io/de/articles/index.html</loc>
-    <lastmod>2026-10-29T14:09:09.385Z</lastmod>
+    <loc>https://ai-sic.github.io/de/articles/active_learning_experiments/index.html</loc>
+    <lastmod>2026-11-05T15:39:06.838Z</lastmod>
   </url>
   <url>
-    <loc>https://ai-sic.github.io/de/einverstaendnis.html</loc>
-    <lastmod>2026-10-29T14:09:09.385Z</lastmod>
+    <loc>https://ai-sic.github.io/de/about.html</loc>
+    <lastmod>2026-11-05T15:39:06.835Z</lastmod>
   </url>
   <url>
-    <loc>https://ai-sic.github.io/de/index.html</loc>
-    <lastmod>2026-10-29T14:09:09.386Z</lastmod>
+    <loc>https://ai-sic.github.io/de/pdf/anschreiben/index.html</loc>
+    <lastmod>2026-11-05T15:39:06.843Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-sic.github.io/de/pdf/index.html</loc>
+    <lastmod>2026-11-05T15:39:06.846Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-sic.github.io/de/privacy-statement.html</loc>
+    <lastmod>2026-11-05T15:39:06.846Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-sic.github.io/de/contact.html</loc>
+    <lastmod>2026-11-05T15:39:06.841Z</lastmod>
   </url>
   <url>
     <loc>https://ai-sic.github.io/de/imprint.html</loc>
-    <lastmod>2026-10-29T14:09:09.386Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-sic.github.io/pdf/anschreiben/index.html</loc>
-    <lastmod>2026-10-29T14:09:09.390Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-sic.github.io/about.html</loc>
-    <lastmod>2026-10-29T14:09:09.362Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-sic.github.io/articles/transcription_insights/index.html</loc>
-    <lastmod>2026-10-29T14:09:09.379Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-sic.github.io/articles/esra_silicon_interviews/index.html</loc>
-    <lastmod>2026-10-29T14:09:09.368Z</lastmod>
+    <lastmod>2026-11-05T15:39:06.842Z</lastmod>
   </url>
   <url>
     <loc>https://ai-sic.github.io/articles/esra_transcription_evaluation/index.html</loc>
-    <lastmod>2026-10-29T14:09:09.377Z</lastmod>
+    <lastmod>2026-11-05T15:39:06.832Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-sic.github.io/articles/llm_pretests/index.html</loc>
+    <lastmod>2026-11-05T15:39:06.834Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-sic.github.io/articles/index.html</loc>
+    <lastmod>2026-11-05T15:39:06.833Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-sic.github.io/about.html</loc>
+    <lastmod>2026-11-05T15:39:06.814Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-sic.github.io/pdf/anschreiben/index.html</loc>
+    <lastmod>2026-11-05T15:39:06.848Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-sic.github.io/pdf/index.html</loc>
+    <lastmod>2026-11-05T15:39:06.848Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-sic.github.io/static/fonts/iosevka-etoile/LICENSE.html</loc>
+    <lastmod>2026-11-05T15:39:06.868Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-sic.github.io/index.html</loc>
+    <lastmod>2026-11-05T15:39:06.847Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-sic.github.io/imprint.html</loc>
+    <lastmod>2026-11-05T15:39:06.847Z</lastmod>
   </url>
   <url>
     <loc>https://ai-sic.github.io/contact.html</loc>
-    <lastmod>2026-10-29T14:09:09.379Z</lastmod>
+    <lastmod>2026-11-05T15:39:06.834Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-sic.github.io/static/fonts/source-serif-4/LICENSE.html</loc>
+    <lastmod>2026-11-05T15:39:06.868Z</lastmod>
   </url>
   <url>
     <loc>https://ai-sic.github.io/privacy-statement.html</loc>
-    <lastmod>2026-10-29T14:09:09.391Z</lastmod>
+    <lastmod>2026-11-05T15:39:06.848Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-sic.github.io/pdf/datenschutz/index.html</loc>
+    <lastmod>2026-11-05T15:39:06.848Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-sic.github.io/participation.html</loc>
+    <lastmod>2026-11-05T15:39:06.847Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-sic.github.io/articles/transcription_insights/index.html</loc>
+    <lastmod>2026-11-05T15:39:06.834Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-sic.github.io/articles/concept_alignment_with_xai/index.html</loc>
+    <lastmod>2026-11-05T15:39:06.820Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-sic.github.io/articles/active_learning_experiments/index.html</loc>
+    <lastmod>2026-11-05T15:39:06.819Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-sic.github.io/articles/esra_silicon_interviews/index.html</loc>
+    <lastmod>2026-11-05T15:39:06.822Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-sic.github.io/de/404.html</loc>
+    <lastmod>2026-11-05T15:39:06.835Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-sic.github.io/de/index.html</loc>
+    <lastmod>2026-11-05T15:39:06.842Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-sic.github.io/de/pdf/flyer/index.html</loc>
+    <lastmod>2026-11-05T15:39:06.846Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-sic.github.io/de/pdf/datenschutz/index.html</loc>
+    <lastmod>2026-11-05T15:39:06.844Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-sic.github.io/de/participation.html</loc>
+    <lastmod>2026-11-05T15:39:06.842Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-sic.github.io/de/articles/index.html</loc>
+    <lastmod>2026-11-05T15:39:06.841Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-sic.github.io/de/articles/esra_transcription_evaluation/index.html</loc>
+    <lastmod>2026-11-05T15:39:06.840Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-sic.github.io/de/einverstaendnis.html</loc>
+    <lastmod>2026-11-05T15:39:06.841Z</lastmod>
   </url>
 </urlset>
