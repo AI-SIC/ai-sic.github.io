@@ -7,10 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="aisic">
-<meta name="dcterms.date" content="2026-10-29">
-<meta name="description" content="Results from a codebook pre-test with three different LLMs on our silicon interviews">
+<meta name="dcterms.date" content="2026-11-17">
+<meta name="description" content="We asked three AI tools to apply our coding scheme to a synthetic interview and used their deviations and uncertainties to uncover ambiguities in the scheme itself">
 
-<title>Pre-Testing Our Codebook with LLMs</title>
+<title>Making Implicit Knowledge Explicit: What AI Tools Revealed About Our Coding Scheme</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -50,7 +50,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-54a727c0ca0c5ec5117001fc94bce80d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-10fe608fb4fd89d6352fe96a67139fcb.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -94,11 +94,11 @@ ul.task-list li input[type="checkbox"] {
 </script>
 
 
-<meta property="og:title" content="Pre-Testing Our Codebook with LLMs">
-<meta property="og:description" content="Results from a codebook pre-test with three different LLMs on our silicon interviews">
-<meta property="og:image" content="https://ai-sic.github.io/articles/llm_pretests/images/chart.png">
-<meta property="og:image:height" content="371">
-<meta property="og:image:width" content="600">
+<meta property="og:title" content="Making Implicit Knowledge Explicit: What AI Tools Revealed About Our Coding Scheme">
+<meta property="og:description" content="We asked three AI tools to apply our coding scheme to a synthetic interview and used their deviations and uncertainties to uncover ambiguities in the scheme itself">
+<meta property="og:image" content="https://ai-sic.github.io/articles/llm_pretests/images/thumbnail.png">
+<meta property="og:image:height" content="750">
+<meta property="og:image:width" content="1200">
 </head>
 
 <body class="nav-fixed quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a>
@@ -155,7 +155,25 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#abstract" id="toc-abstract" class="nav-link active" data-scroll-target="#abstract">Abstract</a></li>
+  <li><a href="#in-short" id="toc-in-short" class="nav-link active" data-scroll-target="#in-short">In Short</a></li>
+  <li><a href="#background" id="toc-background" class="nav-link" data-scroll-target="#background">Background</a></li>
+  <li><a href="#our-research-interest-making-implicit-knowledge-explicit" id="toc-our-research-interest-making-implicit-knowledge-explicit" class="nav-link" data-scroll-target="#our-research-interest-making-implicit-knowledge-explicit">Our Research Interest: Making Implicit Knowledge Explicit</a></li>
+  <li><a href="#implementation" id="toc-implementation" class="nav-link" data-scroll-target="#implementation">Implementation</a></li>
+  <li><a href="#results-what-did-the-ai-codings-reveal-about-our-coding-scheme" id="toc-results-what-did-the-ai-codings-reveal-about-our-coding-scheme" class="nav-link" data-scroll-target="#results-what-did-the-ai-codings-reveal-about-our-coding-scheme">Results: What Did the AI Codings Reveal About Our Coding Scheme?</a>
+  <ul class="collapse">
+  <li><a href="#health-behavior-or-functional-capacity-why-the-meaning-of-an-activity-matters" id="toc-health-behavior-or-functional-capacity-why-the-meaning-of-an-activity-matters" class="nav-link" data-scroll-target="#health-behavior-or-functional-capacity-why-the-meaning-of-an-activity-matters">1. Health Behavior or Functional Capacity? Why the Meaning of an Activity Matters</a></li>
+  <li><a href="#feeling-fit-which-health-dimension-and-health-factor-is-it" id="toc-feeling-fit-which-health-dimension-and-health-factor-is-it" class="nav-link" data-scroll-target="#feeling-fit-which-health-dimension-and-health-factor-is-it">2. Feeling Fit: Which Health Dimension and Health Factor Is It?</a></li>
+  <li><a href="#sleep-tiredness-and-feeling-rested-an-unclear-conceptual-boundary" id="toc-sleep-tiredness-and-feeling-rested-an-unclear-conceptual-boundary" class="nav-link" data-scroll-target="#sleep-tiredness-and-feeling-rested-an-unclear-conceptual-boundary">3. Sleep, Tiredness, and Feeling Rested: An Unclear Conceptual Boundary</a></li>
+  <li><a href="#when-should-multiple-codes-apply" id="toc-when-should-multiple-codes-apply" class="nav-link" data-scroll-target="#when-should-multiple-codes-apply">4. When Should Multiple Codes Apply?</a></li>
+  <li><a href="#what-exactly-is-being-quantified" id="toc-what-exactly-is-being-quantified" class="nav-link" data-scroll-target="#what-exactly-is-being-quantified">5. What Exactly Is Being Quantified?</a></li>
+  </ul></li>
+  <li><a href="#lessons-learned-using-ai-tools-for-methodological-development" id="toc-lessons-learned-using-ai-tools-for-methodological-development" class="nav-link" data-scroll-target="#lessons-learned-using-ai-tools-for-methodological-development">Lessons Learned: Using AI Tools for Methodological Development</a>
+  <ul class="collapse">
+  <li><a href="#shared-team-knowledge-is-not-necessarily-documented-knowledge" id="toc-shared-team-knowledge-is-not-necessarily-documented-knowledge" class="nav-link" data-scroll-target="#shared-team-knowledge-is-not-necessarily-documented-knowledge">1. Shared Team Knowledge Is Not Necessarily Documented Knowledge</a></li>
+  <li><a href="#ambiguities-cluster-at-conceptual-boundaries" id="toc-ambiguities-cluster-at-conceptual-boundaries" class="nav-link" data-scroll-target="#ambiguities-cluster-at-conceptual-boundaries">2. Ambiguities Cluster at Conceptual Boundaries</a></li>
+  <li><a href="#different-interpretations-can-be-a-starting-point-for-discussion-not-necessarily-an-indication-of-an-error" id="toc-different-interpretations-can-be-a-starting-point-for-discussion-not-necessarily-an-indication-of-an-error" class="nav-link" data-scroll-target="#different-interpretations-can-be-a-starting-point-for-discussion-not-necessarily-an-indication-of-an-error">3. Different Interpretations Can Be a Starting Point for Discussion, Not Necessarily an Indication of an Error</a></li>
+  </ul></li>
+  <li><a href="#conclusion-outlook" id="toc-conclusion-outlook" class="nav-link" data-scroll-target="#conclusion-outlook">Conclusion &amp; Outlook</a></li>
   </ul>
 </nav>
     </div>
@@ -164,12 +182,12 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Pre-Testing Our Codebook with LLMs</h1>
+<h1 class="title">Making Implicit Knowledge Explicit: What AI Tools Revealed About Our Coding Scheme</h1>
 </div>
 
 <div>
   <div class="description">
-    Results from a codebook pre-test with three different LLMs on our silicon interviews
+    We asked three AI tools to apply our coding scheme to a synthetic interview and used their deviations and uncertainties to uncover ambiguities in the scheme itself
   </div>
 </div>
 
@@ -177,7 +195,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-title-meta">
 
     <div>
-    <div class="quarto-title-meta-heading">Donata Perakis</div>
+    <div class="quarto-title-meta-heading">Donata Perakis, Niklas Ippisch, Jonas Mirtschoff</div>
     <div class="quarto-title-meta-contents">
              <p><a href="https://ai-sic.github.io/">aisic</a> </p>
           </div>
@@ -186,7 +204,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">October 29, 2026</p>
+      <p class="date">November 17, 2026</p>
     </div>
   </div>
   
@@ -198,9 +216,98 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="abstract" class="level1">
-<h1>Abstract</h1>
-<p>We will soon report the results of our codebook pre-tests with LLMs here.</p>
+<section id="in-short" class="level2">
+<h2 class="anchored" data-anchor-id="in-short">In Short</h2>
+<p>In the project AI-SIC, we aim to analyze qualitative interviews using deductive coding with the help of AI. This includes AI-assisted transcription and semi-automated coding. However, before applying AI to our real interview data, we wanted to address a fundamental question: Is our coding scheme formulated clearly and unambiguously enough to be applied by AI tools?</p>
+<p>Through repeated joint review and revision of the coding scheme, we had gradually developed a shared understanding of how to interpret and apply its categories. Yet this process may also have created implicit knowledge: we might take certain rules and distinctions for granted, even though they are not spelled out in the coding scheme itself.</p>
+<p>To examine this, we prompted three AI tools (ChatGPT, Claude, and Microsoft 365 Copilot) to code a synthetic interview using the same prompt and our coding scheme. Rather than ranking the tools against each other, we examined their deviations from our human reference coding and the uncertainties they identified. By bringing together these observations, we were able to identify recurring ambiguities, unclear category boundaries, and potential gaps in our coding scheme.</p>
+<p>The results indicate that AI tools can serve as an additional perspective in methodological development, helping us identify aspects of our coding scheme that may require further clarification. At the same time, the models differed in how they applied the scheme, so their outputs are best read as pointers rather than a verdict.</p>
+</section>
+<section id="background" class="level2">
+<h2 class="anchored" data-anchor-id="background">Background</h2>
+<p>At AI-SIC, we conducted semi-structured cognitive interviews with families about children’s self-reported health. Such interviews provide valuable insights but are time-consuming to analyze. A key step in this process is coding: individual text passages are assigned to categories based on a predefined coding scheme.</p>
+<p>Our coding scheme distinguishes between 7 analytical categories, containing 34 codes in total. The analytical categories include, among others, the health dimension (which contains codes such as physical, mental, and functional health) and health factors (which contain codes related to more specific health aspects, such as “pain and symptoms,” “acute illnesses,” or “health behaviors”). Other analytical categories include, for example, the temporal context of the statements. A text passage can be assigned multiple codes simultaneously, such as a health factor and the corresponding health dimension. This makes the framework nuanced but also challenging to apply.</p>
+<p>Coding therefore is demanding: it requires sustained concentration over long periods and is prone to errors, for example when statements in the interview are ambiguous or the coding scheme does not distinguish clearly enough between different categories.</p>
+<p>AI could make coding more efficient. However, reliable AI-assisted coding requires not only a capable model and a well-designed prompt but also a coding scheme whose categories and rules are clear enough that different coders, human or AI, arrive at comparable results.</p>
+</section>
+<section id="our-research-interest-making-implicit-knowledge-explicit" class="level2">
+<h2 class="anchored" data-anchor-id="our-research-interest-making-implicit-knowledge-explicit">Our Research Interest: Making Implicit Knowledge Explicit</h2>
+<p>Through repeated joint reviews and revisions of the coding scheme, as well as initial test codings conducted by several team members, we identified areas requiring clarification and revised the scheme several times. During this process, we repeatedly assessed whether the categories were plausible and clearly distinguishable from one another, whether the inclusion and exclusion criteria were precise enough, and whether the examples adequately reflected their respective categories. Through this iterative process, we gradually developed a shared understanding of how to interpret and apply the coding scheme.</p>
+<p>However, this shared understanding may also create a blind spot: over time, researchers can develop implicit knowledge of certain distinctions and rules, taking them for granted even when they are not explicitly documented in the coding scheme. They may know, for example, why a particular statement belongs to one category rather than another, whereas someone without this implicit knowledge would make a different coding decision. This raises the question of whether the coding scheme can be understood and applied consistently by coders (whether human or AI tools) who were not involved in its development, based on the written instructions alone.</p>
+<p>We used AI tools as an additional perspective to explore this question. Having had no prior involvement in developing the coding scheme, the models could not draw on the shared interpretative understanding established within our research team, although they naturally bring assumptions of their own from training. Their application of the written instructions therefore offered an opportunity to identify potential ambiguities and gaps that might otherwise have remained unnoticed.</p>
+<p>Our central research question was: Where do AI tools encounter difficulties when applying our coding scheme, and what do these difficulties reveal about ambiguities or gaps in the scheme itself?</p>
+<p>More specifically, we wanted to identify:</p>
+<ul>
+<li>Categories whose definitions or boundaries leave room for different interpretations.</li>
+<li>Coding rules that are insufficiently explicit or difficult to apply consistently.</li>
+<li>Situations in which multiple codes might appear equally plausible.</li>
+<li>Concepts or types of statements that are not adequately covered by the existing coding instructions.</li>
+<li>Cases in which uncertainty cannot be resolved based on the written coding scheme alone.</li>
+</ul>
+<p>Importantly, our aim was not to determine which tool performs best. Instead, we used the combined observations from all models to critically examine our coding scheme. We wanted to find remaining weaknesses and refine the scheme before moving to semi-automated coding, so that both humans and machines can apply it reliably.</p>
+</section>
+<section id="implementation" class="level2">
+<h2 class="anchored" data-anchor-id="implementation">Implementation</h2>
+<p>To conduct the test, we used a synthetic interview from our synthetic dataset (see the article on <a href="../../articles/esra_silicon_interviews/">Silicon Interviews</a>). Although we already have a rich set of original data available, uploading highly sensitive data to commercial web-based AI tools would violate research ethics and data protection regulations. We therefore used a synthetic interview, deliberately chosen because it covered as many different aspects of the scheme as possible: a conversation with “Finn,” a simulated nine-year-old child, which focused, among other things, on how Finn assesses his own health and what health means to him. It contained the same questions as the real interviews and corresponds to an estimated duration of just under 10 minutes (approx. 1,300 words).</p>
+<p>In September 2026, we tested our coding scheme with three AI tools: ChatGPT (OpenAI, GPT 5.6 Luna), Claude (Anthropic, Sonnet 5.5), and Microsoft 365 Copilot (based on OpenAI’s GPT 5.6 Sol/Terra/Luna). We compared their output with a human reference coding. ChatGPT and Claude were used with the free standard version of the web interface. Microsoft Copilot was used as a component integrated into the M365 environment. In this environment, we used the default integration of the AI tool with the “auto” setting. This means that, depending on the task at hand, Copilot decides on its own which model to use, choosing between GPT 5.6 Sol, GPT 5.6 Terra, and GPT 5.6 Luna. In a new session, each tool received the same prompt, the coding scheme, and the interview.</p>
+<p>The prompt specified the following:</p>
+<ul>
+<li>the role of the AI tool,</li>
+<li>task, procedure, and workflow,</li>
+<li>coding rules, including how to handle uncertainty,</li>
+<li>the output format,</li>
+<li>a final quality check before output.</li>
+</ul>
+<p>We then compared the AI tools’ codings with the human reference coding and brought together all deviations as well as all explicitly reported uncertainties. We treated these observations as potential indicators of unclear definitions, overlapping categories, insufficiently specified decision rules, or missing examples. This approach allowed us to use the tool outputs as a diagnostic instrument for examining the coding scheme itself.</p>
+</section>
+<section id="results-what-did-the-ai-codings-reveal-about-our-coding-scheme" class="level2">
+<h2 class="anchored" data-anchor-id="results-what-did-the-ai-codings-reveal-about-our-coding-scheme">Results: What Did the AI Codings Reveal About Our Coding Scheme?</h2>
+<p>The analysis revealed several recurring areas in which the tools’ interpretations differed from our human reference coding or in which the models explicitly expressed uncertainty. These cases pointed to aspects of the coding scheme that may require further clarification.</p>
+<section id="health-behavior-or-functional-capacity-why-the-meaning-of-an-activity-matters" class="level3">
+<h3 class="anchored" data-anchor-id="health-behavior-or-functional-capacity-why-the-meaning-of-an-activity-matters">1. Health Behavior or Functional Capacity? Why the Meaning of an Activity Matters</h3>
+<p>One recurring issue concerned the distinction between health behavior and functional capacity. For example, consider Finn’s statement “I’m always outside playing soccer, jumping on the trampoline.” The statement describes an activity that could be interpreted in two ways. It might represent health behavior, because physical activity is generally associated with health. Alternatively, it might describe functional capacity in leisure activities, because Finn emphasizes what he is able to do. The reference coding primarily assigned the statement to functional capacity in leisure activities. Health behavior was considered a possible but less likely alternative. The outputs of the AI tools reflected this ambiguity: different interpretations emerged, and one model explicitly identified both categories as potentially applicable. The coding scheme therefore needs to clarify what distinguishes health-promoting behavior from the ability to perform activities. Is the intention behind an activity decisive? Does the statement need to explicitly describe an activity as something done to maintain health? Or is the activity itself sufficient? Without clearer decision rules, the same statement can plausibly be assigned to different categories.</p>
+</section>
+<section id="feeling-fit-which-health-dimension-and-health-factor-is-it" class="level3">
+<h3 class="anchored" data-anchor-id="feeling-fit-which-health-dimension-and-health-factor-is-it">2. Feeling Fit: Which Health Dimension and Health Factor Is It?</h3>
+<p>Another recurring issue concerned statements such as “I feel strong and fit.” In our reference coding, “feeling fit” was primarily classified as the nonspecific health dimension, because it is not immediately clear whether this refers to physical or mental fitness. The AI tools also considered physical health as a possible health dimension. This points to a possible need to revise the nonspecific category. With regard to the health factor as well, it became apparent that “being fit” was a borderline case: in the reference coding it was classified as subjective well-being (affect/well-being), while the AI tools also considered health-related resources as a possible assignment. This hints at an unclear boundary between these two health factors, which clearer guidelines would have to resolve.</p>
+</section>
+<section id="sleep-tiredness-and-feeling-rested-an-unclear-conceptual-boundary" class="level3">
+<h3 class="anchored" data-anchor-id="sleep-tiredness-and-feeling-rested-an-unclear-conceptual-boundary">3. Sleep, Tiredness, and Feeling Rested: An Unclear Conceptual Boundary</h3>
+<p>Similar to “feeling fit”, sleep-related statements revealed another area of uncertainty. Consider statements such as “I wake up feeling rested”, “I would be tired all day” or “I sleep well and get enough rest”. Depending on the context, these statements could describe health behavior, health-related resources, or affect/well-being. Tiredness might also be interpreted as a symptom. The outputs of the AI tools reflected these different possibilities. In particular, the distinction between sleep as a behavior and sleep as a health-related state was not consistently clear. The uncertainty notes also highlighted that tiredness was not explicitly assigned to a sufficiently clear category in the coding scheme. The scheme would benefit from an explicit rule on how sleep-related experiences, including tiredness, are coded.</p>
+</section>
+<section id="when-should-multiple-codes-apply" class="level3">
+<h3 class="anchored" data-anchor-id="when-should-multiple-codes-apply">4. When Should Multiple Codes Apply?</h3>
+<p>Further uncertainties arose in the assignment of parallel codes. Notable differences emerged at various points in the interview: While some AI tools, for example, selected a single health factor, others coded multiple health factors simultaneously for the same statement. The example from point 1, “I’m always outside playing soccer, jumping on the trampoline.”, was coded by one of the AI tools as health behavior and also as functional capacity in leisure activities. Evidently, the rules for parallel coding need to be more specific: when is a second code justified, and when should coders commit to a single one?</p>
+</section>
+<section id="what-exactly-is-being-quantified" class="level3">
+<h3 class="anchored" data-anchor-id="what-exactly-is-being-quantified">5. What Exactly Is Being Quantified?</h3>
+<p>Finally, several statements revealed uncertainties about the application of our quantification code (captures the prevalence of diseases/pain and symptoms, or of positive conditions). Expressions such as “hardly ever”, “only for a few days”, or “every morning” can refer to frequency, duration or regularity of said conditions. It raises the question of whether the regularity or duration of symptoms, conditions, or diseases should also be included in the quantification code. This suggests that the scope and application of the quantification code should be reviewed.</p>
+</section>
+</section>
+<section id="lessons-learned-using-ai-tools-for-methodological-development" class="level2">
+<h2 class="anchored" data-anchor-id="lessons-learned-using-ai-tools-for-methodological-development">Lessons Learned: Using AI Tools for Methodological Development</h2>
+<p>The pretest indicates that AI tools can provide a useful additional perspective when reviewing a qualitative coding scheme. The most valuable insights emerged from examining recurring deviations and uncertainties across the different outputs.</p>
+<p>Three broader lessons stand out:</p>
+<section id="shared-team-knowledge-is-not-necessarily-documented-knowledge" class="level3">
+<h3 class="anchored" data-anchor-id="shared-team-knowledge-is-not-necessarily-documented-knowledge">1. Shared Team Knowledge Is Not Necessarily Documented Knowledge</h3>
+<p>The AI tools highlighted distinctions that seemed relatively straightforward to our research team but were not always sufficiently explicit in the written coding instructions. This reinforced our starting concern: a shared understanding among researchers is no substitute for fully operationalized coding rules.</p>
+</section>
+<section id="ambiguities-cluster-at-conceptual-boundaries" class="level3">
+<h3 class="anchored" data-anchor-id="ambiguities-cluster-at-conceptual-boundaries">2. Ambiguities Cluster at Conceptual Boundaries</h3>
+<p>Many of the identified issues were not a matter of wording. They touched on fundamental conceptual boundaries, such as health behavior versus functional capacity. In some cases, the underlying decision rules and definitions may therefore need to be rethought, not just clarified.</p>
+</section>
+<section id="different-interpretations-can-be-a-starting-point-for-discussion-not-necessarily-an-indication-of-an-error" class="level3">
+<h3 class="anchored" data-anchor-id="different-interpretations-can-be-a-starting-point-for-discussion-not-necessarily-an-indication-of-an-error">3. Different Interpretations Can Be a Starting Point for Discussion, Not Necessarily an Indication of an Error</h3>
+<p>A deviation from the reference coding does not automatically mean that an AI tool has made a mistake. It can also reveal that a particular statement permits multiple plausible interpretations or that the coding scheme does not sufficiently specify how to resolve a borderline case. Therefore, all identified deviations and uncertainties need to be reviewed by the research team before changes are made.</p>
+</section>
+</section>
+<section id="conclusion-outlook" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion-outlook">Conclusion &amp; Outlook</h2>
+<p>Our pretest offers first indications that AI tools can be useful not only for applying an existing coding scheme but also for critically examining and improving it. By asking several AI tools to code the same synthetic interview, we identified recurring ambiguities and potential gaps in our coding instructions. These included the distinction between health behavior and functional capacity, the interpretation of subjective feelings of being fit and the classification of sleep and tiredness.</p>
+<p>The key insight is that AI tools can help us make implicit knowledge explicit. Their interpretations provide an additional perspective that is not shaped by the shared understanding developed within our research team.</p>
+<p>Our findings come with limitations. We tested only one synthetic interview of about ten minutes, with one run per tool and a single prompt. Synthetic interviews may not fully capture how real children and parents speak, and the output of AI tools can vary from run to run. We therefore regard the results as pointers for further review rather than as evidence of specific flaws in the scheme.</p>
+<p>Our next step is to systematically review the identified borderline cases, discuss them internally, and decide which ones point to genuine weaknesses in the coding scheme. We will then revise the relevant definitions, inclusion and exclusion criteria, and illustrative examples.</p>
+<p>Ultimately, we want to ensure that our coding scheme can be applied consistently by both human researchers and AI tools by making the underlying coding rules sufficiently transparent and explicit. Our preliminary conclusion is that AI tools can serve as a valuable aid for quality assurance and methodological reflection, helping researchers identify what their coding scheme still leaves open. Using synthetic data and multiple tools is helpful, as is having the tools identify their uncertainties and treat discrepancies as opportunities for discussion.</p>
 
 
 </section>

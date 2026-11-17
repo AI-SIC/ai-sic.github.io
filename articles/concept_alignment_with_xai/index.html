@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="aisic">
-<meta name="dcterms.date" content="2026-10-29">
+<meta name="dcterms.date" content="2026-11-11">
 <meta name="description" content="Our experiments show how XAI methods can trace model decisions and how these relate to disagreements among human coders">
 
 <title>What Does a Machine Learn? Experiments on Concept Representations of Human Coders and Machine Learning Models</title>
@@ -29,7 +29,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -50,7 +69,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-54a727c0ca0c5ec5117001fc94bce80d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-10fe608fb4fd89d6352fe96a67139fcb.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -155,7 +174,14 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#abstract" id="toc-abstract" class="nav-link active" data-scroll-target="#abstract">Abstract</a></li>
+  <li><a href="#context-of-the-xai-experiments" id="toc-context-of-the-xai-experiments" class="nav-link active" data-scroll-target="#context-of-the-xai-experiments">Context of the XAI Experiments</a></li>
+  <li><a href="#experimental-setup" id="toc-experimental-setup" class="nav-link" data-scroll-target="#experimental-setup">Experimental Setup</a></li>
+  <li><a href="#findings" id="toc-findings" class="nav-link" data-scroll-target="#findings">Findings</a>
+  <ul class="collapse">
+  <li><a href="#the-human-side" id="toc-the-human-side" class="nav-link" data-scroll-target="#the-human-side">The Human Side</a></li>
+  <li><a href="#the-model-side" id="toc-the-model-side" class="nav-link" data-scroll-target="#the-model-side">The Model Side</a></li>
+  </ul></li>
+  <li><a href="#what-does-this-mean-for-the-ai-sic-project" id="toc-what-does-this-mean-for-the-ai-sic-project" class="nav-link" data-scroll-target="#what-does-this-mean-for-the-ai-sic-project">What Does This Mean for the AI-SIC Project?</a></li>
   </ul>
 </nav>
     </div>
@@ -186,7 +212,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">October 29, 2026</p>
+      <p class="date">November 11, 2026</p>
     </div>
   </div>
   
@@ -198,14 +224,207 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="abstract" class="level1">
-<h1>Abstract</h1>
-<p>We will soon post the results of our XAI experiments here.</p>
+<section id="context-of-the-xai-experiments" class="level2">
+<h2 class="anchored" data-anchor-id="context-of-the-xai-experiments">Context of the XAI Experiments</h2>
+<p>One goal of our research project is to develop a coding tool that helps researchers scale up the labor-intensive task of coding. We approach this with active learning, a machine learning paradigm that iteratively involves human coders in model training: they decide on the boundary cases that are most informative for the model, so that it learns the human definition of the codes as efficiently as possible. After each feedback round, the model is retrained on the newly coded examples and, based on what it has learned so far, selects the next most informative examples from the pool of uncoded material (see our <a href="../../articles/active_learning_experiments/">article on active learning setups</a>). This process rests on a crucial assumption: that the human coder holds a coherent understanding of a code that someone else, be it another coder or a model, can adopt. Since this assumption also determines what “scaling up coding” can accomplish, we took the time to investigate, in an experiment with multiple coders, how the coders’ understandings of the codes relate to each other and to the representation a model learns from them. To make this comparison, we used explainable AI (XAI) methods to identify the parts of an interview passage that are relevant to the model’s prediction. This article briefly summarizes our findings.</p>
+<p>The experiments are part of the author’s master’s thesis, which develops the methodological groundwork for this comparison: it examines how the representation a model learns from coded examples can be related to human interpretations of a code, and how XAI can be used to surface ambiguity in coding rather than conceal it. Here, we report only the observations most relevant to our work at AI-SIC; a more detailed publication will follow.</p>
+</section>
+<section id="experimental-setup" class="level2">
+<h2 class="anchored" data-anchor-id="experimental-setup">Experimental Setup</h2>
+<p>To compare the model with the human coders, we needed to make their understanding of a code empirically comparable. We did this by tracing it back to the coded interview passages, highlighting the words that were important for a coding decision. Such highlights can be obtained from the human coders as well as, by means of XAI, from the classification model, and since both refer to the same passages, they can be compared directly. Although highlights are only an abstract proxy for the understanding of a code, our qualitative readings showed that in many cases they supported a coherent reading of it.</p>
+<p>Our experiments draw on the first batch of 54 fully <a href="../../articles/transcription_insights/">transcribed and anonymized</a> cognitive interviews. As this was a preliminary study rather than our full coding, we restricted the analysis to selected questions from our interview guideline and to a limited set of codes: the health dimensions (“physical”, “functional”, “mental”) and the reference criteria (“social”, “intrapersonal”, “normative”) <span class="citation" data-cites="Kroh2023">(<a href="#ref-Kroh2023" role="doc-biblioref">Kroh et al. 2023</a>)</span>. We located the relevant questions in the transcripts using a simple approach based on regular expressions.</p>
+<p>After preprocessing, this left us with 281 respondent answers, which we split into a training set (221) and a test set (60). The training set was coded exclusively by the author of this article, who is referred to as the <em>trainer</em> in the following (annotator 1 in the figures), and served to train the classification model. The test set was coded by four project members, again including the author. In a first coding phase, each of them assigned one or more codes to every example and rated how certain they were of each assignment on a scale from 1 (very uncertain) to 10 (very certain) (see <a href="#fig-coding" class="quarto-xref">Fig.&nbsp;1</a>).</p>
+<p>In a second phase, each coder was shown their own coding decisions again and asked to highlight the parts of the passage that had been relevant to each assignment (see <a href="#fig-highlighting" class="quarto-xref">Fig.&nbsp;2</a>).</p>
+<div class="figure framed">
+<div id="fig-coding" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-coding-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/argilla_coding.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-coding-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Fig.&nbsp;1: First coding phase in Argilla: coders assign codes for both dimensions and rate their certainty for each assigned code.
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="figure framed">
+<div id="fig-highlighting" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-highlighting-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/argilla_highlighting.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-highlighting-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Fig.&nbsp;2: Second coding phase in Argilla: coders highlight the parts of the passage that were relevant to their assignment.
+</figcaption>
+</figure>
+</div>
+</div>
+<p>The human coding alone already tells us a lot about how the coders understand the codes: we can derive agreement scores for individual codes, relate them to the coders’ certainty ratings, and trace disagreements back to possibly divergent readings. To obtain comparable evidence on the model side, we used the XAI method Integrated Gradients <span class="citation" data-cites="Sundararajan2017">(<a href="#ref-Sundararajan2017" role="doc-biblioref">Sundararajan et al. 2017</a>)</span>. It assigns each word of a passage an attribution score that indicates whether, and how strongly, the word pushed the model towards or away from a code.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> For every test example, this gives us the model’s prediction, its probability for each code, and word-level attributions, the latter even for codes where the model’s probability stayed below the 0.5 threshold.</p>
+</section>
+<section id="findings" class="level2">
+<h2 class="anchored" data-anchor-id="findings">Findings</h2>
+<section id="the-human-side" class="level3">
+<h3 class="anchored" data-anchor-id="the-human-side">The Human Side</h3>
+<p>Since the highlights were tied to the coding decisions, agreement among the coders on a code was a prerequisite for comparing them. In this respect, the experiments also turned out to be an insightful pre-test for our actual coding, as they showed that we did not interpret all codes uniformly.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> As <a href="#tbl-agreement" class="quarto-xref">Tab.&nbsp;1</a> shows, agreement varies considerably between the codes: it is highest for “Physical Health” and “Social Reference”, the latter, however, being rarely assigned, and lowest for “Intrapersonal Reference” and “Normative Reference”. As the reference criteria were assigned rarely or with low agreement, the model-side analysis focuses on the three health codes.</p>
+<div id="tbl-agreement" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-agreement-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tab.&nbsp;1: Intercoder reliability by code. Assignments count how often a code was assigned across the 60 test passages and four coders (at most 240).
+</figcaption>
+<div aria-describedby="tbl-agreement-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Code</th>
+<th>Assignments (of 240)</th>
+<th>Krippendorff’s α</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Physical Health</td>
+<td>167</td>
+<td>0.73</td>
+</tr>
+<tr class="even">
+<td>Mental Health</td>
+<td>112</td>
+<td>0.62</td>
+</tr>
+<tr class="odd">
+<td>Functional Health</td>
+<td>69</td>
+<td>0.56</td>
+</tr>
+<tr class="even">
+<td>Intrapersonal Reference</td>
+<td>64</td>
+<td>0.25</td>
+</tr>
+<tr class="odd">
+<td>Social Reference</td>
+<td>23</td>
+<td>0.73</td>
+</tr>
+<tr class="even">
+<td>Normative Reference</td>
+<td>16</td>
+<td>0.11</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>One reason for these mixed results lies in single coders whose understanding of a code deviated from that of the others: this happened for three codes, each time with a different coder. The UpSet plot in <a href="#fig-upset-mental" class="quarto-xref">Fig.&nbsp;3 (a)</a> shows this for “Mental Health”: annotator 1, the trainer, assigned the code to 8 passages where none of the other coders did. In these cases, the trainer counted rather general descriptions of health as mental health, since the codebook contained an ambiguous example for such cases. An average certainty of 3.375 for these assignments indicates that the trainer was unsure about them as well. Similar patterns can be observed for “Intrapersonal Reference” and “Normative Reference”. The latter was almost exclusively assigned by one coder: in 11 of the 13 cases in which this coder assigned it, no one else did (<a href="#fig-upset-normative" class="quarto-xref">Fig.&nbsp;3 (b)</a>). This time, however, the coder was confident in the divergent reading, with an average certainty of 8.23.</p>
+<div id="fig-upset" class="quarto-layout-panel">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-upset-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-layout-row quarto-layout-valign-bottom">
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-upset" style="flex-basis: 59.6%;justify-content: flex-start;">
+<div id="fig-upset-mental" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-upset-mental-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/upset_mental.png" class="img-fluid figure-img" data-ref-parent="fig-upset">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-upset-mental-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(a) Mental Health
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-upset" style="flex-basis: 40.4%;justify-content: flex-start;">
+<div id="fig-upset-normative" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-upset-normative-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/upset_normative.png" class="img-fluid figure-img" data-ref-parent="fig-upset">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-upset-normative-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(b) Normative Reference
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-upset-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Fig.&nbsp;3: Coder agreement on “Mental Health” and “Normative Reference”. Each bar counts the passages to which exactly the combination of coders marked by the dots below assigned the code; the bars on the left show how often each coder assigned it in total.
+</figcaption>
+</figure>
+</div>
+<p>This leads to our first lesson: coding is a cognitively demanding task that involves at least two layers: understanding what a code means, and deciding whether a passage meets it. Vague formulations in the codebook can create uncertainty in the latter and, as a consequence, disagreement between coders. But even when coders are certain in their decisions, their understandings of what a code means may still differ.</p>
+</section>
+<section id="the-model-side" class="level3">
+<h3 class="anchored" data-anchor-id="the-model-side">The Model Side</h3>
+<p>On the model side, we wanted to know how the coders’ divergent interpretations relate to the representation the model learns from the coded examples. As the model was trained on examples coded by the trainer alone, the first question was how far this shapes its representation compared to the other coders. Put simply: is the model a puppet of its trainer, or can it infer a more general representation of a code from the training examples? Our experiments point towards the former. When we ranked the coders by how closely their highlights matched the model’s positive attributions, the trainer ranked closest to the model on average for each of the three health codes.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></p>
+<p><a href="#fig-motivation" class="quarto-xref">Fig.&nbsp;4</a> shows a case in which this lean becomes visible. All four coders assigned “Mental Health” to the passage, but while the other coders highlighted only “seelisches Wohlbefinden” (mental well-being) as relevant, the trainer additionally highlighted “Motivation mich zu bewegen” (motivation to get moving). The model assigns its highest attribution score to the word “Motivation”, which indicates that its representation is closer to the trainer’s reading in this case.</p>
+<div id="fig-motivation" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-motivation-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div style="border: 1px solid #333; border-radius: 3px; padding: 0.8em 1em; font-size: 0.9em; text-align: left;">
+<p><strong>Other coders (annotators 2–4):</strong> Ähm also mein eigenes einfach allgemein körperliches Wohlbefinden <span style="background-color: #FFD166;">seelisches Wohlbefinden</span> ähm meine Aktivität ähm Aktivitätsgrad Motivation mich zu bewegen ähm gehört auch Ernährung dazu ähm Appetit ähm Dann Krankheitsausfälle, klar, […]</p>
+<p><strong>Trainer (annotator 1):</strong> Ähm also mein eigenes einfach allgemein körperliches Wohlbefinden <span style="background-color: #9BBCFF;">seelisches Wohlbefinden</span> ähm meine Aktivität ähm Aktivitätsgrad <span style="background-color: #9BBCFF;">Motivation mich zu bewegen</span> ähm gehört auch Ernährung dazu ähm Appetit ähm Dann Krankheitsausfälle, klar, […]</p>
+<p><strong>Model attributions:</strong> Ähm also mein eigenes einfach allgemein <span style="background-color: rgba(230, 0, 0, 0.55);">körperliches</span> <span style="background-color: rgba(0, 200, 0, 0.14);">Wohlbefinden</span> <span style="background-color: rgba(0, 200, 0, 0.30);">seelisches</span> <span style="background-color: rgba(0, 200, 0, 0.10);">Wohlbefinden</span> ähm meine Aktivität ähm Aktivitätsgrad <span style="background-color: rgba(0, 200, 0, 0.42);">Motivation</span> mich zu bewegen ähm gehört auch Ernährung dazu ähm Appetit ähm Dann Krankheitsausfälle, klar, […]</p>
+<p><em>Top-scoring words:</em> Motivation (+1.85) · seelisches (+1.34) · Wohlbefinden (+0.64) · Wohlbefinden (+0.46) · ähm (+0.11)</p>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-motivation-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Fig.&nbsp;4: Highlights and model attributions for a passage coded as “Mental Health” by all four coders. The model attributions use green for positive and red for negative values, shaded relative to the strongest attribution.
+</figcaption>
+</figure>
+</div>
+<p>Another finding that shows in this example is the importance of key terms that trigger a code assignment. The positive attributions are distributed very unevenly: “Motivation” receives a score of +1.85, about three times as much as the third-highest word. “Seelisches” also scores high, and it is arguably the term that carries the consistent assignment of the code across all coders and the model in this case. Across codes, this concentration is most pronounced for “Physical Health”, where the highest-scoring word alone accounts for 41% of a passage’s positive attribution on average. The same code also showed the highest agreement among the coders and the closest match between human highlights and model attributions. In contrast, where the trainer was uncertain about an assignment, the model’s attributions were spread more evenly across the passage (<a href="#fig-entropy" class="quarto-xref">Fig.&nbsp;5</a>).<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a></p>
+<div class="figure framed">
+<div id="fig-entropy" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-entropy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/entropy_by_certainty.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:60.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-entropy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Fig.&nbsp;5: Diffuseness of the model’s positive attributions for the trainer’s low- and high-certainty assignments.
+</figcaption>
+</figure>
+</div>
+</div>
+<p>These general trends were complemented by a close reading, which showed that, read across multiple examples, the attributions could in some cases be assembled into a coherent reading of the model’s representation of a code. For instance, terms related to everyday activities, such as playing, doing sports and going to school, received high attribution scores for “Functional Health” across several examples. However, this is a selective reading that may not hold for other cases. The attributions were also not always interpretable: in some cases, relatively high scores could not be brought into any coherent reading.</p>
+<p>This leads to our second lesson, which can be summarized in three points:</p>
+<ul>
+<li>Model predictions always have to be considered in light of the interpretation carried by the training examples.</li>
+<li>Uncertainty in interpretation and ambiguity in the data are also reflected in the model’s representation of a code.</li>
+<li>To some extent, IG attributions can make this representation accessible.</li>
+</ul>
+</section>
+</section>
+<section id="what-does-this-mean-for-the-ai-sic-project" class="level2">
+<h2 class="anchored" data-anchor-id="what-does-this-mean-for-the-ai-sic-project">What Does This Mean for the AI-SIC Project?</h2>
+<p>In our use case, the coding of cognitive interviews, we aim to minimize ambiguity, as our codes serve to ground statements about empirical relationships in the data. Nonetheless, some ambiguity is unavoidable when applying abstract codes to diverse interview material, since this is always an interpretive act. As a consequence of the experiments, we revised our codebook and now brief our coders in order to reduce the room for interpretation wherever possible. In this setting, XAI attributions can serve as an intermediate quality check after several rounds of training, verifying that the model has picked up the right cues before it is applied to unseen material.</p>
+<p>In other forms of social science coding, such as Grounded Theory, ambiguity is embraced as a productive part of the coding itself. Here, XAI attributions could be used in a more interactive human–machine setting to surface the ambiguity in the learned representation, for example by deliberately reviewing cases with diffuse attributions or by reading attributions across assignments. Confronting this ambiguity could then push researchers to rethink their own categories.</p>
+<p>In both cases, however, our experiments show that attributions can be misleading when used as a decision aid <span class="citation" data-cites="Miller2023">(<a href="#ref-Miller2023" role="doc-biblioref">Miller 2023</a>)</span>, as they themselves carry various kinds of ambiguity and are error-prone when read for a single case. Their intended use is therefore not to justify individual model decisions, for instance as a coding helper that tells coders why a code applies, but to support extended reasoning about the codebook and the modeling process across many cases.</p>
+
 
 
 </section>
 
-</main> <!-- /main -->
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-Kroh2023" class="csl-entry" role="listitem">
+Kroh, Jacqueline, Julia Tuppat, Raffaela Gentile, and Hanna Reichelt. 2023. <span>“How Do Children Rate Their Health? An Investigation of Considered Health Dimensions, Health Factors, and Assessment Strategies.”</span> <em>Child Indicators Research</em> 16 (6): 2545–80. <a href="https://doi.org/10.1007/s12187-023-10066-6">https://doi.org/10.1007/s12187-023-10066-6</a>.
+</div>
+<div id="ref-Miller2023" class="csl-entry" role="listitem">
+Miller, Tim. 2023. <span>“Explainable AI Is Dead, Long Live Explainable AI!: Hypothesis-Driven Decision Support Using Evaluative AI.”</span> <em>2023 ACM Conference on Fairness Accountability and Transparency</em>, FAccT ’23, June, 333–42. <a href="https://doi.org/10.1145/3593013.3594001">https://doi.org/10.1145/3593013.3594001</a>.
+</div>
+<div id="ref-Sundararajan2017" class="csl-entry" role="listitem">
+Sundararajan, Mukund, Ankur Taly, and Qiqi Yan. 2017. <span>“Axiomatic Attribution for Deep Networks.”</span> In <em>Proceedings of the 34th International Conference on Machine Learning</em>, edited by Doina Precup and Yee Whye Teh, vol. 70. Proceedings of Machine Learning Research. PMLR. <a href="https://proceedings.mlr.press/v70/sundararajan17a.html">https://proceedings.mlr.press/v70/sundararajan17a.html</a>.
+</div>
+</div></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>After pre-testing two models on passages with and without the interviewer’s questions, we chose a fine-tuned <a href="https://huggingface.co/sentence-transformers/paraphrase-multilingual-mpnet-base-v2">mpnet sentence transformer</a>, which performed best overall.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>The codes were defined in a detailed codebook at the time. In a debriefing after the coding, the team concluded that some of the disagreements could be traced back to ambiguous statements in the codebook, and that the lack of a proper briefing beforehand may have contributed to the variation in interpretation.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>We only considered passages to which the trainer and at least one other coder had assigned the same code. Highlights and positive attributions were compared using a size-corrected Dice score; the resulting ranks were normalized by the number of coders in each comparison and compared against the rank expected under random ordering.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>We measured this spread (“diffuseness” in <a href="#fig-entropy" class="quarto-xref">Fig.&nbsp;5</a>) as the entropy of the positive attributions, normalized by the number of positively attributed words. Assignments with low trainer certainty (below 8, n = 41) reached a mean entropy of 0.83 ± 0.11, those with high certainty (above 8, n = 35) a mean of 0.65 ± 0.14.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
